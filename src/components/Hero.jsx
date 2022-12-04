@@ -13,7 +13,7 @@ const Hero = () => {
                     <button className='py-3 px-6 sm:w-[60%] my-4'>Get Started</button>
                 </div>
                 <div>
-                    <img className='w-full md:max-w-[474px]' src={bgImg} alt="/" />
+                    <img className='w-full md:max-w-[474px] sm:max-w-[650px] ' src={bgImg} alt="/" />
                 </div>
                 <div className='absolute flex flex-col py-8 md:min-w-[760px] bottom-[5%]
             mx-1 md:left-1/2 transform md:-translate-x-1/2 bg-zinc-200
