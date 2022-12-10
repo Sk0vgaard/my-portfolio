@@ -4,6 +4,7 @@ import About from "./components/about";
 import Support from "./components/support";
 import AllInOne from "./components/all-in-one";
 import Pricing from "./components/pricing";
+import Footer from "./components/footer";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Support/>
         <AllInOne/>
         <Pricing/>
+        <Footer/>
     </>
   );
 }

@@ -6,7 +6,7 @@ import supportImg from '../assets/xl_salmon.png';
 const Support = () => {
     return (
         <div className='w-full mt-24'>
-            <div className='w-full h-[700px] bg-gray-900/90 absolute'>
+            <div className='w-full h-[600px] bg-gray-900/90 absolute'>
                 <img className='w-full h-full object-cover mix-blend-overlay' src={supportImg} alt="/"/>
             </div>
             <div className='max-w-[1240px] mx-auto text-white relative'>
@@ -21,7 +21,7 @@ const Support = () => {
                         <div className='p-8'>
                             <PhoneIcon className='w-16 p-4 bg-indigo-600 text-white rounded-lg mt-[-4rem]'/>
                             <h3 className='font-bold text-2xl my-6'>Sales</h3>
-                            <p className='text-gray-600 text-xl'>Some text</p>
+                            <p className='text-gray-600 text-xl'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, commodi ea illo laudantium maiores nemo nisi porro quia quisquam sequi?</p>
                         </div>
                         <div className='bg-slate-100 pl-8 py-4'>
                             <p className='flex item-center text-indigo-600'>Contact Me <ArrowSmRightIcon className='w-5 ml-2'/></p>
@@ -31,7 +31,7 @@ const Support = () => {
                         <div className='p-8'>
                             <SupportIcon className='w-16 p-4 bg-indigo-600 text-white rounded-lg mt-[-4rem]'/>
                             <h3 className='font-bold text-2xl my-6'>Technical</h3>
-                            <p className='text-gray-600 text-xl'>Some text</p>
+                            <p className='text-gray-600 text-xl'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur cupiditate dolorem incidunt ipsam magnam rem sint! Ipsam, quia, ut. Neque.</p>
                         </div>
                         <div className='bg-slate-100 pl-8 py-4'>
                             <p className='flex item-center text-indigo-600'>Contact Me <ArrowSmRightIcon className='w-5 ml-2'/></p>
@@ -41,7 +41,7 @@ const Support = () => {
                         <div className='p-8'>
                             <ChatIcon className='w-16 p-4 bg-indigo-600 text-white rounded-lg mt-[-4rem]'/>
                             <h3 className='font-bold text-2xl my-6'>Media</h3>
-                            <p className='text-gray-600 text-xl'>Some text</p>
+                            <p className='text-gray-600 text-xl'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet consectetur dolores hic ipsa odio quidem quis tempore temporibus vitae voluptatum?</p>
                         </div>
                         <div className='bg-slate-100 pl-8 py-4'>
                             <p className='flex item-center text-indigo-600'>Contact Me <ArrowSmRightIcon className='w-5 ml-2'/></p>
