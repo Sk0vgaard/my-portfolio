@@ -23,7 +23,7 @@ const Navbar = () => {
                 <button className='border-none bg-transparent text-black mr-4'>Sign In</button>
                 <button className='px-8 py-3'>Sign Out</button>
             </div>
-            <div className='md:hidden flex items-center' onClick={handleClick}>
+            <div className='md:hidden flex items-center mr-4' onClick={handleClick}>
                 {!nav ? <MenuIcon className='w-5'/> : <XIcon className='w-5'/>}
             </div>
         </div>

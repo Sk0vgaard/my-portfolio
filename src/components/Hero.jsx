@@ -1,6 +1,6 @@
 import React from "react";
 import {CloudUploadIcon, DatabaseIcon, PaperAirplaneIcon, ServerIcon} from "@heroicons/react/solid";
-import bgImg from '../assets/312129995_10159799132917508_9160938620148319791_n.jpg';
+import bgImg from '../assets/l_salmon.jpg';
 
 const Hero = () => {
     return (
