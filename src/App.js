@@ -1,7 +1,7 @@
-import Navbar from'./components/Navbar'
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Support from "./components/Support";
+import Navbar from './components/navbar'
+import Hero from "./components/hero";
+import About from "./components/about";
+import Support from "./components/support";
 import AllInOne from "./components/all-in-one";
 
 function App() {
