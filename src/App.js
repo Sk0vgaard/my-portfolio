@@ -1,5 +1,5 @@
 import Navbar from './components/navbar'
-import Hero from "./components/hero";
+import Home from "./components/home";
 import About from "./components/about";
 import Support from "./components/support";
 import Platform from "./components/platform";
@@ -10,7 +10,7 @@ function App() {
   return (
     <>
         <Navbar/>
-        <Hero/>
+        <Home/>
         <About/>
         <Support/>
         <Platform/>
