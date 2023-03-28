@@ -3,6 +3,10 @@ import {FaGithub, FaInstagram, FaLinkedinIn} from "react-icons/fa";
 import bgImg from '../assets/l_salmon.jpg';
 
 const Home = () => {
+    const linkedInUrl = "https://www.linkedin.com/in/mathias-skovgaard/";
+    const githubUrl = "https://github.com/Sk0vgaard";
+    const instagramUrl = "https://www.instagram.com/sk0vgaard/";
+
     return (
         <div name='home'
              className='w-full h-screen gradient-change flex flex-col justify-between'
@@ -23,17 +27,24 @@ const Home = () => {
                 <div className='absolute flex flex-col py-8 md:min-w-[760px] bottom-[5%]
             mx-1 md:left-1/2 transform md:-translate-x-1/2 bg-zinc-200
             border border-slate-300 rounded-xl text-center shadow-xl'>
-                    <div className='flex justify-between flex-wrap px-4'>
-                        <div className='flex px-4 py-2 text-slate-500'><FaLinkedinIn className='h-6 text-indigo-600'/>
-                            <p className={'pl-1'}>LinkedIn</p>
+                    <div className='flex justify-between flex-wrap px-20'>
+                        <div className='flex px-4 py-2 text-slate-500'>
+                            <a href={linkedInUrl} target="_blank" rel="noopener noreferrer">
+                                <FaLinkedinIn size={'40px'} className='text-indigo-600' />
+                            </a>
                         </div>
-                        <div className='flex px-4 py-2 text-slate-500'><FaGithub className='h-6 text-indigo-600'/>
-                            <p className={'pl-1'}>GitHub</p>
+                        <div className='flex px-4 py-2 text-slate-500'>
+                            <a href={githubUrl} target="_blank" rel="noopener noreferrer">
+                                <FaGithub size={'40px'} className='text-indigo-600' />
+                            </a>
                         </div>
-                        <div className='flex px-4 py-2 text-slate-500'><FaInstagram className='h-6 text-indigo-600'/>
-                            <p className={'pl-1'}>Instagram</p>
+                        <div className='flex px-4 py-2 text-slate-500'>
+                            <a href={instagramUrl} target="_blank" rel="noopener noreferrer">
+                                <FaInstagram size={'40px'} className='text-indigo-600' />
+                            </a>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>

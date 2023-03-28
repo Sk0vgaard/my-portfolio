@@ -13,7 +13,7 @@ module.exports = {
     },
   },
   plugins: [
-    plugin(function ({ addUtilities, addComponents, e, prefix, config }) {
+    plugin(function ({ addUtilities }) {
       const spinnerKeyframes = {
         '0%': { transform: 'rotate(0deg)' },
         '100%': { transform: 'rotate(360deg)' },
@@ -39,7 +39,7 @@ module.exports = {
       const gradientUtilities = {
         '.gradient-change': {
           'background-color': 'rgba(79, 70, 229, 1)',
-          animation: 'gradient-change 4s linear infinite',
+          animation: 'gradient-change 6s linear infinite',
         },
       };
 
