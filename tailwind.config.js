@@ -19,17 +19,32 @@ module.exports = {
         '100%': { transform: 'rotate(360deg)' },
       };
 
+      const gradientKeyframes = {
+        '0%': { 'background-color': 'rgba(79, 70, 229, 1)' },
+        '50%': { 'background-color': 'rgba(16, 185, 129, 1)' },
+        '100%': { 'background-color': 'rgba(79, 70, 229, 1)' },
+      };
+
       addUtilities({
         '@keyframes spinner': spinnerKeyframes,
+        '@keyframes gradient-change': gradientKeyframes,
       });
 
       const spinnerUtilities = {
         '.spinner': {
-          animation: 'spinner 2s linear infinite',
+          animation: 'spinner 4s linear infinite',
+        },
+      };
+
+      const gradientUtilities = {
+        '.gradient-change': {
+          'background-color': 'rgba(79, 70, 229, 1)',
+          animation: 'gradient-change 4s linear infinite',
         },
       };
 
       addUtilities(spinnerUtilities);
+      addUtilities(gradientUtilities);
     }),
   ],
 };
