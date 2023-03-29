@@ -41,12 +41,23 @@ const Home = () => {
             <div className='grid md:grid-cols-2 max-w-[1240px] m-auto'>
                 <div className="flex flex-col justify-center md:items-start w-full px-2 py-8">
                     <p className={`text-2xl ${fadeIn} ${fadeProp.fade}`}>Frontend Developer</p>
-                    <h1 className={`py-3 text-5xl md:text-7xl font-bold ${fadeIn}`}>
+                    <h1 className={`pt-5 pb-8 text-5xl md:text-7xl font-bold ${fadeIn}`}>
                         Mathias Skovgaard
                     </h1>
-                    <p className={`text-2xl ${fadeIn}`}>Always going the extra mile</p>
+                    <div className={`flex font-poppins uppercase tracking-[5px] bg-yellow-100 text-xl px-[35px] py-[20px] h-[70px] shadow-xl ${fadeIn}`}>
+                        <p>
+                            I am a
+                        </p>
+                        <div className='grid ml-[8px] overflow-hidden'>
+                            <span className="text-scroll underline">Problem solver</span>
+                            <span className="text-scroll underline">Proactive communicator</span>
+                            <span className="text-scroll underline">Detail oriented</span>
+                            <span className="text-scroll underline">Team player</span>
+                            <span className="text-scroll underline">Continuous learner</span>
+                            <span className="text-scroll underline">Problem solver</span>
+                        </div>
+                    </div>
                 </div>
-
 
                 <div className={`relative w-full md:max-w-[474px] sm:max-w-[650px] overflow-hidden ${fadeIn}`}>
                     <div
