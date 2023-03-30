@@ -44,19 +44,20 @@ const Home = () => {
                     <h1 className={`pt-5 pb-8 text-5xl md:text-7xl font-bold ${fadeIn}`}>
                         Mathias Skovgaard
                     </h1>
-                    <div className={`flex font-poppins uppercase tracking-[5px] bg-yellow-100 text-xl px-[35px] py-[20px] h-[70px] shadow-xl ${fadeIn}`}>
+                    <div className={`flex font-poppins uppercase tracking-[5px] bg-yellow-100 text-xs md:text-xl px-[10px] md:px-[35px] py-[20px] h-[55px] md:h-[70px] shadow-xl ${fadeIn}`}>
                         <p>
                             I am a
                         </p>
                         <div className='grid ml-[8px] overflow-hidden'>
-                            <span className="text-scroll underline">Problem solver</span>
-                            <span className="text-scroll underline">Proactive communicator</span>
-                            <span className="text-scroll underline">Detail oriented</span>
-                            <span className="text-scroll underline">Team player</span>
-                            <span className="text-scroll underline">Continuous learner</span>
-                            <span className="text-scroll underline">Problem solver</span>
+                            <p className="text-scroll underline">Problem solver</p>
+                            <p className="text-scroll underline">Proactive communicator</p>
+                            <p className="text-scroll underline">Detail oriented</p>
+                            <p className="text-scroll underline">Team player</p>
+                            <p className="text-scroll underline">Continuous learner</p>
+                            <p className="text-scroll underline">Problem solver</p>
                         </div>
                     </div>
+
                 </div>
 
                 <div className={`relative w-full md:max-w-[474px] sm:max-w-[650px] overflow-hidden ${fadeIn}`}>
