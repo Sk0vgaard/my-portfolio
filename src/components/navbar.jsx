@@ -57,7 +57,7 @@ const Navbar = () => {
                 <Link onClick={handleClose} to='about' smooth={true} offset={-125} duration={500}>About</Link>
             </li>
             <li className='border-b-2 border-zinc-300 w-full'>
-                <Link onClick={handleClose} to='support' smooth={true} offset={-50} duration={500}>Support</Link>
+                <Link onClick={handleClose} to='timeline' smooth={true} offset={-50} duration={500}>Timeline</Link>
             </li>
             <li className='border-b-2 border-zinc-300 w-full'>
                 <Link onClick={handleClose} to='platform' smooth={true} offset={-150} duration={500}>Platform</Link>
