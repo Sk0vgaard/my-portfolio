@@ -5,7 +5,7 @@ const Timeline = () => {
     const jobs = [
         {
             workplace: "Bankdata",
-            jobtitle: "Senior Software Developer",
+            jobTitle: "Senior Software Developer",
             fromDate: "Feb 2022",
             toDate: "Jan 2023 - Present",
             description:
@@ -14,7 +14,7 @@ const Timeline = () => {
         },
         {
             workplace: "Bankdata",
-            jobtitle: "Teknisk Product Owner / Frontend Engineer",
+            jobTitle: "Teknisk Product Owner / Frontend Engineer",
             fromDate: "Feb 2022 - Present",
             toDate: "",
             description:
@@ -23,7 +23,7 @@ const Timeline = () => {
         },
         {
             workplace: "Bankdata",
-            jobtitle: "Full Stack Developer",
+            jobTitle: "Full Stack Developer",
             fromDate: "May 2021",
             toDate: "Jan 2023",
             description: "test",
@@ -31,7 +31,7 @@ const Timeline = () => {
         },
         {
             workplace: "Bankdata",
-            jobtitle: "Full Stack Develope2r",
+            jobTitle: "Full Stack Develope2r",
             fromDate: "May 2021",
             toDate: "Jan 2023",
             description: "test",
@@ -39,7 +39,7 @@ const Timeline = () => {
         },
         {
             workplace: "EG A/S",
-            jobtitle: "Full Stack - Developer",
+            jobTitle: "Full Stack - Developer",
             fromDate: "Aug 2020",
             toDate: "May 2021",
             description:
@@ -48,7 +48,7 @@ const Timeline = () => {
         },
         {
             workplace: "EG A/S",
-            jobtitle: "Scrummaster",
+            jobTitle: "Scrummaster",
             fromDate: "Jun 2020",
             toDate: "May 2021",
             description: "",
@@ -56,7 +56,7 @@ const Timeline = () => {
         },
         {
             workplace: "EG A/S",
-            jobtitle: "Full Stack - Junior Developer",
+            jobTitle: "Full Stack - Junior Developer",
             fromDate: "Feb 2019",
             toDate: "Aug 2020",
             description: "",
@@ -64,7 +64,7 @@ const Timeline = () => {
         },
         {
             workplace: "EG A/S",
-            jobtitle: "Software Team Lead",
+            jobTitle: "Software Team Lead",
             fromDate: "Sep 2019",
             toDate: "Jun 2020",
             description: "",
@@ -90,7 +90,7 @@ const Timeline = () => {
 
         jobs.forEach((job) => {
             timeline.push({
-                title: job.jobtitle,
+                title: job.jobTitle,
                 fromDate: job.fromDate,
                 toDate: job.toDate,
                 description: job.description,
