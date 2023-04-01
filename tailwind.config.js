@@ -1,7 +1,10 @@
 const plugin = require('tailwindcss/plugin');
 
 module.exports = {
-    content: ['./src/**/*.{js,jsx,ts,tsx}'],
+    content: [
+        "./src/**/*.{js,jsx,ts,tsx}",
+        "./node_modules/tw-elements/dist/js/**/*.js"
+    ],
     theme: {
         screens: {
             sm: '640px',
@@ -12,6 +15,7 @@ module.exports = {
         },
     },
     plugins: [
+        require("tw-elements/dist/plugin"),
         plugin(function ({addUtilities}) {
             const spinnerKeyframes = {
                 '0%': {transform: 'rotate(0deg)'},

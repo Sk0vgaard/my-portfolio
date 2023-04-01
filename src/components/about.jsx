@@ -32,15 +32,6 @@ const About = () => {
                         <p className='text-gray-400 mt-2'>Technical Product Owner / Frontend Engineer (Feb 2022 - Present · 1 yr 2 mos)</p>
                         <p className='text-gray-400 mt-2'>Fredericia, South Denmark, Denmark</p>
                     </div>
-                    <div className='border py-8 rounded-xl shadow-xl'>
-                        <h3 className='text-4xl font-bold text-red-600'>EG A/S</h3>
-                        <p className='text-gray-400 mt-2'>Full-time · 2 yrs 4 mos</p>
-                        <p className='text-gray-400 mt-2'>Full Stack - Developer (Aug 2020 - May 2021 · 10 mos)</p>
-                        <p className='text-gray-400 mt-2'>Scrummaster (Jun 2020 - May 2021 · 1 yr)</p>
-                        <p className='text-gray-400 mt-2'>Full Stack - Junior Developer (Feb 2019 - Aug 2020 · 1 yr 7 mos)</p>
-                        <p className='text-gray-400 mt-2'>Software Team Lead (Sep 2019 - Jun 2020 · 10 mos)</p>
-                        <p className='text-gray-400 mt-2'>Odense, Syddanmark, Danmark</p>
-                    </div>
                 </div>
 
                 <div className='text-center mt-10'>

@@ -35,7 +35,7 @@ const Navbar = () => {
                     <ul className='hidden md:flex'>
                         <li><Link className={`cursor-pointer ${headerColor} hover:text-zinc-400`} to='home' smooth={true} duration={500}>Home</Link></li>
                         <li><Link className={`cursor-pointer ${headerColor} hover:text-zinc-400`} to='about' smooth={true} offset={-200} duration={500}>About</Link></li>
-                        <li><Link className={`cursor-pointer ${headerColor} hover:text-zinc-400`} to='support' smooth={true} offset={-50} duration={500}>Support</Link></li>
+                        <li><Link className={`cursor-pointer ${headerColor} hover:text-zinc-400`} to='timeline' smooth={true} offset={-50} duration={500}>Timeline</Link></li>
                         <li><Link className={`cursor-pointer ${headerColor} hover:text-zinc-400`} to='platform' smooth={true} offset={-150} duration={500}>Platform</Link></li>
                         <li><Link className={`cursor-pointer ${headerColor} hover:text-zinc-400`} to='pricing' smooth={true} offset={-80} duration={500}>Pricing</Link></li>
                     </ul>
