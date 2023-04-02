@@ -11,7 +11,7 @@ const Navbar = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            if (window.scrollY >= 850) {
+            if (window.scrollY >= 800) {
                 setBgColor('bg-zinc-100');
                 setHeaderColor('text-zinc-900')
             } else {
@@ -54,7 +54,7 @@ const Navbar = () => {
                 <Link onClick={handleClose} to='home' smooth={true} duration={500}>Home</Link>
             </li>
             <li className='border-b-2 border-zinc-300 w-full'>
-                <Link onClick={handleClose} to='about' smooth={true} offset={-125} duration={500}>About</Link>
+                <Link onClick={handleClose} to='about' smooth={true} offset={-80} duration={500}>About</Link>
             </li>
             <li className='border-b-2 border-zinc-300 w-full'>
                 <Link onClick={handleClose} to='timeline' smooth={true} offset={-50} duration={500}>Timeline</Link>
