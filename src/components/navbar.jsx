@@ -36,7 +36,7 @@ const Navbar = () => {
                         <li><Link className={`cursor-pointer ${headerColor} hover:text-zinc-400`} to='home' smooth={true} duration={500}>Home</Link></li>
                         <li><Link className={`cursor-pointer ${headerColor} hover:text-zinc-400`} to='about' smooth={true} offset={-100} duration={500}>About</Link></li>
                         <li><Link className={`cursor-pointer ${headerColor} hover:text-zinc-400`} to='timeline' smooth={true} offset={-50} duration={500}>Timeline</Link></li>
-                        <li><Link className={`cursor-pointer ${headerColor} hover:text-zinc-400`} to='platform' smooth={true} offset={-150} duration={500}>Platform</Link></li>
+                        <li><Link className={`cursor-pointer ${headerColor} hover:text-zinc-400`} to='skills' smooth={true} offset={-150} duration={500}>Skills</Link></li>
                         <li><Link className={`cursor-pointer ${headerColor} hover:text-zinc-400`} to='pricing' smooth={true} offset={-80} duration={500}>Pricing</Link></li>
                     </ul>
                 </div>
@@ -60,7 +60,7 @@ const Navbar = () => {
                 <Link onClick={handleClose} to='timeline' smooth={true} offset={-50} duration={500}>Timeline</Link>
             </li>
             <li className='border-b-2 border-zinc-300 w-full'>
-                <Link onClick={handleClose} to='platform' smooth={true} offset={-150} duration={500}>Platform</Link>
+                <Link onClick={handleClose} to='skills' smooth={true} offset={-150} duration={500}>Skills</Link>
             </li>
             <li className='border-b-2 border-zinc-300 w-full'>
                 <Link onClick={handleClose} to='pricing' smooth={true} offset={-80} duration={500}>Pricing</Link>
