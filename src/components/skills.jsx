@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 const categories = [
     {
@@ -72,8 +72,8 @@ const categories = [
     {
         title: 'Version Control & Collaboration',
         skills: [
-            { technologyName: 'Confluence', knowledge: 10 },
             { technologyName: 'Jira', knowledge: 10 },
+            { technologyName: 'Confluence', knowledge: 9 },
             { technologyName: 'Git', knowledge: 9 },
             { technologyName: 'GitHub', knowledge: 7 },
             { technologyName: 'BitBucket', knowledge: 9 },
@@ -125,9 +125,45 @@ const categories = [
     },
 ];
 
-
-
 const Skills = () => {
+    const [animate, setAnimate] = useState({});
+    const categoryRefs = useRef([]);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        setAnimate((prevAnimate) => ({
+                            ...prevAnimate,
+                            [entry.target.id]: true,
+                        }));
+                    } else {
+                        setAnimate((prevAnimate) => ({
+                            ...prevAnimate,
+                            [entry.target.id]: false,
+                        }));
+                    }
+                });
+            },
+            { threshold: 0.5 } // Adjust the threshold value based on your preference
+        );
+
+        categoryRefs.current.forEach((ref) => {
+            if (ref) {
+                observer.observe(ref);
+            }
+        });
+
+        return () => {
+            categoryRefs.current.forEach((ref) => {
+                if (ref) {
+                    observer.unobserve(ref);
+                }
+            });
+        };
+    }, []);
+
     return (
         <div name="skills" className="w-full my-32">
             <div className="max-w-[1240px] mx-auto px-2">
@@ -138,7 +174,7 @@ const Skills = () => {
 
                 <div className="grid md:grid-cols-2 gap-4 pt-4">
                     {categories.map((category, index) => (
-                        <div key={index} className="">
+                        <div key={index} className="" ref={(el) => (categoryRefs.current[index] = el)} id={`category-${index}`}>
                             <div className="bg-gray-200 p-8 rounded-lg shadow-md h-full">
                                 <h3 className="font-bold text-lg">{category.title}</h3>
                                 <ul className="grid md:grid-cols-2 gap-4 pt-4">
@@ -148,8 +184,12 @@ const Skills = () => {
                                             {skill.knowledge && skill.knowledge && (
                                                 <div className="relative mt-2">
                                                     <div className="overflow-hidden h-2 text-xs flex rounded bg-gray-300">
-                                                        <div style={{ width: `${skill.knowledge * 10}%` }}
-                                                             className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-green-500"
+                                                        <div
+                                                            style={{
+                                                                width: animate[`category-${index}`] ? `${skill.knowledge * 10}%` : '0%',
+                                                                transition: 'width 1s ease-in-out',
+                                                            }}
+                                                            className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-green-500"
                                                         ></div>
                                                     </div>
                                                 </div>
