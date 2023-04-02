@@ -58,9 +58,9 @@ const categories = [
         ],
     },
     {
-        title: 'DevOps',
+        title: 'DevOps & Infrastructure',
         skills: [
-            { technologyName: 'CI/CD', knowledge: 10 },
+            { technologyName: 'CI/CD', knowledge: 8 },
             { technologyName: 'Linux', knowledge: 7 },
             { technologyName: 'OpenShift', knowledge: 7 },
             { technologyName: 'Grafana', knowledge: 6 },
@@ -81,12 +81,11 @@ const categories = [
         ],
     },
     {
-        title: 'Agile',
+        title: 'Agile Methodologies',
         skills: [
-            { technologyName: 'Scrum', knowledge: 10 },
-            { technologyName: 'Kanban', knowledge: 10 },
-            { technologyName: 'Extreme Programming', knowledge: 10 },
-            { technologyName: 'Agile Methodologies', knowledge: 10 },
+            { technologyName: 'Scrum', knowledge: 9 },
+            { technologyName: 'Kanban', knowledge: 9 },
+            { technologyName: 'Extreme Programming', knowledge: 9 },
         ],
     },
     {
@@ -110,7 +109,7 @@ const categories = [
         ],
     },
     {
-        title: 'Knowledge',
+        title: 'Additional Knowledge',
         skills: [
             { technologyName: 'Android Development'},
             { technologyName: 'Ionic'},
