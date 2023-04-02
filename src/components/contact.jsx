@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
-import {CheckIcon, LocationMarkerIcon, MailIcon, PhoneIcon} from "@heroicons/react/outline";
+import {LocationMarkerIcon, MailIcon, PhoneIcon} from "@heroicons/react/outline";
 import {PaperAirplaneIcon} from "@heroicons/react/solid";
-import {FaGithub, FaInstagram, FaLinkedinIn} from "react-icons/fa";
+import {FaLinkedinIn} from "react-icons/fa";
 
 const Contact = () => {
 
@@ -60,13 +60,19 @@ const Contact = () => {
                             height="300"
                             className="rounded-xl"
                             loading="lazy"
-                            style={{ border: 0 }}
+                            style={{border: 0}}
                         ></iframe>
                         <div className='text-2xl'>
-                            <p className='flex py-4'><LocationMarkerIcon className='w-8 mr-5 text-blue-600 flex-shrink-0'/> Esbjerg, Denmark</p>
-                            <a href='https://www.linkedin.com/in/mathias-skovgaard/' target="_blank" className='flex py-4'><FaLinkedinIn className='w-8 mr-5 text-blue-600 flex-shrink-0'/> in/mathias-skovgaard</a>
-                            <p className='flex py-4'><MailIcon className='w-8 mr-5 text-blue-600 flex-shrink-0'/> Contact me through the contact form</p>
-                            <p className='flex py-4'><PhoneIcon className='w-8 mr-5 text-blue-600 flex-shrink-0'/> For a phone conversation, please provide your contact number in the form. </p>
+                            <p className='flex py-4'><LocationMarkerIcon
+                                className='w-8 mr-5 text-blue-600 flex-shrink-0'/> Esbjerg, Denmark</p>
+                            <a href='https://www.linkedin.com/in/mathias-skovgaard/' target="_blank"
+                               className='flex py-4'><FaLinkedinIn
+                                className='w-8 mr-5 text-blue-600 flex-shrink-0'/> in/mathias-skovgaard</a>
+                            <p className='flex py-4'><MailIcon
+                                className='w-8 mr-5 text-blue-600 flex-shrink-0'/> Contact me through the contact form
+                            </p>
+                            <p className='flex py-4'><PhoneIcon className='w-8 mr-5 text-blue-600 flex-shrink-0'/> For a
+                                phone conversation, please provide your contact number in the form. </p>
                         </div>
                     </div>
                     <div className='bg-white text-slate-900 m-4 p-8 rounded-xl shadow-2xl relative'>

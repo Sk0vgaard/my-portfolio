@@ -1,5 +1,5 @@
 import React from 'react';
-import {FaGithub, FaInstagram, FaLinkedinIn, FaReact} from 'react-icons/fa';
+import {FaGithub, FaLinkedinIn, FaTwitter} from 'react-icons/fa';
 import tailwind from './../assets/tailwind.png'
 import react from './../assets/react.png'
 import firebase from './../assets/firebase.png'
@@ -8,7 +8,7 @@ import firebase from './../assets/firebase.png'
 const Footer = () => {
     const linkedInUrl = "https://www.linkedin.com/in/mathias-skovgaard/";
     const githubUrl = "https://github.com/Sk0vgaard";
-    const instagramUrl = "https://www.instagram.com/sk0vgaard/";
+    const twitterUrl = "https://twitter.com/sk0vgaard";
 
     return (
         <div className="w-full mt-24 bg-slate-900 py-8 px-2">
@@ -41,8 +41,8 @@ const Footer = () => {
                         </a>
                     </div>
                     <div className='flex px-4 py-2 text-slate-500'>
-                        <a href={instagramUrl} target="_blank" rel="noopener noreferrer">
-                            <FaInstagram size={'40px'} className='text-slate-400'/>
+                        <a href={twitterUrl} target="_blank" rel="noopener noreferrer">
+                            <FaTwitter size={'40px'} className='text-slate-400'/>
                         </a>
                     </div>
                 </div>

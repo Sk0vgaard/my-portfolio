@@ -32,7 +32,7 @@ const Navbar = () => {
             <div className='px-2 flex justify-between item-center w-full h-full'>
                 <div className='flex items-center pl-10'>
                     <h1 className={`text-3xl font-bold ${headerColor} mr-4 sm:text-3xl`}>
-                        <Link className={`cursor-pointer ${headerColor} hover:text-zinc-400`} to='home' smooth={true} duration={500}>
+                        <Link className={`cursor-pointer ${headerColor}`} to='home' smooth={true} duration={500}>
                             Mathias Skovgaard
                         </Link>
                     </h1>
