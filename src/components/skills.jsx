@@ -51,10 +51,10 @@ const categories = [
     {
         title: 'Database',
         skills: [
-            { technologyName: 'DB2', knowledge: 10 },
             { technologyName: 'Firebase', knowledge: 9 },
-            { technologyName: 'SQL', knowledge: 8 },
-            { technologyName: 'MySQL', knowledge: 8 },
+            { technologyName: 'SQL', knowledge: 5 },
+            { technologyName: 'DB2', knowledge: 5 },
+            { technologyName: 'MySQL', knowledge: 4 },
         ],
     },
     {
