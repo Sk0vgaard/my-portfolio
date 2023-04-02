@@ -1,6 +1,6 @@
-import React, {useState, useEffect} from 'react';
-import { Link } from 'react-scroll';
-import { MenuIcon, XIcon } from '@heroicons/react/outline';
+import React, {useEffect, useState} from 'react';
+import {Link} from 'react-scroll';
+import {MenuIcon, XIcon} from '@heroicons/react/outline';
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);
@@ -31,7 +31,11 @@ const Navbar = () => {
         <div className={`w-screen h-[80px] z-10 ${bgColor} fixed drop-shadow-lg`}>
             <div className='px-2 flex justify-between item-center w-full h-full'>
                 <div className='flex items-center pl-10'>
-                    <h1 className={`text-3xl font-bold ${headerColor} mr-4 sm:text-3xl`}>Mathias Skovgaard</h1>
+                    <h1 className={`text-3xl font-bold ${headerColor} mr-4 sm:text-3xl`}>
+                        <Link className={`cursor-pointer ${headerColor} hover:text-zinc-400`} to='home' smooth={true} duration={500}>
+                            Mathias Skovgaard
+                        </Link>
+                    </h1>
                     <ul className='hidden md:flex'>
                         <li><Link className={`cursor-pointer ${headerColor} hover:text-zinc-400`} to='home' smooth={true} duration={500}>Home</Link></li>
                         <li><Link className={`cursor-pointer ${headerColor} hover:text-zinc-400`} to='about' smooth={true} offset={-100} duration={500}>About</Link></li>
