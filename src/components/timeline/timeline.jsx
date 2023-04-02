@@ -1,7 +1,7 @@
 import React from 'react';
 import JobTimeline from "./jobTimeline";
-import bankdataLogo from '../assets/bankdata.png';
-import egLogo from '../assets/EG_Logo.png';
+import bankdataLogo from '../../assets/bankdata.png';
+import egLogo from '../../assets/EG_Logo.png';
 
 const Timeline = () => {
     const jobTimelineArray = [
@@ -58,11 +58,11 @@ const Timeline = () => {
         // EG
         {
             company: "EG A/S",
-            jobTitle: "Full Stack - Developer",
+            jobTitle: "Full Stack Developer",
             fromDate: "Aug 2020",
             toDate: "May 2021",
             description:
-                "I were promoted to Developer because I took a lot of responsibility and had a mature attitude in how to write good code.",
+                "I were promoted to Developer because I took a lot of responsibility and had a mature attitude on how to write good code.",
             companyLink: "https://eg.dk/om-eg/",
             companyIcon: `${egLogo}`,
             technologies: "",
@@ -130,8 +130,6 @@ const Timeline = () => {
             jobs: jobs,
         };
     });
-
-    console.log(jobTimelines);
 
     return (
         <div name="timeline" className="md:p-4">

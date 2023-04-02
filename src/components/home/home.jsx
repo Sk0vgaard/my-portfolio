@@ -1,7 +1,7 @@
 import './home.css';
 import React, {useEffect, useState} from 'react';
 import {FaGithub, FaInstagram, FaLinkedinIn} from "react-icons/fa";
-import bgImg from '../assets/l_salmon.jpg';
+import bgImg from '../../assets/l_salmon.jpg';
 
 const Home = () => {
     const linkedInUrl = "https://www.linkedin.com/in/mathias-skovgaard/";

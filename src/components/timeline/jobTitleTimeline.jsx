@@ -4,7 +4,7 @@ const JobTimeline = ({jobs}) => {
     return (
         <ol className="border-l-2 border-primary dark:text-info">
             {jobs.map((job) => (
-                <li key={job.jobTitle}>
+                <li key={job.description}>
                     <div className="flex-start flex">
                         <div className="-ml-[27px] flex h-[20px] w-[20px] items-center justify-center rounded-full bg-primary dark:bg-info"></div>
                         <div className={'pl-2 w-full'}>
