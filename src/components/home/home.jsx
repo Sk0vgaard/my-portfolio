@@ -73,17 +73,17 @@ const Home = () => {
                     <div className='flex justify-between flex-wrap px-20'>
                         <div className='flex px-4 py-2 text-slate-500'>
                             <a href={linkedInUrl} target="_blank" rel="noopener noreferrer">
-                                <FaLinkedinIn size={'40px'} className='text-indigo-600'/>
+                                <FaLinkedinIn size={'40px'} className='text-slate-700'/>
                             </a>
                         </div>
                         <div className='flex px-4 py-2 text-slate-500'>
                             <a href={githubUrl} target="_blank" rel="noopener noreferrer">
-                                <FaGithub size={'40px'} className='text-indigo-600'/>
+                                <FaGithub size={'40px'} className='text-slate-700'/>
                             </a>
                         </div>
                         <div className='flex px-4 py-2 text-slate-500'>
                             <a href={instagramUrl} target="_blank" rel="noopener noreferrer">
-                                <FaInstagram size={'40px'} className='text-indigo-600'/>
+                                <FaInstagram size={'40px'} className='text-slate-700'/>
                             </a>
                         </div>
                     </div>

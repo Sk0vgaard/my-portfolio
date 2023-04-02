@@ -3,7 +3,7 @@ import Home from "./components/home/home";
 import About from "./components/about";
 import Timeline from "./components/timeline/timeline";
 import Skills from "./components/skills";
-import Pricing from "./components/pricing";
+import Contact from "./components/contact";
 import Footer from "./components/footer";
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
         <About/>
         <Timeline/>
         <Skills/>
-        <Pricing/>
+        <Contact/>
         <Footer/>
     </>
   );

@@ -26,7 +26,7 @@ const Footer = () => {
                     </ul>
                 </div>
                 <div>
-                    <h6 className='font-bold uppercase pt-2'>Pricing</h6>
+                    <h6 className='font-bold uppercase pt-2'>Contact</h6>
                     <ul>
                         <li className='py-1'>Marketing</li>
                         <li className='py-1'>Analytics</li>
@@ -57,7 +57,7 @@ const Footer = () => {
             </div>
 
             <div className='flex flex-col max-w-[1240px] px-10 py-4 mx-auto justify-between sm:flex-row text-center text-gray-400'>
-                <p className='py-4'>2022 Workflow, All rights reserved</p>
+                <p className='py-4'>© All rights reserved</p>
                 <div className='flex justify-between sm:w-[300px] pt-2 text-3xl'>
                     <FaFacebook/>
                     <FaInstagram/>

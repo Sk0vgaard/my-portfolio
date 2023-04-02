@@ -37,7 +37,7 @@ const Navbar = () => {
                         <li><Link className={`cursor-pointer ${headerColor} hover:text-zinc-400`} to='about' smooth={true} offset={-100} duration={500}>About</Link></li>
                         <li><Link className={`cursor-pointer ${headerColor} hover:text-zinc-400`} to='timeline' smooth={true} offset={-50} duration={500}>Timeline</Link></li>
                         <li><Link className={`cursor-pointer ${headerColor} hover:text-zinc-400`} to='skills' smooth={true} offset={-150} duration={500}>Skills</Link></li>
-                        <li><Link className={`cursor-pointer ${headerColor} hover:text-zinc-400`} to='pricing' smooth={true} offset={-80} duration={500}>Pricing</Link></li>
+                        <li><Link className={`cursor-pointer ${headerColor} hover:text-zinc-400`} to='contact' smooth={true} offset={-80} duration={500}>Contact</Link></li>
                     </ul>
                 </div>
                 {/*<div className='hidden md:flex pr-4'>*/}
@@ -63,7 +63,7 @@ const Navbar = () => {
                 <Link onClick={handleClose} to='skills' smooth={true} offset={-150} duration={500}>Skills</Link>
             </li>
             <li className='border-b-2 border-zinc-300 w-full'>
-                <Link onClick={handleClose} to='pricing' smooth={true} offset={-80} duration={500}>Pricing</Link>
+                <Link onClick={handleClose} to='contact' smooth={true} offset={-80} duration={500}>Contact</Link>
             </li>
             {/*<div className='flex flex-col my-4'>*/}
             {/*    <button className='bg-transparent text-indigo-600 px-8 py-3 mb-4'>Sign In</button>*/}

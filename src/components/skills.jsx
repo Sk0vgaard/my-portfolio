@@ -6,7 +6,7 @@ const categories = [
         skills: [
             { technologyName: 'TypeScript', knowledge: 8 },
             { technologyName: 'JavaScript', knowledge: 8 },
-            { technologyName: 'HTML(5)/CSS', knowledge: 8 },
+            { technologyName: 'HTML(5) / CSS', knowledge: 8 },
             { technologyName: 'JSON', knowledge: 8 },
             { technologyName: 'AJAX', knowledge: 8 },
             { technologyName: 'Responsive Web Design', knowledge: 9 },
@@ -17,7 +17,7 @@ const categories = [
         skills: [
             { technologyName: 'Angular', knowledge: 10 },
             { technologyName: 'React', knowledge: 5 },
-            { technologyName: 'AngularJS', knowledge: 6 },
+            { technologyName: 'Jest / Spectator', knowledge: 8 },
             { technologyName: 'Angular Material', knowledge: 9 },
             { technologyName: 'Bootstrap', knowledge: 8 },
             { technologyName: 'Tailwind', knowledge: 6 },
@@ -51,7 +51,7 @@ const categories = [
     {
         title: 'Database',
         skills: [
-            { technologyName: 'Firebase', knowledge: 9 },
+            { technologyName: 'Firebase', knowledge: 8 },
             { technologyName: 'SQL', knowledge: 5 },
             { technologyName: 'DB2', knowledge: 5 },
             { technologyName: 'MySQL', knowledge: 4 },
@@ -72,12 +72,21 @@ const categories = [
     {
         title: 'Version Control & Collaboration',
         skills: [
-            { technologyName: 'Jira', knowledge: 10 },
+            { technologyName: 'Jira', knowledge: 9 },
             { technologyName: 'Confluence', knowledge: 9 },
             { technologyName: 'Git', knowledge: 9 },
             { technologyName: 'GitHub', knowledge: 7 },
             { technologyName: 'BitBucket', knowledge: 9 },
             { technologyName: 'Mercurial', knowledge: 5 },
+        ],
+    },
+    {
+        title: 'IDE\'s',
+        skills: [
+            { technologyName: 'IntelliJ IDEA', knowledge: 9 },
+            { technologyName: 'WebStorm', knowledge: 7 },
+            { technologyName: 'Visual Studio', knowledge: 6 },
+            { technologyName: 'Android Studio', knowledge: 5 },
         ],
     },
     {
@@ -121,6 +130,8 @@ const categories = [
             { technologyName: 'Gradle'},
             { technologyName: 'NoSQL'},
             { technologyName: 'Website hosting'},
+            { technologyName: 'Eclipse'},
+            { technologyName: 'NetBeans'},
         ],
     },
 ];
