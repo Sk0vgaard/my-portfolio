@@ -108,7 +108,10 @@ const Platform = () => {
                         </div>
                     </div>
                 </div>
-
+                <div className='text-center mt-10'>
+                    <h3 className='text-4xl font-bold text-indigo-600'>Skills</h3>
+                    <p className='text-gray-500 mt-4'>Backend-webudvikling · DevOps · Præsentationskompetencer · Frontend-udvikling · Networking · Domain-Driven Design (DDD) · Microservices · API Development · Java · Webudvikling · Scrum · Softwareudvikling · Kanban · Microsoft Azure · CSS · AJAX · Git · JavaScript · SQL · HTML5 · Kommunikation · Extreme Programming · Angular · Node.js · TypeScript · GitHub · BitBucket · Jenkins · Swagger · Agile-metodologier</p>
+                </div>
             </div>
         </div>
     )

@@ -1,42 +1,54 @@
 import React from 'react';
+import aboutPicture from './../assets/l_salmon.jpg'
 
 const About = () => {
     return (
-        <div name='about' className='w-full my-32 '>
+        <div name='about' className='w-full my-20 '>
             <div className='max-w-[1240px] mx-auto'>
-                <div className='text-center'>
-                    <h2 className='text-5xl font-bold'>A developer with flare</h2>
-                    <p className='text-3xl py-6 text-gray-500'>Lets have a talk</p>
-                </div>
+                <div className="bg-gray-200 p-8 rounded-lg shadow-md">
+                    <div className='text-center'>
+                        <h2 className='pb-10 text-5xl font-bold'>About me</h2>
+                    </div>
 
-                <div className='grid md:grid-cols-3 gap-1 px-2 text-center'>
-                    <div className='border py-8 rounded-xl shadow-xl'>
-                        <p className='text-6xl font-bold text-indigo-600'>Test</p>
-                        <p className='text-gray-400 mt-2'>Good code is tested code</p>
+                    <div className="flex justify-center pb-5 mb-6">
+                        <img
+                            src={aboutPicture}
+                            alt="Profile"
+                            className="w-[250px] h-[250px] rounded-full border-4 border-white shadow-lg"
+                        />
                     </div>
-                    <div className='border py-8 rounded-xl shadow-xl'>
-                        <p className='text-6xl font-bold text-indigo-600'>100%</p>
-                        <p className='text-gray-400 mt-2'>Commitment</p>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 className="text-xl font-semibold mb-2">Interests</h3>
+                            <ul className="list-disc pl-5">
+                                <li>Angler for salmon and sea trout in southwest Jutland brooks</li>
+                                <li>Family life in Esbjerg with wife and two daughters</li>
+                                <li>Exploring new technology in my free time</li>
+                                <li>Process optimization both in private and at work</li>
+                                <li>Volunteering at our rivers to improve the fish population</li>
+                                <li>Friends is a huge part of my persona</li>
+                                <li>Going on trips in the nature with my family</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 className="text-xl font-semibold mb-2">Skills & Qualities</h3>
+                            <ul className="list-disc pl-5">
+                                <li>Embracing challenges and self-improvement</li>
+                                <li>Structured and diligent in documentation</li>
+                                <li>Problem-solving and critical thinking abilities</li>
+                                <li>Adaptability and willingness to learn new technologies</li>
+                                <li>Leadership and mentoring skills</li>
+                                <li>Not afraid to invite open discussions in the plenum to address concerns and clarify misunderstandings</li>
+                                <li>Empathy, communication skills, and teamwork from social & health worker background</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div className='border py-8 rounded-xl shadow-xl'>
-                        <p className='text-6xl font-bold text-indigo-600'>5 Years</p>
-                        <p className='text-gray-400 mt-2'>Frontend Experience</p>
+                    <div className="mt-6">
+                        <h3 className="text-xl font-semibold mb-2">Career</h3>
+                        <p>
+                            Currently, I work as a Senior Software Developer at Bankdata, where I constantly strive to stay updated with the latest technology trends in the market.
+                        </p>
                     </div>
-                </div>
-                <br/>
-                <div className='grid md:grid-cols-2 gap-1 px-2 text-center'>
-                    <div className='border py-8 rounded-xl shadow-xl'>
-                        <h3 className='text-4xl font-bold text-green-700'>Bankdata</h3>
-                        <p className='text-gray-400 mt-2'>Full-time · 1 yr 11 mos</p>
-                        <p className='text-gray-400 mt-2'>Senior Frontend Developer (Jan 2023 - Present · 3 mos)</p>
-                        <p className='text-gray-400 mt-2'>Technical Product Owner / Frontend Engineer (Feb 2022 - Present · 1 yr 2 mos)</p>
-                        <p className='text-gray-400 mt-2'>Fredericia, South Denmark, Denmark</p>
-                    </div>
-                </div>
-
-                <div className='text-center mt-10'>
-                    <h3 className='text-4xl font-bold text-indigo-600'>Skills</h3>
-                    <p className='text-gray-500 mt-4'>Backend-webudvikling · DevOps · Præsentationskompetencer · Frontend-udvikling · Networking · Domain-Driven Design (DDD) · Microservices · API Development · Java · Webudvikling · Scrum · Softwareudvikling · Kanban · Microsoft Azure · CSS · AJAX · Git · JavaScript · SQL · HTML5 · Kommunikation · Extreme Programming · Angular · Node.js · TypeScript · GitHub · BitBucket · Jenkins · Swagger · Agile-metodologier</p>
                 </div>
             </div>
         </div>
