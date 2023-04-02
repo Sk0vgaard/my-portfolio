@@ -12,10 +12,9 @@ const Timeline = () => {
             fromDate: "Jan 2023",
             toDate: "Present",
             description:
-                "My primary role is currently on OnBoarding multiple teams in Bankdata. \n" +
-                "I help teams that is in need of assistance. \n" +
-                "Making documentations/how-to's etc. that describes our development flow. \n" +
-                "As Senior Developer I started to join a lot of meetings regarding our vision for our platforms and a lot of my points and points is what I am currently working on.",
+                "In my current role as a Senior Frontend Developer, I primarily focus on onboarding multiple teams at Bankdata. \n" +
+                "I assist teams in need of guidance and create documentation and how-to guides to explain our development processes. \n" +
+                "As a Senior Developer, I participate in numerous meetings to discuss the vision for our platforms, and many of the ideas and suggestions I bring to the table are now being implemented.",
             companyLink: "https://www.bankdata.dk/om/bankdata",
             companyIcon: `${bankdataLogo}`,
             technologies: "Sprint Boot, Angular",
@@ -26,8 +25,9 @@ const Timeline = () => {
             fromDate: "Feb 2022",
             toDate: "Present",
             description:
-                "I started up a new team in Bankdata, where our focus were on Angular. \n" +
-                "As Technical Product Owner my responsible for leading and guiding a team of software developers and ensuring that projects are completed on time and with high quality. This role requires both technical expertise and leadership skills.",
+                "I took the lead in starting a new team at Bankdata, with a focus on modern frontend frameworks. \n" +
+                "As Technical Product Owner, I am responsible for leading and guiding a team of software developers, ensuring that projects are completed on time and with high quality. " +
+                "This role requires both technical expertise and leadership skills.",
         },
         {
             company: "Bankdata",
@@ -35,8 +35,7 @@ const Timeline = () => {
             fromDate: "Aug 2021",
             toDate: "Present",
             description:
-                "I am the coordinator for our Angular Guild, where multiple teams across Bankdata attend. " +
-                "Here spent time to find alignments, knowledge sharing, questions and present new technologies and presentations.",
+                "As the coordinator for our Angular Guild, I bring together multiple teams from across Bankdata to share knowledge, answer questions, and present new technologies and best practices.",
         },
         {
             company: "Bankdata",
@@ -44,16 +43,15 @@ const Timeline = () => {
             fromDate: "Feb 2022",
             toDate: "Jan 2023",
             description:
-                "Our responsibility were to OnBoarding of new and existing teams to teach them about standards, best-practices etc. when develop Frontend Applications. \n" +
-                "Furthermore we made sure to create a good developer environment across Bankdata.\n" +
-                "In our team we develop into our three platforms, and making sure that as much as possible is aligned between them.",
+                "During this period, I was responsible for onboarding new and existing teams, teaching them about standards and best practices for frontend application development. \n" +
+                "My team and I worked to create a cohesive developer environment across Bankdata, ensuring alignment and consistency across our three main platforms.",
         },
         {
             company: "Bankdata",
             jobTitle: "Full Stack Developer",
             fromDate: "May 2021",
             toDate: "Jan 2023",
-            description: "I started in a team where we had the responsibility regarding Message Services. This was regarding SMS, Mail etc.",
+            description: "I started in a team responsible for managing Message Services, including SMS and Emails.",
         },
         // EG
         {
@@ -136,7 +134,7 @@ const Timeline = () => {
             <div className="max-w-[1240px] mx-auto text-white relative">
                 <div className="px-4 py-12">
                     <h2 className='p-8 text-5xl font-bold text-center text-slate-700'>TIMELINE</h2>
-                    <JobTimeline jobTimelines={jobTimelines} />
+                    <JobTimeline jobTimelines={jobTimelines}/>
                 </div>
             </div>
         </div>

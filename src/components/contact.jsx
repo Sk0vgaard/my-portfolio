@@ -40,7 +40,7 @@ const Contact = () => {
                 <div className='text-center py-8 text-slate-300'>
                     <h2 className='text-3xl uppercase'>Contact</h2>
                     <h3 className='text-4xl uppercase font-bold text-white py-8'>Get in Touch</h3>
-                    <p className='text-2xl'>
+                    <p className='text-xl m-2'>
                         I'm Mathias Skovgaard, a passionate software developer with a strong background in frontend
                         technologies, project management, and agile methodologies.
                         I love connecting with fellow tech enthusiasts, sharing knowledge, and exploring new
