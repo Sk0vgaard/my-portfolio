@@ -1,12 +1,9 @@
 import './home.css';
-import React, {useEffect, useState} from 'react';
-import {FaGithub, FaLinkedinIn, FaTwitter} from "react-icons/fa";
+import React, {lazy, useEffect, useState} from 'react';
 import bgImg from '../../assets/l_salmon.jpg';
+const SocialIcons = lazy(() => import('../_shared/socialIcons'));
 
 const Home = () => {
-    const linkedInUrl = "https://www.linkedin.com/in/mathias-skovgaard/";
-    const githubUrl = "https://github.com/Sk0vgaard";
-    const twitterUrl = "https://twitter.com/sk0vgaard";
 
     const [fadeProp, setFadeProp] = useState({fade: 'fade-in'});
     const [fadeIn, setFadeIn] = useState('opacity-0');
@@ -68,29 +65,16 @@ const Home = () => {
                         className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-indigo-500 to-green-500 spinner border-4 border-transparent border-t-4 border-opacity-50 rounded-full">
                     </div>
                     <div className="relative aspect-w-1 aspect-h-1 overflow-hidden rounded-full">
-                        <img className="p-1 relative top-0 left-0 w-full h-full object-cover rounded-full" src={bgImg} alt="Salmon img" />
+                        <img className="p-1 relative top-0 left-0 w-full h-full object-cover rounded-full" src={bgImg}
+                             alt="Salmon img"/>
                     </div>
                 </div>
 
                 <div className='absolute bottom-[1%] sm:bottom-[5%] left-0 right-0 flex justify-center'>
                     <div
                         className={`flex flex-col py-8 mx-1 bg-zinc-200 border border-slate-300 rounded-xl shadow-xl ${fadeIn}`}>
-                        <div className='flex flex-wrap px-20'>
-                            <div className='flex px-4 py-2 text-slate-500'>
-                                <a href={linkedInUrl} target="_blank" rel="noopener noreferrer">
-                                    <FaLinkedinIn size={'35px'} className='text-slate-700'/>
-                                </a>
-                            </div>
-                            <div className='flex px-4 py-2 text-slate-500'>
-                                <a href={githubUrl} target="_blank" rel="noopener noreferrer">
-                                    <FaGithub size={'35px'} className='text-slate-700'/>
-                                </a>
-                            </div>
-                            <div className='flex px-4 py-2 text-slate-500'>
-                                <a href={twitterUrl} target="_blank" rel="noopener noreferrer">
-                                    <FaTwitter size={'35px'} className='text-slate-700'/>
-                                </a>
-                            </div>
+                        <div className={'px-20'}>
+                            <SocialIcons color={'text-slate-700'}/>
                         </div>
                     </div>
                 </div>

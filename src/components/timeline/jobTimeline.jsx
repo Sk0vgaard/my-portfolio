@@ -1,6 +1,6 @@
 import React from 'react';
 import JobTitleTimeline from "./jobTitleTimeline";
-import { OfficeBuildingIcon } from '@heroicons/react/outline';
+import {FaBuilding} from "react-icons/fa";
 
 const JobTimeline = ({jobTimelines}) => {
     return (
@@ -12,11 +12,11 @@ const JobTimeline = ({jobTimelines}) => {
                             className="-ml-[36px] flex h-[40px] w-[40px] items-center justify-center rounded-full bg-info-100 text-info-700">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 24 24"
+                                viewBox="0 -2 16 20"
                                 fill="currentColor"
-                                className="h-6 w-6"
+                                className="h-7 w-7"
                             >
-                                <OfficeBuildingIcon></OfficeBuildingIcon>
+                                <FaBuilding></FaBuilding>
                             </svg>
                         </div>
                         <div className="block rounded-lg bg-neutral-50 p-4 md:p-6 shadow-md shadow-black/5 dark:bg-neutral-700 dark:shadow-black/10">

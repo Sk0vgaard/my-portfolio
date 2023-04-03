@@ -1,7 +1,5 @@
 import React, {useState} from 'react';
-import {LocationMarkerIcon, MailIcon, PhoneIcon} from "@heroicons/react/outline";
-import {PaperAirplaneIcon} from "@heroicons/react/solid";
-import {FaLinkedinIn} from "react-icons/fa";
+import {FaEnvelope, FaLinkedinIn, FaPaperPlane, FaPhone, FaLocationArrow} from "react-icons/fa";
 
 const Contact = () => {
 
@@ -63,15 +61,15 @@ const Contact = () => {
                             style={{border: 0}}
                         ></iframe>
                         <div className='text-2xl'>
-                            <p className='flex py-4'><LocationMarkerIcon
+                            <p className='flex py-4'><FaLocationArrow
                                 className='w-8 mr-5 text-blue-600 flex-shrink-0'/> Esbjerg, Denmark</p>
                             <a href='https://www.linkedin.com/in/mathias-skovgaard/' target="_blank"
-                               className='flex py-4'><FaLinkedinIn
+                               className='flex py-4' rel="noreferrer"><FaLinkedinIn
                                 className='w-8 mr-5 text-blue-600 flex-shrink-0'/> in/mathias-skovgaard</a>
-                            <p className='flex py-4'><MailIcon
+                            <p className='flex py-4'><FaEnvelope
                                 className='w-8 mr-5 text-blue-600 flex-shrink-0'/> Contact me through the contact form
                             </p>
-                            <p className='flex py-4'><PhoneIcon className='w-8 mr-5 text-blue-600 flex-shrink-0'/> For a
+                            <p className='flex py-4'><FaPhone className='w-8 mr-5 text-blue-600 flex-shrink-0'/> For a
                                 phone conversation, please provide your contact number in the form. </p>
                         </div>
                     </div>
@@ -117,7 +115,7 @@ const Contact = () => {
                                 disabled={!nameValid || !emailValid || !messageValid}>
                                 Send mail
                                 <div className={'pl-1'}>
-                                    <PaperAirplaneIcon className="h-5 w-5 mr-2 transform rotate-90"/>
+                                    <FaPaperPlane className="h-5 w-5 mr-2 transform rotate-90"/>
                                 </div>
                             </button>
                         </form>
