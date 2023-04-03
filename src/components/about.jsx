@@ -19,7 +19,7 @@ const About = () => {
                     </div>
                     <div className="bg-gray-700 p-8 rounded-lg shadow-md mb-8">
                         <div className={'text-center text-gray-200'}>
-                            My name is Mathias Skovgaard, and I am a passionate software developer based in the
+                            My name is Mathias Skovgaard, a 32-year-old passionate software developer based in the
                             beautiful city of Esbjerg, Denmark.
                             <br/>
                             I specialize in creating high-quality, interactive websites and applications using modern

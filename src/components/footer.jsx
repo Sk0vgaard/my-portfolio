@@ -29,20 +29,20 @@ const Footer = () => {
             <div
                 className="flex flex-col max-w-[1240px] px-10 py-4 mx-auto justify-between sm:flex-row text-center text-gray-400">
                 <p className="py-4">© All rights reserved</p>
-                <div className='flex justify-between flex-wrap px-20'>
+                <div className='flex justify-between flex-wrap'>
                     <div className='flex px-4 py-2 text-slate-500'>
                         <a href={linkedInUrl} target="_blank" rel="noopener noreferrer">
-                            <FaLinkedinIn size={'40px'} className='text-slate-400'/>
+                            <FaLinkedinIn size={'30px'} className='text-slate-400'/>
                         </a>
                     </div>
                     <div className='flex px-4 py-2 text-slate-500'>
                         <a href={githubUrl} target="_blank" rel="noopener noreferrer">
-                            <FaGithub size={'40px'} className='text-slate-400'/>
+                            <FaGithub size={'30px'} className='text-slate-400'/>
                         </a>
                     </div>
                     <div className='flex px-4 py-2 text-slate-500'>
                         <a href={twitterUrl} target="_blank" rel="noopener noreferrer">
-                            <FaTwitter size={'40px'} className='text-slate-400'/>
+                            <FaTwitter size={'30px'} className='text-slate-400'/>
                         </a>
                     </div>
                 </div>

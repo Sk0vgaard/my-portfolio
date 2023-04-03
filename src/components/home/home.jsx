@@ -13,7 +13,7 @@ const Home = () => {
 
     useEffect(() => {
         const timeout = setTimeout(() => {
-            setFadeIn('fade-in');
+            setFadeIn('fade-in-4');
         }, 1000);
 
         return () => clearTimeout(timeout);
@@ -37,7 +37,7 @@ const Home = () => {
     }, [fadeProp])
 
     return (
-        <div name='home' className={`w-full h-screen gradient-change flex flex-col justify-between`}>
+        <div name='home' className={`w-full h-screen gradient-change flex flex-col`}>
             <div className='grid md:grid-cols-2 max-w-[1240px] m-auto'>
                 <div className="flex flex-col justify-center md:items-start w-full px-2 py-8">
                     <p className={`text-2xl ${fadeIn} ${fadeProp.fade}`}>Frontend Developer</p>
@@ -68,28 +68,29 @@ const Home = () => {
                     <img className="p-1 relative w-full rounded-full" src={bgImg} alt="/"/>
                 </div>
 
-                <div className={`absolute flex flex-col py-8 md:min-w-[760px] bottom-[5%]
-            mx-1 md:left-1/2 transform md:-translate-x-1/2 bg-zinc-200
-            border border-slate-300 rounded-xl text-center shadow-xl ${fadeIn}`}>
-                    <div className='flex justify-between flex-wrap px-20'>
-                        <div className='flex px-4 py-2 text-slate-500'>
-                            <a href={linkedInUrl} target="_blank" rel="noopener noreferrer">
-                                <FaLinkedinIn size={'40px'} className='text-slate-700'/>
-                            </a>
-                        </div>
-                        <div className='flex px-4 py-2 text-slate-500'>
-                            <a href={githubUrl} target="_blank" rel="noopener noreferrer">
-                                <FaGithub size={'40px'} className='text-slate-700'/>
-                            </a>
-                        </div>
-                        <div className='flex px-4 py-2 text-slate-500'>
-                            <a href={twitterUrl} target="_blank" rel="noopener noreferrer">
-                                <FaTwitter size={'40px'} className='text-slate-700'/>
-                            </a>
+                <div className='absolute bottom-[5%] left-0 right-0 flex justify-center'>
+                    <div
+                        className={`flex flex-col py-8 mx-1 bg-zinc-200 border border-slate-300 rounded-xl shadow-xl ${fadeIn}`}>
+                        <div className='flex flex-wrap px-20'>
+                            <div className='flex px-4 py-2 text-slate-500'>
+                                <a href={linkedInUrl} target="_blank" rel="noopener noreferrer">
+                                    <FaLinkedinIn size={'35px'} className='text-slate-700'/>
+                                </a>
+                            </div>
+                            <div className='flex px-4 py-2 text-slate-500'>
+                                <a href={githubUrl} target="_blank" rel="noopener noreferrer">
+                                    <FaGithub size={'35px'} className='text-slate-700'/>
+                                </a>
+                            </div>
+                            <div className='flex px-4 py-2 text-slate-500'>
+                                <a href={twitterUrl} target="_blank" rel="noopener noreferrer">
+                                    <FaTwitter size={'35px'} className='text-slate-700'/>
+                                </a>
+                            </div>
                         </div>
                     </div>
-
                 </div>
+
             </div>
         </div>
     )

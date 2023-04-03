@@ -11,7 +11,7 @@ const Navbar = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            if (window.scrollY >= 800) {
+            if (window.scrollY >= 700) {
                 setBgColor('bg-zinc-100');
                 setHeaderColor('text-zinc-900')
             } else {
@@ -44,10 +44,6 @@ const Navbar = () => {
                         <li><Link className={`cursor-pointer ${headerColor} hover:text-zinc-400`} to='contact' smooth={true} offset={-80} duration={500}>Contact</Link></li>
                     </ul>
                 </div>
-                {/*<div className='hidden md:flex pr-4'>*/}
-                {/*    <button className='border-none bg-transparent text-black mr-4'>Sign In</button>*/}
-                {/*    <button className='px-8 py-3'>Sign Out</button>*/}
-                {/*</div>*/}
                 <div className='md:hidden flex items-center mr-4' onClick={handleClick}>
                     {!nav ? <MenuIcon className='w-5'/> : <XIcon className='w-5'/>}
                 </div>

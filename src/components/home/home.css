@@ -6,3 +6,7 @@
 .fade-in {
     transition: opacity 2s ease;
 }
+
+.fade-in-4 {
+    transition: opacity 4s ease;
+}
