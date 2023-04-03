@@ -40,12 +40,14 @@ const Home = () => {
         <div name='home' className={`w-full h-screen gradient-change flex flex-col`}>
             <div className='grid md:grid-cols-2 max-w-[1240px] m-auto'>
                 <div className="flex flex-col justify-center md:items-start w-full px-2 py-8">
-                    <p className={`text-2xl ${fadeIn} ${fadeProp.fade}`}>Frontend Developer</p>
-                    <h1 className={`pt-5 pb-8 text-5xl md:text-7xl font-bold ${fadeIn}`}>
-                        Mathias Skovgaard
-                    </h1>
+                    <div className={'hidden md:block'}>
+                        <p className={`text-2xl ${fadeIn} ${fadeProp.fade}`}>Frontend Developer</p>
+                        <h1 className={`pt-5 pb-8 text-5xl md:text-7xl font-bold ${fadeIn}`}>
+                            Mathias Skovgaard
+                        </h1>
+                    </div>
                     <div
-                        className={`flex font-poppins uppercase tracking-[5px] bg-yellow-100 text-xs md:text-xl px-[10px] md:px-[35px] py-[20px] h-[55px] md:h-[70px] shadow-xl ${fadeIn}`}>
+                        className={`flex font-poppins uppercase tracking-[5px] bg-yellow-100 text-xs md:text-xl px-[6px] md:px-[35px] py-[20px] h-[55px] md:h-[70px] shadow-xl ${fadeIn}`}>
                         <p>
                             I am a
                         </p>
@@ -68,7 +70,7 @@ const Home = () => {
                     <img className="p-1 relative w-full rounded-full" src={bgImg} alt="/"/>
                 </div>
 
-                <div className='absolute bottom-[5%] left-0 right-0 flex justify-center'>
+                <div className='absolute bottom-[1%] sm:bottom-[5%] left-0 right-0 flex justify-center'>
                     <div
                         className={`flex flex-col py-8 mx-1 bg-zinc-200 border border-slate-300 rounded-xl shadow-xl ${fadeIn}`}>
                         <div className='flex flex-wrap px-20'>

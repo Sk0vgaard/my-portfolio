@@ -11,7 +11,17 @@ const Navbar = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            if (window.scrollY >= 700) {
+            let scrollValue = 600;
+
+            if (window.innerWidth >= 640 && window.innerWidth < 768) { // sm
+                scrollValue = 500;
+            } else if (window.innerWidth >= 768 && window.innerWidth < 1024) { // md
+                scrollValue = 550;
+            } else if (window.innerWidth >= 1024) { // lg and above
+                scrollValue = 800;
+            }
+
+            if (window.scrollY >= scrollValue) {
                 setBgColor('bg-zinc-100');
                 setHeaderColor('text-zinc-900')
             } else {
@@ -26,6 +36,7 @@ const Navbar = () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
+
 
     return (
         <div className={`w-screen h-[80px] z-10 ${bgColor} fixed drop-shadow-lg`}>
