@@ -67,7 +67,9 @@ const Home = () => {
                     <div
                         className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-indigo-500 to-green-500 spinner border-4 border-transparent border-t-4 border-opacity-50 rounded-full">
                     </div>
-                    <img className="p-1 relative w-full rounded-full" src={bgImg} alt="/"/>
+                    <div className="relative aspect-w-1 aspect-h-1 overflow-hidden rounded-full">
+                        <img className="p-1 relative top-0 left-0 w-full h-full object-cover rounded-full" src={bgImg} alt="Salmon img" />
+                    </div>
                 </div>
 
                 <div className='absolute bottom-[1%] sm:bottom-[5%] left-0 right-0 flex justify-center'>

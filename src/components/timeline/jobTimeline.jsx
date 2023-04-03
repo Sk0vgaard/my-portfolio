@@ -26,7 +26,9 @@ const JobTimeline = ({jobTimelines}) => {
                                         {timeline.company}
                                     </p>
                                 </span>
-                                <img className="h-[100px] text-white bg-neutral-700" src={timeline.companyIcon} alt={timeline.company} />
+                                <div className="relative aspect-w-1 aspect-h-1 h-[100px] overflow-hidden bg-neutral-700">
+                                    <img className="relative top-0 left-0 w-full h-full object-cover text-white" src={timeline.companyIcon} alt={timeline.company} />
+                                </div>
                             </div>
                             <JobTitleTimeline jobs={timeline.jobs} />
                             <div className={'py-2 pl-4'}>

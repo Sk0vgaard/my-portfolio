@@ -11,12 +11,15 @@ const About = () => {
                     </div>
 
                     <div className="flex justify-center pb-5 mb-6">
-                        <img
-                            src={aboutPicture}
-                            alt="Profile"
-                            className="w-[250px] h-[250px] rounded-full border-4 border-white shadow-lg"
-                        />
+                        <div className="relative aspect-w-1 aspect-h-1 w-[250px] overflow-hidden rounded-full border-4 border-white shadow-lg">
+                            <img
+                                src={aboutPicture}
+                                alt="Profile"
+                                className="relative top-0 left-0 w-full h-full object-cover"
+                            />
+                        </div>
                     </div>
+
                     <div className="bg-gray-700 p-8 rounded-lg shadow-md mb-8">
                         <div className={'text-center text-gray-200'}>
                             My name is Mathias Skovgaard, a 32-year-old passionate software developer based in the

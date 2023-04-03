@@ -20,9 +20,9 @@ const Footer = () => {
                 </div>
 
                 <div className="flex justify-center space-x-4">
-                    <img src={react} alt="" className={'h-10'}/>
-                    <img src={tailwind} alt="" className={'h-10'}/>
-                    <img src={firebase} alt="" className={'h-10'}/>
+                    <img src={react} alt="React" style={{ width: '110px', height: '40px' }} />
+                    <img src={tailwind} alt="Tailwind CSS" style={{ width: '130px', height: '40px' }} />
+                    <img src={firebase} alt="Firebase" style={{ width: '110px', height: '40px' }} />
                 </div>
             </div>
 
