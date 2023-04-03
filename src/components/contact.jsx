@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
-import {FaEnvelope, FaLinkedinIn, FaPaperPlane, FaPhone, FaLocationArrow} from "react-icons/fa";
+import {FaEnvelope, FaLinkedinIn, FaPhone} from "react-icons/fa";
+import {IoMdSend} from "react-icons/io";
+import {GoLocation} from "react-icons/go";
 
 const Contact = () => {
 
@@ -61,17 +63,17 @@ const Contact = () => {
                             style={{border: 0}}
                         ></iframe>
                         <div className='text-2xl'>
-                            <p className='flex py-4'><FaLocationArrow
-                                className='w-8 mr-5 text-blue-600 flex-shrink-0'/> Esbjerg, Denmark</p>
-                            <a href='https://www.linkedin.com/in/mathias-skovgaard/' target="_blank"
-                               className='flex py-4' rel="noreferrer"><FaLinkedinIn
-                                className='w-8 mr-5 text-blue-600 flex-shrink-0'/> in/mathias-skovgaard</a>
-                            <p className='flex py-4'><FaEnvelope
-                                className='w-8 mr-5 text-blue-600 flex-shrink-0'/> Contact me through the contact form
-                            </p>
-                            <p className='flex py-4'><FaPhone className='w-8 mr-5 text-blue-600 flex-shrink-0'/> For a
-                                phone conversation, please provide your contact number in the form. </p>
+                            <div className='flex items-center py-4'><GoLocation className='w-8 mr-5 text-blue-600 flex-shrink-0'/> Esbjerg, Denmark</div>
+                            <div className='flex items-center py-4'>
+                                <FaLinkedinIn className='w-8 mr-5 text-blue-600 flex-shrink-0'/>
+                                <a href='https://www.linkedin.com/in/mathias-skovgaard/' target="_blank" rel="noreferrer" className={'underline'}>
+                                    in/mathias-skovgaard
+                                </a>
+                            </div>
+                            <div className='flex items-center py-4'><FaEnvelope className='w-8 mr-5 text-blue-600 flex-shrink-0'/> Contact me through the contact form</div>
+                            <div className='flex items-center py-4'><FaPhone className='w-8 mr-5 text-blue-600 flex-shrink-0'/> For a phone conversation, please provide your contact number in the form. </div>
                         </div>
+
                     </div>
                     <div className='bg-white text-slate-900 m-4 p-8 rounded-xl shadow-2xl relative'>
                         <p className='text-2xl py-8 text-slate-500'>Please feel free to drop me a message, and I'll get
@@ -114,8 +116,8 @@ const Contact = () => {
                                 className='w-full py-4 my-4 flex items-center justify-center bg-slate-700 text-white rounded hover:bg-slate-900 focus:outline-none focus:ring focus:ring-slate-300 disabled:bg-gray-300 disabled:cursor-not-allowed'
                                 disabled={!nameValid || !emailValid || !messageValid}>
                                 Send mail
-                                <div className={'pl-1'}>
-                                    <FaPaperPlane className="h-5 w-5 mr-2 transform rotate-90"/>
+                                <div className={'pl-2 flex'}>
+                                    <IoMdSend className="h-5 w-5"/>
                                 </div>
                             </button>
                         </form>
