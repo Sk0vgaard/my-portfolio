@@ -50,8 +50,8 @@ const Home = () => {
                         </p>
                         <div className='grid ml-[8px] overflow-hidden'>
                             <p className="text-scroll underline">Problem solver</p>
-                            <p className="text-scroll underline">Proactive communicator</p>
-                            <p className="text-scroll underline">Detail oriented</p>
+                            <p className="text-scroll underline">Mentor</p>
+                            <p className="text-scroll underline">Communicator</p>
                             <p className="text-scroll underline">Team player</p>
                             <p className="text-scroll underline">Continuous learner</p>
                             <p className="text-scroll underline">Problem solver</p>
