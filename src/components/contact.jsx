@@ -3,6 +3,7 @@ import {FaEnvelope, FaLinkedinIn, FaPhone} from "react-icons/fa";
 import {IoMdSend} from "react-icons/io";
 import {GoLocation} from "react-icons/go";
 import emailjs from "@emailjs/browser";
+import {Transition} from "@headlessui/react";
 
 const Contact = () => {
 
@@ -29,11 +30,21 @@ const Contact = () => {
         setMessageValid(event.target.value.trim().length > 0);
     };
 
+    const [showSnackbar, setShowSnackbar] = useState(false);
+    const [snackbarMessage, setSnackbarMessage] = useState('');
+    const [snackbarType, setSnackbarType] = useState('');
+
+    const showSnackBarMessage = (message, type) => {
+        setSnackbarMessage(message);
+        setSnackbarType(type);
+        setShowSnackbar(true);
+        setTimeout(() => setShowSnackbar(false), 3000);
+    };
+
     const form = useRef();
 
     const sendEmail = (e) => {
         e.preventDefault();
-        console.log({name, email, message});
 
         emailjs.sendForm(
             process.env.REACT_APP_EMAILJS_SERVICE_ID,
@@ -42,13 +53,12 @@ const Contact = () => {
             process.env.REACT_APP_EMAILJS_PUBLIC_KEY
         )
             .then((result) => {
-                console.log(form)
-                console.log(result)
                 console.log(result.text);
+                showSnackBarMessage("Your message has been submitted successfully", "success");
             }, (error) => {
                 console.log(error.text);
+                showSnackBarMessage("Something went wrong - Try again later", "error");
             });
-        e.target.reset();
     };
 
     return (
@@ -153,6 +163,27 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
+            {
+                <Transition
+                    show={showSnackbar}
+                    enter="transition-opacity duration-300"
+                    enterFrom="opacity-0"
+                    enterTo="opacity-100"
+                    leave="transition-opacity duration-500"
+                    leaveFrom="opacity-100"
+                    leaveTo="opacity-0"
+                >
+                    <div className="fixed inset-x-0 top-[70px] z-50 flex justify-center">
+                        <div
+                            className={`mt-4 p-4 rounded-lg shadow-lg ${
+                                snackbarType === 'success' ? 'bg-green-500' : 'bg-red-500'
+                            }`}
+                        >
+                            <p className="text-white font-semibold">{snackbarMessage}</p>
+                        </div>
+                    </div>
+                </Transition>
+            }
         </div>
     )
 }
