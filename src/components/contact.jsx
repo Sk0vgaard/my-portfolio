@@ -1,7 +1,8 @@
-import React, {useState} from 'react';
+import React, {useRef, useState} from 'react';
 import {FaEnvelope, FaLinkedinIn, FaPhone} from "react-icons/fa";
 import {IoMdSend} from "react-icons/io";
 import {GoLocation} from "react-icons/go";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
 
@@ -12,11 +13,6 @@ const Contact = () => {
     const [nameValid, setNameValid] = useState(false);
     const [emailValid, setEmailValid] = useState(false);
     const [messageValid, setMessageValid] = useState(false);
-
-    const handleSubmit = (event) => {
-        event.preventDefault();
-        console.log({name, email, message});
-    };
 
     const handleNameChange = (event) => {
         setName(event.target.value);
@@ -31,6 +27,28 @@ const Contact = () => {
     const handleMessageChange = (event) => {
         setMessage(event.target.value);
         setMessageValid(event.target.value.trim().length > 0);
+    };
+
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+        console.log({name, email, message});
+
+        emailjs.sendForm(
+            process.env.REACT_APP_EMAILJS_SERVICE_ID,
+            process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+            form.current,
+            process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+        )
+            .then((result) => {
+                console.log(form)
+                console.log(result)
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+        e.target.reset();
     };
 
     return (
@@ -63,27 +81,36 @@ const Contact = () => {
                             style={{border: 0}}
                         ></iframe>
                         <div className='text-2xl'>
-                            <div className='flex items-center py-4'><GoLocation className='w-8 mr-5 text-blue-600 flex-shrink-0'/> Esbjerg, Denmark</div>
+                            <div className='flex items-center py-4'><GoLocation
+                                className='w-8 mr-5 text-blue-600 flex-shrink-0'/> Esbjerg, Denmark
+                            </div>
                             <div className='flex items-center py-4'>
                                 <FaLinkedinIn className='w-8 mr-5 text-blue-600 flex-shrink-0'/>
-                                <a href='https://www.linkedin.com/in/mathias-skovgaard/' target="_blank" rel="noreferrer" className={'underline'}>
+                                <a href='https://www.linkedin.com/in/mathias-skovgaard/' target="_blank"
+                                   rel="noreferrer" className={'underline'}>
                                     in/mathias-skovgaard
                                 </a>
                             </div>
-                            <div className='flex items-center py-4'><FaEnvelope className='w-8 mr-5 text-blue-600 flex-shrink-0'/> Contact me through the contact form</div>
-                            <div className='flex items-center py-4'><FaPhone className='w-8 mr-5 text-blue-600 flex-shrink-0'/> For a phone conversation, please provide your contact number in the form. </div>
+                            <div className='flex items-center py-4'><FaEnvelope
+                                className='w-8 mr-5 text-blue-600 flex-shrink-0'/> Contact me through the contact form
+                            </div>
+                            <div className='flex items-center py-4'><FaPhone
+                                className='w-8 mr-5 text-blue-600 flex-shrink-0'/> For a phone conversation, please
+                                provide your contact number in the form.
+                            </div>
                         </div>
 
                     </div>
                     <div className='bg-white text-slate-900 m-4 p-8 rounded-xl shadow-2xl relative'>
                         <p className='text-2xl py-8 text-slate-500'>Please feel free to drop me a message, and I'll get
                             back to you as soon as possible.</p>
-                        <form onSubmit={handleSubmit}>
+                        <form ref={form} onSubmit={sendEmail}>
                             <div className="mb-4">
                                 <label htmlFor="name" className="block text-sm font-semibold mb-2">Name</label>
                                 <input
                                     type="text"
                                     id="name"
+                                    name="user_name"
                                     value={name}
                                     onChange={handleNameChange}
                                     className="w-full px-4 py-2 border rounded focus:outline-none focus:ring focus:border-blue-300"
@@ -95,6 +122,7 @@ const Contact = () => {
                                 <input
                                     type="email"
                                     id="email"
+                                    name="user_email"
                                     value={email}
                                     onChange={handleEmailChange}
                                     className="w-full px-4 py-2 border rounded focus:outline-none focus:ring focus:border-blue-300"
@@ -105,6 +133,7 @@ const Contact = () => {
                                 <label htmlFor="message" className="block text-sm font-semibold mb-2">Message</label>
                                 <textarea
                                     id="message"
+                                    name="message"
                                     value={message}
                                     onChange={handleMessageChange}
                                     className="w-full px-4 py-2 border rounded focus:outline-none focus:ring focus:border-blue-300"
