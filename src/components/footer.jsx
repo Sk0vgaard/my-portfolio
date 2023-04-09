@@ -1,7 +1,7 @@
 import React, {lazy} from 'react';
-import tailwind from './../assets/tailwind.png'
-import react from './../assets/react.png'
-import firebase from './../assets/firebase.png'
+import tailwind from '../assets/logos/tailwind.png'
+import react from '../assets/logos/react.png'
+import firebase from '../assets/logos/firebase.png'
 
 const SocialIcons = lazy(() => import('./_shared/socialIcons'));
 

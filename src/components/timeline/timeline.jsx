@@ -1,7 +1,7 @@
 import React from 'react';
 import JobTimeline from "./jobTimeline";
-import bankdataLogo from '../../assets/bankdata.png';
-import egLogo from '../../assets/EG_Logo.png';
+import bankdataLogo from '../../assets/logos/bankdata.png';
+import egLogo from '../../assets/logos/EG_Logo.png';
 
 const Timeline = () => {
     const jobTimelineArray = [

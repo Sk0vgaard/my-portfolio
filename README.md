@@ -1,12 +1,59 @@
-# Getting Started with Create React App
+# Mathias Skovgaard Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#### This project is a personal portfolio website for Mathias Skovgaard, a passionate software developer with a strong background in frontend technologies, project management, and agile methodologies.
 
-## Available Scripts
+![portfolio.gif](src/assets/portfolio.gif)
 
-In the project directory, you can run:
+## Lighthouse analyze
+### Web
+![img.png](src/assets/lighthouse/web_lighthouse.png)
 
-### `npm start`
+### Mobile
+![img_1.png](src/assets/lighthouse/mobile_lighthouse.png)
+
+## Features
+
+- Responsive design
+- Tailwind CSS for styling
+- Firebase for deployment
+- React.js as the main framework
+- Smooth scrolling to different sections
+- Email functionality through EmailJS
+- Snackbar notifications
+
+## Sections
+
+- Home: Introduction and a background image
+- About: A brief biography of Mathias Skovgaard
+- Timeline: A timeline of Mathias Skovgaard's earlier workexperience
+- Skills: A section about Mathias Skovgaard's skills and experience with different tools
+- Contact: A contact form for visitors to get in touch with Mathias Skovgaard
+
+## Dependencies
+
+- React.js
+- EmailJS
+- Tailwind CSS
+- Headless UI
+- React-icons
+- React-scroll
+- React-transition-group
+
+## Setup
+
+1. Clone the repository: `git clone https://github.com/sk0vgaard/mathias-skovgaard-portfolio.git` 
+2. Install the dependencies: `npm install`
+3. Set up environment variables for EmailJS:
+
+Create a `.env` file in the root of the project and add the following variables:
+
+<ul>
+    <li>REACT_APP_EMAILJS_SERVICE_ID=your_service_id</li>
+    <li>REACT_APP_EMAILJS_TEMPLATE_ID=your_template_id</li>
+    <li>REACT_APP_EMAILJS_PUBLIC_KEY=your_public_key</li>
+</ul>
+
+4. Start the development server: `npm start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
@@ -14,30 +61,14 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Deployment
+I am using Firebase for deployment of my application.
 
-### `npm run build`
+1. To build the project for production, run: `npm run build` \
+This will create a `build` folder containing the production-ready files.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+You can deploy the build folder to any hosting provider of your choice.
 
 ## Learn More
 
