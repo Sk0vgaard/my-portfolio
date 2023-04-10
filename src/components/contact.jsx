@@ -43,6 +43,12 @@ const Contact = () => {
 
     const form = useRef();
 
+    const resetInputs = () => {
+        setName('');
+        setEmail('');
+        setMessage('');
+    };
+
     const sendEmail = (e) => {
         e.preventDefault();
 
@@ -55,9 +61,11 @@ const Contact = () => {
             .then((result) => {
                 console.log(result.text);
                 showSnackBarMessage("Your message has been submitted successfully", "success");
+                resetInputs();
             }, (error) => {
                 console.log(error.text);
                 showSnackBarMessage("Something went wrong - Try again later", "error");
+                resetInputs();
             });
     };
 
