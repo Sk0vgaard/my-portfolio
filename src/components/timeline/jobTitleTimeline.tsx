@@ -12,10 +12,11 @@ const JobTimeline = ({jobDetails}: { jobDetails: JobDetails[] }) => {
                         <div className={'pl-2 w-full'}>
                             <div className="mb-4 flex justify-between">
                                 <span>{jobDetail.title}</span>
-                                <span className="text-sm text-info transition duration-150 text-info-500"> {jobDetail.fromDate} - {jobDetail.toDate} </span>
+                                <span className="text-sm text-info transition duration-150 text-info-500">
+                                    {jobDetail.fromDate} {jobDetail.toDate ? `- ${jobDetail.toDate}` : ''}
+                                </span>
                             </div>
-                            <p className="mb-6 text-neutral-200 whitespace-pre-wrap">
-                                {jobDetail.description}
+                            <p className="mb-6 text-neutral-200 whitespace-pre-wrap" dangerouslySetInnerHTML={{ __html: jobDetail.description }}>
                             </p>
                         </div>
                     </div>
