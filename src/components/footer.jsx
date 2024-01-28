@@ -8,7 +8,7 @@ const SocialIcons = lazy(() => import('./_shared/socialIcons'));
 
 const Footer = () => {
     return (
-        <div className="w-full mt-24 bg-slate-900 py-8 px-2">
+        <div className="w-full mt-24 bg-gray-900 py-8 px-2">
             <div className="max-w-[1240px] mx-auto grid md:grid-cols-2 border-b-2 border-gray-600 py-8">
                 <div className="flex items-center justify-center h-full">
                     <h1 className="text-xl font-semibold mb-4 text-center text-gray-400 m-0">

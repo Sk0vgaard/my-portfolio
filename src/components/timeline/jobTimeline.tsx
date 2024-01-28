@@ -38,7 +38,7 @@ const JobTimeline = ({companyTimelines}: { companyTimelines: CompanyTimeline[] }
                                 </svg>
                             </div>
                             <div onClick={() => toggleExpand(itemKey)}
-                                 className="block rounded-lg bg-neutral-50 p-4 md:p-6 shadow-md bg-neutral-700 cursor-pointer hover:bg-neutral-800">
+                                 className="block rounded-lg p-4 md:p-6 shadow-md bg-gray-800 cursor-pointer hover:bg-gray-900">
                                 <div className="flex items-center justify-center md:justify-between">
                                     <span className="text-sm text-info" rel="noreferrer">
                                         <p className="hidden md:block text-3xl">
@@ -60,7 +60,7 @@ const JobTimeline = ({companyTimelines}: { companyTimelines: CompanyTimeline[] }
                                 <div className={'py-2 md:pl-4 flex items-center justify-center md:justify-between'}>
                                     <button
                                         type="button"
-                                        className="inline-block rounded border-2 border-info px-4 pt-[4px] pb-[3px] text-s font-medium uppercase leading-normal text-info transition duration-150 ease-in-out hover:border-info-600 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-info-600 focus:border-info-600 focus:text-info-600 focus:outline-none focus:ring-0 active:border-info-700 active:text-info-700 hover:bg-neutral-100 hover:bg-opacity-10"
+                                        className="inline-block rounded border-2 border-info px-4 pt-[4px] pb-[3px] text-s font-medium uppercase leading-normal text-info transition duration-150 ease-in-out hover:border-info-600 hover:bg-gray-500 hover:bg-opacity-10 hover:text-info-600 focus:border-info-600 focus:text-info-600 focus:outline-none focus:ring-0 active:border-info-700 active:text-info-700 hover:bg-gray-100 hover:bg-opacity-10"
                                     >
                                         <a href={companyTimeline.companyLink} target="_blank" rel="noreferrer">
                                             Read about {companyTimeline.companyName}

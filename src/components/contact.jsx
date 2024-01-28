@@ -71,7 +71,7 @@ const Contact = () => {
 
     return (
         <div name='contact' className='w-full text-white my-24'>
-            <div className='w-full h-[800px] bg-slate-900 absolute mix-blend-overlay'></div>
+            <div className='w-full h-[800px] bg-gray-900 absolute mix-blend-overlay'></div>
             <div className='max-w-[1240px] mx-auto py-12'>
                 <div className='text-center py-8 text-slate-300'>
                     <h2 className='text-3xl uppercase'>Contact</h2>
@@ -160,7 +160,7 @@ const Contact = () => {
                                 ></textarea>
                             </div>
                             <button
-                                className='w-full py-4 my-4 flex items-center justify-center bg-slate-700 text-white rounded hover:bg-slate-900 focus:outline-none focus:ring focus:ring-slate-300 disabled:bg-gray-300 disabled:cursor-not-allowed'
+                                className='w-full py-4 my-4 flex items-center justify-center bg-gray-800 text-white rounded hover:bg-slate-900 focus:outline-none focus:ring focus:ring-slate-300 disabled:bg-gray-300 disabled:cursor-not-allowed'
                                 disabled={!nameValid || !emailValid || !messageValid}>
                                 Send mail
                                 <div className={'pl-2 flex'}>
