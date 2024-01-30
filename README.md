@@ -67,6 +67,7 @@ I am using Firebase for deployment of my application.
 
 1. To build the project for production, run: `npm run build` \
 This will create a `build` folder containing the production-ready files.
+2. To deploy the project to firebase, run: `firebase deploy`
 
 You can deploy the build folder to any hosting provider of your choice.
 
