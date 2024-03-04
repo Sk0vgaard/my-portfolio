@@ -16,7 +16,9 @@ const JobTimeline = ({jobDetails}: { jobDetails: JobDetails[] }) => {
                                     {jobDetail.fromDate} {jobDetail.toDate ? `- ${jobDetail.toDate}` : ''}
                                 </span>
                             </div>
-                            <p className="mb-6 text-neutral-200 whitespace-pre-wrap" dangerouslySetInnerHTML={{ __html: jobDetail.description }}>
+                            <p className="mb-6 text-neutral-200 whitespace-pre-wrap"
+                               dangerouslySetInnerHTML={{ __html: jobDetail.description }}
+                               onClick={(e) => e.stopPropagation()}>
                             </p>
                         </div>
                     </div>
