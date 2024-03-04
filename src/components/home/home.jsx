@@ -53,7 +53,7 @@ const Home = () => {
                             <p className="text-scroll underline">Mentor</p>
                             <p className="text-scroll underline">Communicator</p>
                             <p className="text-scroll underline">Team player</p>
-                            <p className="text-scroll underline">Continuous learner</p>
+                            <p className="text-scroll underline">Leader</p>
                             <p className="text-scroll underline">Problem solver</p>
                         </div>
                     </div>

@@ -1,8 +1,9 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import JobTitleTimeline from './jobTitleTimeline';
-import {FaBuilding} from 'react-icons/fa';
-import {FiChevronDown, FiChevronUp} from 'react-icons/fi';
-import {CompanyTimeline} from '../../interfaces';
+import { FaBuilding } from 'react-icons/fa';
+import { FiChevronDown, FiChevronUp } from 'react-icons/fi';
+import { CompanyTimeline } from '../../interfaces';
+import { scroller } from 'react-scroll';
 
 type ExpandedState = {
     [key: string]: boolean;
@@ -12,10 +13,24 @@ const JobTimeline = ({companyTimelines}: { companyTimelines: CompanyTimeline[] }
     const [expanded, setExpanded] = useState<ExpandedState>({});
 
     const toggleExpand = (key: any) => {
-        setExpanded((prevState: Record<string, boolean>) => ({
-            ...prevState,
-            [key]: !prevState[key],
-        }));
+        setExpanded((prevState: Record<string, boolean>) => {
+            const isExpanding = !prevState[key];
+            if (!isExpanding) {
+                // Schedule the scrolling to happen after state update
+                setTimeout(() => {
+                    scroller.scrollTo('timeline', {
+                        duration: 500,
+                        delay: 0,
+                        smooth: 'easeOutQuint', // Starts the fastest among the animations and decelerates the most sharply towards the end.
+                        offset: -50, // Adjust based on your requirement
+                    });
+                }, 0);
+            }
+            return {
+                ...prevState,
+                [key]: isExpanding,
+            };
+        });
     };
 
     return (

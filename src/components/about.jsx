@@ -1,5 +1,5 @@
 import React from 'react';
-import aboutPicture from './../assets/l_salmon.jpg';
+import profileImg from './../assets/profile_pic.jpg';
 
 function useAgeCalculator(birthdate) {
     const birthdayCalculator = () => {
@@ -33,7 +33,7 @@ const About = () => {
                     <div className="flex justify-center pb-5 mb-6">
                         <div
                             className="relative aspect-w-1 aspect-h-1 w-[250px] overflow-hidden rounded-full border-4 border-white shadow-lg">
-                            <img src={aboutPicture} alt="Profile" className="w-full h-full object-cover"/>
+                            <img src={profileImg} alt="Profile" className="w-full h-full object-cover"/>
                         </div>
                     </div>
 

@@ -10,24 +10,28 @@ const categories = [
             {technologyName: 'JSON', knowledge: 8},
             {technologyName: 'AJAX', knowledge: 8},
             {technologyName: 'Responsive Web Design', knowledge: 9},
+            {technologyName: 'Chrome Dev Tools', knowledge: 9},
+            {technologyName: 'ESLint / TSLint / Stylelint', knowledge: 9},
         ],
     },
     {
         title: 'Frontend Frameworks',
         skills: [
             {technologyName: 'Angular', knowledge: 10},
-            {technologyName: 'React', knowledge: 5},
+            {technologyName: 'React', knowledge: 7},
             {technologyName: 'Jest / Spectator', knowledge: 8},
             {technologyName: 'Angular Material', knowledge: 9},
+            {technologyName: 'Kirby Design System', knowledge: 8},
             {technologyName: 'Bootstrap', knowledge: 8},
-            {technologyName: 'Tailwind', knowledge: 6},
+            {technologyName: 'Playwright', knowledge: 8},
+            {technologyName: 'Cypress', knowledge: 8},
         ],
     },
     {
         title: 'Backend Tools',
         skills: [
-            {technologyName: 'Node.js', knowledge: 8},
-            {technologyName: 'Java', knowledge: 5},
+            {technologyName: 'Node.js', knowledge: 9},
+            {technologyName: 'Java', knowledge: 6},
             {technologyName: 'C#', knowledge: 5},
             {technologyName: 'C++', knowledge: 3},
         ],
@@ -36,6 +40,7 @@ const categories = [
         title: 'Backend Frameworks',
         skills: [
             {technologyName: 'Spring Boot', knowledge: 6},
+            {technologyName: 'Quarkus', knowledge: 5},
             {technologyName: 'ASP.NET & Core', knowledge: 4},
         ],
     },
@@ -51,10 +56,10 @@ const categories = [
     {
         title: 'Database',
         skills: [
-            {technologyName: 'Firebase', knowledge: 8},
-            {technologyName: 'SQL', knowledge: 5},
+            {technologyName: 'Firebase', knowledge: 9},
+            {technologyName: 'SQL', knowledge: 7},
             {technologyName: 'DB2', knowledge: 5},
-            {technologyName: 'MySQL', knowledge: 4},
+            {technologyName: 'MySQL', knowledge: 6},
         ],
     },
     {
@@ -66,7 +71,7 @@ const categories = [
             {technologyName: 'Grafana', knowledge: 6},
             {technologyName: 'Docker', knowledge: 5},
             {technologyName: 'Jenkins', knowledge: 8},
-            {technologyName: 'Postman', knowledge: 7},
+            {technologyName: 'Postman', knowledge: 8},
         ],
     },
     {
@@ -75,7 +80,7 @@ const categories = [
             {technologyName: 'Jira', knowledge: 9},
             {technologyName: 'Confluence', knowledge: 9},
             {technologyName: 'Git', knowledge: 9},
-            {technologyName: 'GitHub', knowledge: 7},
+            {technologyName: 'GitHub', knowledge: 8},
             {technologyName: 'BitBucket', knowledge: 9},
             {technologyName: 'Mercurial', knowledge: 5},
         ],
@@ -85,7 +90,7 @@ const categories = [
         skills: [
             {technologyName: 'IntelliJ IDEA', knowledge: 9},
             {technologyName: 'WebStorm', knowledge: 7},
-            {technologyName: 'Visual Studio', knowledge: 6},
+            {technologyName: 'Visual Studio Code', knowledge: 6},
             {technologyName: 'Android Studio', knowledge: 5},
         ],
     },
@@ -110,11 +115,11 @@ const categories = [
         title: 'Personal Skills',
         skills: [
             {technologyName: 'Communication', knowledge: 10},
-            {technologyName: 'Leadership', knowledge: 8},
+            {technologyName: 'Leadership', knowledge: 10},
             {technologyName: 'Adaptability', knowledge: 8},
             {technologyName: 'Critical Thinking', knowledge: 10},
             {technologyName: 'Problem Solving', knowledge: 9},
-            {technologyName: 'Presentation Skills', knowledge: 8},
+            {technologyName: 'Presentation Skills', knowledge: 9},
         ],
     },
 ];
@@ -122,7 +127,7 @@ const categories = [
 const additional = {
     title: 'Additional Knowledge',
     skills: [
-        {technologyName: 'Android Development'},
+        {technologyName: 'Android'},
         {technologyName: 'Ionic'},
         {technologyName: 'Unity'},
         {technologyName: 'Kubernetes'},
