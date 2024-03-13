@@ -38,7 +38,7 @@ const Home = () => {
             <div className='grid md:grid-cols-2 max-w-[1240px] m-auto'>
                 <div className="flex flex-col justify-center md:items-start w-full px-2 py-8">
                     <div className={'hidden md:block'}>
-                        <p className={`text-2xl ${fadeIn} ${fadeProp.fade}`}>Frontend Developer</p>
+                        <p className={`text-2xl ${fadeIn} ${fadeProp.fade}`}>Technical Leader / Frontend Developer</p>
                         <h1 className={`pt-5 pb-8 text-5xl md:text-7xl font-bold ${fadeIn}`}>
                             Mathias Skovgaard
                         </h1>

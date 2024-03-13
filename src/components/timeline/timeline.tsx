@@ -209,8 +209,7 @@ const Timeline = () => {
                         "<i>All this while still being able to code and improve my self as a developer.</i> \n\n" +
                         "Article: " +
                         "<a style='color: deepskyblue' href='https://www.linkedin.com/posts/mathias-skovgaard_jeg-ville-lige-dele-denne-fine-artikel-omkring-activity-6683082058618679296-yufu?utm_source=share&utm_medium=member_desktop' target='_blank'><u>LinkedIn</u></a> / " +
-                        "<a style='color: deepskyblue' href='https://www.toha.dk/filer/Datamatiker_Toender.pdf' target='_blank'><u>Erhvervsakademiet SydVest - Page 10</u></a> \n "
-                    ,
+                        "<a style='color: deepskyblue' href='https://www.toha.dk/filer/Datamatiker_Toender.pdf' target='_blank'><u>Erhvervsakademiet SydVest - Page 10</u></a>",
                 },
                 {
                     title: "Full Stack - Junior Developer",

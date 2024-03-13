@@ -62,14 +62,10 @@ const About = () => {
                             </p>
                             <br/>
                             <p>
-                                If you'd like to get in touch or discuss potential projects, please feel free to reach
-                                out to me through the contact form on this website. For phone conversations, kindly
-                                provide your contact number in the form, and I'll be more than happy to give you a call.
-                            </p>
-                            <br/>
-                            <p>
-                                Thank you for taking the time to visit my portfolio, and I'm looking forward to
-                                connecting with you soon!
+                                I will always prefer to be judged by my achievements and the esteem of my colleagues
+                                above all else.
+                                <br/>
+                                <i>Actions and integrity carry more weight than words.</i>
                             </p>
                         </div>
                     </div>
@@ -79,12 +75,9 @@ const About = () => {
                             <h3 className="text-xl font-semibold mb-2">Interests</h3>
                             <ul className="list-disc pl-5">
                                 <li>Angler for salmon and sea trout in southwest Jutland brooks</li>
-                                <li>Family life in Esbjerg with wife and two daughters</li>
                                 <li>Exploring new technology in my free time</li>
                                 <li>Process optimization both in private and at work</li>
-                                <li>Volunteering at our rivers to improve the fish population</li>
                                 <li>Friends are a huge part of my persona</li>
-                                <li>Going on trips in the nature with my family</li>
                                 <li>AI is a huge interest for me, and I spend multiple hours each day on either
                                     research, playing, or keeping track of all the new things
                                 </li>
@@ -96,12 +89,8 @@ const About = () => {
                             <ul className="list-disc pl-5">
                                 <li>Embracing challenges and self-improvement</li>
                                 <li>Structured and diligent in documentation</li>
-                                <li>Problem-solving and critical thinking abilities</li>
                                 <li>Adaptability and willingness to learn new technologies</li>
                                 <li>Leadership and mentoring skills</li>
-                                <li>Not afraid to invite open discussions in the plenum to address concerns and clarify
-                                    misunderstandings
-                                </li>
                                 <li>Empathy, communication skills, and teamwork from a social & health worker
                                     background
                                 </li>
@@ -111,18 +100,17 @@ const About = () => {
 
                     <div className="mt-6">
                         <h3 className="text-xl font-semibold mb-2">My Career</h3>
-                        <p>
-                            As a dedicated and versatile software developer, I've held various roles, from Scrum Master
-                            to my current position as Senior Frontend Developer.
+                        <p className="mb-2">
+                            Throughout my journey, I've embraced numerous roles at EG A/S and Bankdata.
                         </p>
-                        <p>
-                            My technical expertise and adaptability have helped me excel in these roles, while also
-                            allowing me to take on leadership responsibilities as a Technical Product Owner and Angular
-                            Guild Coordinator.
+                        <p className="mb-2">
+                            My diverse experiences enabled me to lead significant initiatives like introducing frontend development to the Card & Payments area at Bankdata, highlighting my ability to drive innovation and foster collaboration.
                         </p>
-                        <p>
-                            My ability to communicate, mentor, and foster collaboration across teams highlights my
-                            well-rounded skills and passion for staying updated with the latest technology trends.
+                        <p className="mb-2">
+                            I've initiated and led the AI Community at Bankdata, and my leadership extended to roles as Technical Product Owner and Angular Guild Coordinator, where I championed best practices and mentored teams.
+                        </p>
+                        <p className="mb-2">
+                            This journey reflects my adaptability, technical expertise, and passion for shaping a collaborative and forward-thinking tech environment.
                         </p>
                     </div>
                 </div>
