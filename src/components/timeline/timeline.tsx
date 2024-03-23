@@ -28,9 +28,10 @@ const Timeline = () => {
                     fromDate: "Jan 2023",
                     toDate: "Present",
                     description:
-                        "In my current role as a Senior Frontend Developer, I primarily focus on onboarding multiple teams at Bankdata. \n" +
-                        "I assist teams in need of guidance and create documentation and how-to guides to explain our development processes. \n" +
-                        "As a Senior Developer, I participate in numerous meetings to discuss the vision for our platforms, and many of the ideas and suggestions I bring to the table has now being implemented. \n",
+                        "As a Senior Frontend Developer at Bankdata, my role extends beyond mere coding to shaping the strategic direction of our frontend technologies. \n" +
+                        "I spearhead initiatives to standardize development processes, ensuring a cohesive approach across various platforms. \n" +
+                        "My work in crafting extensive documentation and guides not only streamlines the onboarding process but also fosters an environment of continuous learning. \n\n" +
+                        "My active participation in strategic discussions allows for the implementation of innovative solutions, further solidifying our commitment to cutting-edge technology and best practices in frontend development."
                 },
                 {
                     title: "Frontend Alignment Cross Bankdata",
@@ -54,22 +55,27 @@ const Timeline = () => {
                         "Promo Video Created With AI: <a style='color: deepskyblue' href='https://ai.invideo.io/watch/Xk87VzhSTHH' target='_blank'><u>Elevate Frontend Development with KirbyGPT</u></a>"
                 },
                 {
+                    title: "Angular Guild Coordinator",
+                    fromDate: "Aug 2021",
+                    toDate: "April 2024",
+                    description:
+                        "In my role as the Angular Guild Coordinator at Bankdata, I've played a critical part in fostering a collaborative tech culture by uniting diverse teams to share insights, tackle challenges, and embrace cutting-edge practices and technologies within the Angular ecosystem. \n" +
+                        "My efforts have significantly contributed to a unified approach towards Angular development, ensuring consistency and excellence across projects. \n" +
+                        "Even after organizational changes, my ongoing involvement in the Angular Guild underscores my commitment to continuous learning, mentorship, and driving the adoption of best practices, positioning Bankdata at the forefront of technology innovation. \n\n" +
+                        "<i>After a new organization rotation, another team should take the overall responsibility for the Angular Stack.</i>",
+                },
+                {
                     title: "Technical Product Owner",
                     fromDate: "Feb 2022",
                     toDate: "Feb 2024",
                     description:
-                        "I took the lead in starting a new team at Bankdata, with a focus on modern frontend frameworks. \n" +
-                        "As Technical Product Owner, I am responsible for leading and guiding a team of Frontend developers, ensuring that projects are completed on time and with high quality. " +
-                        "This role requires both technical expertise and leadership skills. \n\n" +
+                        "As a \"Technical Product Owner\" at Bankdata, I've played a pivotal role in establishing a new frontend-focused team within Cards & Payments Area. \n\n" +
+                        "My contributions have been crucial in the onboarding of both new and existing teams, standardization, and the creation of an optimal development environment. \n" +
+                        "My work also involved planning the repatriation of frontend development, technical considerations for new developments, and collaborating with POs, PMs, and department leaders. \n" +
+                        "I served as a bridge between technology and product, ensuring reusable code, scalability, and exceeding project expectations. \n\n" +
+                        "My team and I were viewed as knowledge experts and key stakeholders, supporting other areas and teams in crafting the best solutions. \n\n" +
+                        "I've acted as a valuable resource across the organization, driving a strong technical culture, passionate about leading and motivating teams towards shared goals, fostering innovation, and contributing to professional development and mentoring. \n\n" +
                         "<i>After the new organization rotation of teams, I stopped as Tech PO, since the teams responsibility changed to be more product oriented with focus on the Tech part.</i>",
-                },
-                {
-                    title: "Angular Guild Coordinator",
-                    fromDate: "Aug 2021",
-                    toDate: "Feb 2024",
-                    description:
-                        "As the coordinator for our Angular Guild, I bring together multiple teams from across Bankdata to share knowledge, answer questions, and present new technologies and best practices. \n\n" +
-                        "<i>After a new organization rotation and a new team taking responsibility for the Angular Stack, I stepped back, but are still a part of the Angular Guild.</i>",
                 },
                 {
                     "title": "New Frontend Team in Card & Payments Area",
@@ -77,7 +83,7 @@ const Timeline = () => {
                     "toDate": "Feb 2024",
                     "description":
                         "After leading the Frontend Development at the Fredericia location and demonstrating significant impact, I was presented with the opportunity to pioneer a new Frontend Team for the Card & Payments area at Bankdata. \n" +
-                        "Recognizing the need for specialized frontend expertise in upcoming major projects, I leveraged my network to assemble a team of 4 skilled developers within 3 months, marking the rapid establishment of a dedicated Frontend Team. \n\n" +
+                        "Recognizing the need for specialized frontend expertise in upcoming major projects, I leveraged my network to assemble a team of 4 skilled developers within 3 months, marking the rapid establishment of a dedicated Frontend Team named \"Bankular\". \n\n" +
                         "My role extended beyond team assembly; I spearheaded the onboarding process for new and existing teams, imparting knowledge on frontend development standards and best practices. \n" +
                         "My efforts were instrumental in fostering a unified developer environment, ensuring that our three main platforms benefited from alignment and consistency in frontend practices. \n\n" +
                         "This initiative not only filled a critical gap in the Card & Payments area but also strengthened Bankdata's overall frontend development capabilities."
