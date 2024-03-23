@@ -77,12 +77,12 @@ const Contact = () => {
                     <h2 className='text-3xl uppercase'>Contact</h2>
                     <h3 className='text-4xl uppercase font-bold text-white py-8'>Get in Touch</h3>
                     <p className='text-xl m-2'>
-                        I'm Mathias Skovgaard, a passionate software developer with a strong background in frontend
-                        technologies, project management, and agile methodologies.
                         I love connecting with fellow tech enthusiasts, sharing knowledge, and exploring new
-                        opportunities to create amazing digital experiences.
-                        If you're interested in discussing a potential collaboration, project, or just want to chat
+                        opportunities to create cool digital experiences.
+                        <br/>
+                        If you're interested in discussing a potential collaboration, projects, or just want to chat
                         about the latest industry trends, feel free to get in touch.
+                        <br/>
                         I'm always excited to meet new people and learn from each other!
                     </p>
                 </div>

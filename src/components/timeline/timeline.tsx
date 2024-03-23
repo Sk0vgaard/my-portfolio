@@ -2,6 +2,7 @@ import React from 'react';
 import { CompanyTimeline } from '../../interfaces';
 import bankdataLogo from '../../assets/logos/bankdata.png';
 import egLogo from '../../assets/logos/EG_Logo.png';
+import bwsLogo from '../../assets/logos/BWS_Logo.png';
 import JobTimeline from "./jobTimeline";
 
 const Timeline = () => {
@@ -221,6 +222,34 @@ const Timeline = () => {
                         "Futhermore I worked on Sensum One a system that structuring of social welfare efforts, emphasizing automation, oversight, and collaboration across the special needs sector. " +
                         "It brought a unified approach to social welfare work, ensuring coherence and a comprehensive overview across various services, ultimately enhancing life through measurable interventions. " +
                         "This dual engagement not only honed my software development skills, but I could also use my experience and understanding for the user-centered solutions from my time as a Social & Health Worker.",
+                },
+            ],
+        },{
+            companyName: "Blue Water Shipping",
+            startDate: "Aug 2018",
+            endDate: "Jan 2019",
+            companyLink: "https://www.bws.net/da/om-blue-water",
+            companyIcon: `${bwsLogo}`,
+            details: [
+                {
+                    title: "Frontend, Main Assignment",
+                    fromDate: "Nov 2018",
+                    toDate: "Jan 2019",
+                    description:
+                        "Our final year project for Blue Water Shipping focused on upgrading their existing front-end frameworks developed in AngularJS to Angular-7 with Typescript. \n" +
+                        "We aimed to deliver a strategic upgrade plan for their front-ends, showcasing the transition to a more type-strong language by upgrading their \"Work Order Management\" WebApp and the importance of fully tested frontend applications. \n" +
+                        "This included not just an upgraded version of the frontend but also comprehensive documentation of the upgrade process and new frontend architecture to facilitate the transition for Blue Water Shipping's developers to the modern Angular framework."
+                },
+                {
+                    title: "Full Stack - Intern",
+                    fromDate: "Aug 2018",
+                    toDate: "Oct 2018",
+                    description:
+                        "\n" +
+                        "During my internship at Blue Water Shipping, I was actively engaged in enhancing operational efficiency and software functionality. \n" +
+                        "I contributed to various projects, including developing <b>K</b>ey <b>P</b>erformance <b>I</b>ndicator (KPI) reports and improving email communication systems for shipping details. \n" +
+                        "My tasks involved SQL database management, implementing new stored procedures, and refining data representation in Excel reports for better decision-making. \n" +
+                        "This period was instrumental in honing my technical skills, particularly in SQL, and understanding the intricacies of logistics and supply chain management software solutions."
                 },
             ],
         },
