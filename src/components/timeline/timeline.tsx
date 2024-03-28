@@ -1,8 +1,8 @@
 import React from 'react';
 import { CompanyTimeline } from '../../interfaces';
-import bankdataLogo from '../../assets/logos/bankdata.png';
-import egLogo from '../../assets/logos/EG_Logo.png';
-import bwsLogo from '../../assets/logos/BWS_Logo.png';
+import bankdataLogo from '../../assets/logos/bankdata_logo.png';
+import egLogo from '../../assets/logos/eg_logo.png';
+import bwsLogo from '../../assets/logos/bws_logo.png';
 import JobTimeline from "./jobTimeline";
 
 const Timeline = () => {
