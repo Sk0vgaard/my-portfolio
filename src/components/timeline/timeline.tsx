@@ -132,10 +132,10 @@ const Timeline = () => {
                     toDate: "",
                     description:
                         "In December 2023, it was my turn to take the stage at Bankdata's Operational Excellence Days. I led a presentation on front-end onboarding with Angular – and how it's all about getting new developers up and running faster. \n" +
-                        "It was important that we're just talking theory here. We took them through the whole experience – We showcased how our onboarding in Angular builds upon our backend foundation, offering developers an end-to-end experience from the frontend css all the way down to the database. \n\n" +
+                        "It was important that we're just talking about theory. We want to take them through the whole frontend experience – We showcased how our onboarding in Angular builds upon our backend foundation and how we offer developers an end-to-end experience from the frontend css all the way down to the database. \n\n" +
                         "We delved into the significance of knowledge sharing, the use of reusable code, and the role of our Angular Community in fostering a collaborative and efficient development environment. \n\n" +
                         "We want to enhance developer experience and ensuring a smooth transition for new team members into our dynamic and fast-paced environment. \n" +
-                        "This event was not just about sharing our methods; it was about reinforcing our commitment to operational excellence and continuous improvement, as a organisation."
+                        "This event was not just about sharing our methods; it was about reinforcing our commitment to operational excellence and continuous improvement, as an organisation."
                 },
                 {
                     title: "Bankdata Promotional Video Participation",
