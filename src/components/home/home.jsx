@@ -46,18 +46,17 @@ const Home = () => {
                     <div
                         className={`flex font-poppins uppercase tracking-[5px] bg-yellow-100 text-xs md:text-xl px-[6px] md:px-[35px] py-[20px] h-[55px] md:h-[70px] shadow-xl ${fadeIn}`}>
                         <p>
-                            I am a
+                            I AM
                         </p>
                         <div className='grid ml-[8px] overflow-hidden'>
-                            <p className="text-scroll underline">Problem solver</p>
-                            <p className="text-scroll underline">Mentor</p>
-                            <p className="text-scroll underline">Communicator</p>
-                            <p className="text-scroll underline">Team player</p>
-                            <p className="text-scroll underline">Leader</p>
-                            <p className="text-scroll underline">Problem solver</p>
+                            <p className="text-scroll underline">A Leader</p>
+                            <p className="text-scroll underline">Dependable</p>
+                            <p className="text-scroll underline">Selflessness</p>
+                            <p className="text-scroll underline">A Mentor</p>
+                            <p className="text-scroll underline">A Communicator</p>
+                            <p className="text-scroll underline">A Leader</p>
                         </div>
                     </div>
-
                 </div>
 
                 <div className={`relative w-full md:max-w-[474px] sm:max-w-[650px] overflow-hidden ${fadeIn}`}>

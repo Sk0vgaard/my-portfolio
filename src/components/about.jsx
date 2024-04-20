@@ -50,7 +50,7 @@ const About = () => {
                             <br/>
                             <p>
                                 I am always eager to learn and stay up-to-date with the latest developments in the tech
-                                world, which allows me to deliver cutting-edge solutions to my clients. I enjoy
+                                world, which allows me to deliver cutting-edge solutions. I enjoy
                                 collaborating with teams and individuals from various backgrounds, as I believe that
                                 diversity fosters creativity and innovation.
                             </p>
@@ -65,7 +65,7 @@ const About = () => {
                                 I will always prefer to be judged by my achievements and the esteem of my colleagues
                                 above all else.
                                 <br/>
-                                <i>Actions and integrity carry more weight than words.</i>
+                                <i>Actions and integrity speaks louder than words.</i>
                             </p>
                         </div>
                     </div>
@@ -89,8 +89,8 @@ const About = () => {
                             <ul className="list-disc pl-5">
                                 <li>Embracing challenges and self-improvement</li>
                                 <li>Structured and diligent in documentation</li>
-                                <li>Adaptability and willingness to learn new technologies</li>
                                 <li>Leadership and mentoring skills</li>
+                                <li>Selflessness, since I believe that selflessness is one of the keys for a team to succeed</li>
                                 <li>Empathy, communication skills, and teamwork from a social & health worker
                                     background
                                 </li>
