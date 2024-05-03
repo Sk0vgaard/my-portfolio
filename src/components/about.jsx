@@ -90,7 +90,7 @@ const About = () => {
                                 <li>Embracing challenges and self-improvement</li>
                                 <li>Structured and diligent in documentation</li>
                                 <li>Leadership and mentoring skills</li>
-                                <li>Selflessness, since I believe that selflessness is one of the keys for a team to succeed</li>
+                                <li>Selfless, since I believe that selflessness is one of the keys for a team to succeed</li>
                                 <li>Empathy, communication skills, and teamwork from a social & health worker
                                     background
                                 </li>
