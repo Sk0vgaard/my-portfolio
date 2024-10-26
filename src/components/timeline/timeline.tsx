@@ -33,18 +33,20 @@ const Timeline = () => {
             companyIcon: `${bankdataLogo}`,
             details: [
                 {
-                    title: "Retail Payment Engagement",
+                    title: "Team Retail Payment Engagement",
                     fromDate: "Sep 2024",
                     toDate: "Present",
                     description:
-                        "I am currently leading the frontend development for a new Retail Payment project at Bankdata. \n" +
+                        "Leading the frontend development for cards at Bankdata. \n" +
                         "This team is a part of the Danish Card Payment System, which is a critical part of the Danish financial infrastructure. \n" +
-                        "My role involves collaborating with the PO, PM, and other stakeholders to ensure the successful implementation of the project. \n" +
-                        "One of the main reason for joining the Card Team, were to help rewrite and manage the card application for our private customers, to ensure the best quality and experience using our platform.\n\n" +
+                        "My role involves collaborating with the PO, PM, and other stakeholders to ensure the successful implementation of projects and 3rd party providers. \n" +
+                        "One of the main reasons for joining the Card Team, were to help rewrite and manage the card application for our private customers, to ensure the best quality and experience using our platform.\n\n" +
                         "I am working with:\n" +
                         "- Card Administration and management for Private, Business and Advisories\n" +
                         "- Card Issuing and Acquiring\n" +
                         "- GooglePay, ApplePay and GarminPay\n" +
+                        "- Card Security\n" +
+                        "- Card Blocking\n" +
                         "- etc.\n\n" +
                         "I am responsible for the frontend architecture, development, and ensuring that the Card area has the highest quality and performance. \n"
                 },
