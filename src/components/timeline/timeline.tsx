@@ -6,22 +6,47 @@ import bwsLogo from '../../assets/logos/bws_logo.png';
 import JobTimeline from "./jobTimeline";
 
 const Timeline = () => {
+    const calculateTotalLength = (startDate: Date, endDate: Date): string => {
+        const start: Date = new Date(startDate);
+        const end: Date = new Date(endDate);
+
+        let years: number = end.getFullYear() - start.getFullYear();
+        let months: number = end.getMonth() - start.getMonth();
+
+        if (months < 0) {
+            years--;
+            months += 12;
+        }
+
+        const yearStr: string = years > 0 ? `${years} year${years !== 1 ? 's' : ''}` : "";
+        const monthStr: string = `${months} month${months !== 1 ? 's' : ''}`;
+        return [yearStr, monthStr].filter(Boolean).join(", ");
+    };
+
     const companyTimelines: CompanyTimeline[] = [
         {
             companyName: "Bankdata",
-            startDate: "May 2021",
-            endDate: "Present",
+            startDate: new Date("May 2021"),
+            endDate: new Date(),
+            totalLength: calculateTotalLength(new Date("May 2021"), new Date()),
             companyLink: "https://www.bankdata.dk/om/bankdata",
             companyIcon: `${bankdataLogo}`,
             details: [
                 {
-                    title: "AI Community Initiation",
-                    fromDate: "Oct 2023",
-                    toDate: "In Progress",
+                    title: "Retail Payment Engagement",
+                    fromDate: "Sep 2024",
+                    toDate: "Present",
                     description:
-                        "I pioneered the establishment of a new AI community within Bankdata to integrate AI into our processes, developer experience, and workflows. \n" +
-                        "I conduct monthly meetings with upper management to present developer cases and progress. Moreover, I have assembled a team of multiple other talented developers for knowledge sharing, showcasing POCs, and ensuring the success and dissemination of innovative ideas. \n" +
-                        "My role as a facilitator for these meetings involves preparing agendas and creating action items, earning recognition and support from developers and directors for leading this initiative."
+                        "I am currently leading the frontend development for a new Retail Payment project at Bankdata. \n" +
+                        "This team is a part of the Danish Card Payment System, which is a critical part of the Danish financial infrastructure. \n" +
+                        "My role involves collaborating with the PO, PM, and other stakeholders to ensure the successful implementation of the project. \n" +
+                        "One of the main reason for joining the Card Team, were to help rewrite and manage the card application for our private customers, to ensure the best quality and experience using our platform.\n\n" +
+                        "I am working with:\n" +
+                        "- Card Administration and management for Private, Business and Advisories\n" +
+                        "- Card Issuing and Acquiring\n" +
+                        "- GooglePay, ApplePay and GarminPay\n" +
+                        "- etc.\n\n" +
+                        "I am responsible for the frontend architecture, development, and ensuring that the project adheres to the highest standards of quality and performance. \n"
                 },
                 {
                     title: "Senior Frontend Developer",
@@ -34,13 +59,39 @@ const Timeline = () => {
                         "My active participation in strategic discussions allows for the implementation of innovative solutions, further solidifying our commitment to cutting-edge technology and best practices in frontend development."
                 },
                 {
-                    title: "Frontend Alignment Cross Bankdata",
+                    title: "AI Community Initiation",
+                    fromDate: "Oct 2023",
+                    toDate: "Jun 2024",
+                    description:
+                        "I pioneered the establishment of a new AI community within Bankdata to integrate AI into our processes, developer experience, and workflows. \n" +
+                        "I conduct monthly meetings with upper management to present developer cases and progress. Moreover, I have assembled a team of multiple other talented developers for knowledge sharing, showcasing POCs, and ensuring the success and dissemination of innovative ideas. \n" +
+                        "My role as a facilitator for these meetings involves preparing agendas and creating action items, earning recognition and support from developers and directors for leading this initiative." +
+                        "\n\n" +
+                        "The AI community has been instrumental in fostering a culture of innovation and continuous learning, positioning Bankdata at the forefront of AI integration in the financial sector." +
+                        "\n" +
+                        "<i>- After this period, the AI Community was handed over to another team to continue the work, as I will be focusing on other initiatives within my area.</i>"
+                },
+                {
+                    title: "New Created Team - Payment Initiation",
                     fromDate: "Feb 2024",
+                    toDate: "Sep 2024",
+                    description:
+                        "After a new organization rotation back in February, I was positioned in a new team for the Payment Initiation area at Bankdata. \n" +
+                        "This new team was created to focus on the Payment Initiation, to handle the part of payment process that deals with the creating of the payment instructions. \n" +
+                        "We were tasked to bring together all payment applications in one team to remove a lot of complexity. This applied to both Frontend and Backend." +
+                        "Furthermore we were responsible for retrieving all the frontend from other teams within Bankdata."
+                },
+                {
+                    title: "Frontend Alignment Cross Bankdata",
+                    fromDate: "Jan 2024",
                     toDate: "Mar 2024",
                     description:
                         "My team and I successfully developed a POC that standardizes new frontend development across Bankdata using the same template. \n" +
                         "This initiative ensures the use of a consistent design framework, pipeline, CDN server, repository, greatly enhancing the Developer Experience & User Experience. " +
-                        "The unification across platforms has been widely celebrated by developers at Bankdata, marking a significant step forward in streamlining our development processes."
+                        "The unification across platforms has been widely celebrated by developers at Bankdata, marking a significant step forward in streamlining our development processes. " +
+                        "The POC has been well-received by developers and management, and has now been implemented across all platforms." +
+                        "\n\n" +
+                        "This initiative has been instrumental in fostering a culture of collaboration and innovation, positioning Bankdata at the forefront of frontend development in the financial sector."
                 },
                 {
                     title: "Bridging the Gap in UX Design and Frontend Development at Bankdata",
@@ -55,11 +106,11 @@ const Timeline = () => {
                         "Promo Video Created With AI: <a style='color: deepskyblue' href='https://ai.invideo.io/watch/Xk87VzhSTHH' target='_blank'><u>Elevate Frontend Development with KirbyGPT</u></a>"
                 },
                 {
-                    title: "Angular Guild Coordinator",
+                    title: "Angular Guild Facilitator",
                     fromDate: "Aug 2021",
                     toDate: "April 2024",
                     description:
-                        "In my role as the Angular Guild Coordinator at Bankdata, I've played a critical part in fostering a collaborative tech culture by uniting diverse teams to share insights, tackle challenges, and embrace cutting-edge practices and technologies within the Angular ecosystem. \n" +
+                        "In my role as the Angular Guild Facilitator at Bankdata, I've played a critical part in fostering a collaborative tech culture by uniting diverse teams to share insights, tackle challenges, and embrace cutting-edge practices and technologies within the Angular ecosystem. \n" +
                         "My efforts have significantly contributed to a unified approach towards Angular development, ensuring consistency and excellence across projects. \n" +
                         "Even after organizational changes, my ongoing involvement in the Angular Guild underscores my commitment to continuous learning, mentorship, and driving the adoption of best practices, positioning Bankdata at the forefront of technology innovation. \n\n" +
                         "<i>After a new organization rotation, another team should take the overall responsibility for the Angular Stack.</i>",
@@ -78,12 +129,12 @@ const Timeline = () => {
                         "<i>After the new organization rotation of teams, I stopped as Tech PO, since the teams responsibility changed to be more product oriented with focus on the Tech part.</i>",
                 },
                 {
-                    "title": "New Frontend Team in Card & Payments Area",
+                    "title": "New Created Frontend Team - 'Bankular' in Card & Payments Area",
                     "fromDate": "Feb 2022",
                     "toDate": "Feb 2024",
                     "description":
                         "After leading the Frontend Development at the Fredericia location and demonstrating significant impact, I was presented with the opportunity to pioneer a new Frontend Team for the Card & Payments area at Bankdata. \n" +
-                        "Recognizing the need for specialized frontend expertise in upcoming major projects, I leveraged my network to assemble a team of 4 skilled developers within 3 months, marking the rapid establishment of a dedicated Frontend Team named \"Bankular\". \n\n" +
+                        "Recognizing the need for specialized frontend expertise in upcoming major projects, I leveraged my network to assemble a team of 4 skilled developers within 3 months, marking the rapid establishment of a dedicated Frontend Team named \"Bankular\" (Bank + Angular). \n\n" +
                         "My role extended beyond team assembly; I spearheaded the onboarding process for new and existing teams, imparting knowledge on frontend development standards and best practices. \n" +
                         "My efforts were instrumental in fostering a unified developer environment, ensuring that our three main platforms benefited from alignment and consistency in frontend practices. \n\n" +
                         "This initiative not only filled a critical gap in the Card & Payments area but also strengthened Bankdata's overall frontend development capabilities."
@@ -172,8 +223,9 @@ const Timeline = () => {
         },
         {
             companyName: "EG A/S",
-            startDate: "Feb 2019",
-            endDate: "May 2021",
+            startDate: new Date("Feb 2019"),
+            endDate: new Date("May 2021"),
+            totalLength: calculateTotalLength(new Date("Feb 2019"), new Date("May 2021")),
             companyLink: "https://eg.dk/offentlig-digitalisering/eg-sensum-one/",
             companyIcon: `${egLogo}`,
             details: [
@@ -232,8 +284,9 @@ const Timeline = () => {
             ],
         },{
             companyName: "Blue Water Shipping",
-            startDate: "Aug 2018",
-            endDate: "Jan 2019",
+            startDate: new Date("Aug 2018"),
+            endDate: new Date("Jan 2019"),
+            totalLength: calculateTotalLength(new Date("Aug 2018"), new Date("Jan 2019")),
             companyLink: "https://www.bws.net/da/om-blue-water",
             companyIcon: `${bwsLogo}`,
             details: [

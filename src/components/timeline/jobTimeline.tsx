@@ -36,7 +36,7 @@ const JobTimeline = ({companyTimelines}: { companyTimelines: CompanyTimeline[] }
     return (
         <ol className="border-l-2 border-primary border-primary-500">
             {companyTimelines.map((companyTimeline: CompanyTimeline) => {
-                const itemKey = companyTimeline.companyName;
+                const itemKey: string = companyTimeline.companyName;
 
                 return (
                     <li key={itemKey}>
@@ -59,8 +59,18 @@ const JobTimeline = ({companyTimelines}: { companyTimelines: CompanyTimeline[] }
                                         <p className="hidden md:block text-3xl">
                                             {companyTimeline.companyName}
                                         </p>
-                                        <p className="hidden md:block text-sm">
-                                            {companyTimeline.startDate} - {companyTimeline.endDate}
+                                        <p className="hidden md:block text-sm text-info">
+                                            {companyTimeline.startDate.toLocaleDateString('en-GB', {
+                                                month: 'short',
+                                                year: 'numeric'
+                                            })}
+                                            {' - '}
+                                            {companyTimeline.endDate.toDateString() === new Date().toDateString() ? "Present" : companyTimeline.endDate.toLocaleDateString('en-GB', {
+                                                month: 'short',
+                                                year: 'numeric'
+                                            })}
+                                            {' '}
+                                            ({companyTimeline.totalLength})
                                         </p>
                                     </span>
                                     <div
@@ -69,6 +79,19 @@ const JobTimeline = ({companyTimelines}: { companyTimelines: CompanyTimeline[] }
                                              src={companyTimeline.companyIcon} alt={companyTimeline.companyName}/>
                                     </div>
                                 </div>
+                                <p className="md:hidden text-sm text-info flex items-center justify-center md:justify-between">
+                                    {companyTimeline.startDate.toLocaleDateString('en-GB', {
+                                        month: 'short',
+                                        year: 'numeric'
+                                    })}
+                                    {' - '}
+                                    {companyTimeline.endDate.toDateString() === new Date().toDateString() ? "Present" : companyTimeline.endDate.toLocaleDateString('en-GB', {
+                                        month: 'short',
+                                        year: 'numeric'
+                                    })}
+                                    {' '}
+                                    ({companyTimeline.totalLength})
+                                </p>
                                 {expanded[itemKey] && (
                                     <JobTitleTimeline jobDetails={companyTimeline.details}/>
                                 )}
