@@ -76,9 +76,8 @@ const About = () => {
                             <ul className="list-disc pl-5">
                                 <li>Angler for salmon and sea trout in southwest Jutland brooks</li>
                                 <li>Exploring new technology in my free time</li>
-                                <li>Process optimization both in private and at work</li>
                                 <li>Friends are a huge part of my persona</li>
-                                <li>AI is a huge interest for me, and I spend multiple hours each day on either
+                                <li>AI is a huge interest for me, and in my free time I spend time on either
                                     research, playing, or keeping track of all the new things
                                 </li>
                             </ul>
@@ -90,7 +89,7 @@ const About = () => {
                                 <li>Embracing challenges and self-improvement</li>
                                 <li>Structured and diligent in documentation</li>
                                 <li>Leadership and mentoring skills</li>
-                                <li>Selfless, since I believe that selflessness is one of the keys for a team to succeed</li>
+                                <li>Selfless, as I believe that selflessness is a key factor for a team's success.</li>
                                 <li>Empathy, communication skills, and teamwork from a social & health worker
                                     background
                                 </li>
@@ -103,15 +102,15 @@ const About = () => {
                         <p className="mb-2">
                             Throughout my journey, I've embraced numerous roles at EG A/S and Bankdata.
                         </p>
-                        <p className="mb-2">
-                            My diverse experiences enabled me to lead significant initiatives like introducing frontend development to the Card & Payments area at Bankdata, highlighting my ability to drive innovation and foster collaboration.
-                        </p>
-                        <p className="mb-2">
-                            I've initiated and led the AI Community at Bankdata, and my leadership extended to roles as Technical Product Owner and Angular Guild Coordinator, where I championed best practices and mentored teams.
-                        </p>
-                        <p className="mb-2">
-                            This journey reflects my adaptability, technical expertise, and passion for shaping a collaborative and forward-thinking tech environment.
-                        </p>
+                        <p className="mb-2">As a versatile tech leader, I’ve shaped and led initiatives, driving innovation and team alignment across departments.</p>
+                        <p className="mb-2">I've established dedicated teams for critical areas like Cards & Payments,
+                            pioneered the AI Community, and coordinated Angular Guild efforts to foster collaboration
+                            and best practices.</p>
+                        <p className="mb-2">My roles have spanned technical guidance, strategic alignment, and
+                            mentoring, highlighting my commitment to excellence and adaptability in complex
+                            environments.</p>
+                        <p className="mb-2">This journey reflects my adaptability, technical expertise, and passion for
+                            shaping a collaborative and forward-thinking tech environment.</p>
                     </div>
                 </div>
             </div>
