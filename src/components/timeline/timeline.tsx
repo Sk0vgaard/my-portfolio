@@ -46,7 +46,7 @@ const Timeline = () => {
                         "- Card Issuing and Acquiring\n" +
                         "- GooglePay, ApplePay and GarminPay\n" +
                         "- etc.\n\n" +
-                        "I am responsible for the frontend architecture, development, and ensuring that the project adheres to the highest standards of quality and performance. \n"
+                        "I am responsible for the frontend architecture, development, and ensuring that the Card area has the highest quality and performance. \n"
                 },
                 {
                     title: "Senior Frontend Developer",
@@ -57,6 +57,16 @@ const Timeline = () => {
                         "I spearhead initiatives to standardize development processes, ensuring a cohesive approach across various platforms. \n" +
                         "My work in crafting extensive documentation and guides not only streamlines the onboarding process but also fosters an environment of continuous learning. \n\n" +
                         "My active participation in strategic discussions allows for the implementation of innovative solutions, further solidifying our commitment to cutting-edge technology and best practices in frontend development."
+                },
+                {
+                    title: "New Created Team - Payment Initiation",
+                    fromDate: "Feb 2024",
+                    toDate: "Sep 2024",
+                    description:
+                        "After a new organization rotation back in February, I was positioned in a new team for the Payment Initiation area at Bankdata. \n" +
+                        "This new team was created to focus on the Payment Initiation, to handle the part of payment process that deals with the creating of the payment instructions. \n" +
+                        "We were tasked to bring together all payment applications in one team to remove a lot of complexity. This applied to both Frontend and Backend." +
+                        "Furthermore we were responsible for retrieving all the frontend from other teams within Bankdata."
                 },
                 {
                     title: "AI Community Initiation",
@@ -70,16 +80,6 @@ const Timeline = () => {
                         "The AI community has been instrumental in fostering a culture of innovation and continuous learning, positioning Bankdata at the forefront of AI integration in the financial sector." +
                         "\n" +
                         "<i>- After this period, the AI Community was handed over to another team to continue the work, as I will be focusing on other initiatives within my area.</i>"
-                },
-                {
-                    title: "New Created Team - Payment Initiation",
-                    fromDate: "Feb 2024",
-                    toDate: "Sep 2024",
-                    description:
-                        "After a new organization rotation back in February, I was positioned in a new team for the Payment Initiation area at Bankdata. \n" +
-                        "This new team was created to focus on the Payment Initiation, to handle the part of payment process that deals with the creating of the payment instructions. \n" +
-                        "We were tasked to bring together all payment applications in one team to remove a lot of complexity. This applied to both Frontend and Backend." +
-                        "Furthermore we were responsible for retrieving all the frontend from other teams within Bankdata."
                 },
                 {
                     title: "Frontend Alignment Cross Bankdata",
