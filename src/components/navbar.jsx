@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {Link} from 'react-scroll';
 import {FaBars} from "react-icons/fa";
 import {AiOutlineClose} from "react-icons/ai";
+import CVfile from './../assets/CV.pdf';
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);
@@ -59,6 +60,12 @@ const Navbar = () => {
                                   smooth={true} offset={-150} duration={500}>Skills</Link></li>
                         <li><Link className={`cursor-pointer ${headerColor} hover:text-zinc-400`} to='contact'
                                   smooth={true} offset={-80} duration={500}>Contact</Link></li>
+                        <li>
+                            <a href={CVfile} download='Mathias Skovgaard - CV.pdf'
+                               className='bg-blue-500 text-white px-4 py-2 rounded'>
+                                Download CV
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <div className='md:hidden flex items-center mr-4' onClick={handleClick}>
@@ -82,10 +89,12 @@ const Navbar = () => {
                 <li className='border-b-2 border-zinc-300 w-full'>
                     <Link onClick={handleClose} to='contact' smooth={true} offset={-80} duration={500}>Contact</Link>
                 </li>
-                {/*<div className='flex flex-col my-4'>*/}
-                {/*    <button className='bg-transparent text-indigo-600 px-8 py-3 mb-4'>Sign In</button>*/}
-                {/*    <button className='px-8 py-3'>Sign Out</button>*/}
-                {/*</div>*/}
+                <li className='border-b-2 border-zinc-300 w-full'>
+                    <a href={CVfile} download='Mathias Skovgaard - CV.pdf'
+                       className='bg-blue-500 text-white px-4 py-2 rounded'>
+                        Download CV
+                    </a>
+                </li>
             </ul>
 
         </div>

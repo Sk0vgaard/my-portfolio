@@ -102,9 +102,9 @@ const About = () => {
                         <p className="mb-2">
                             Throughout my journey, I've embraced numerous roles at EG A/S and Bankdata.
                         </p>
-                        <p className="mb-2">As a versatile tech leader, I’ve shaped and led initiatives, driving innovation and team alignment across departments.</p>
+                        <p className="mb-2">As a versatile <b>tech leader</b>, I’ve shaped and led initiatives, driving innovation and team alignment across departments.</p>
                         <p className="mb-2">I've established dedicated teams for critical areas like Cards & Payments,
-                            pioneered the AI Community, and coordinated Angular Guild efforts to foster collaboration
+                            pioneered the <b>AI Community</b>, and coordinated <b>Angular Guild</b> efforts to foster collaboration
                             and best practices.</p>
                         <p className="mb-2">My roles have spanned technical guidance, strategic alignment, and
                             mentoring, highlighting my commitment to excellence and adaptability in complex
