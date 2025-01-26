@@ -33,24 +33,6 @@ const Timeline = () => {
             companyIcon: `${bankdataLogo}`,
             details: [
                 {
-                    title: "Team Retail Payment Engagement",
-                    fromDate: "Sep 2024",
-                    toDate: "Present",
-                    description:
-                        "Leading the frontend development for cards at Bankdata. \n" +
-                        "This team is a part of the Danish Card Payment System, which is a critical part of the Danish financial infrastructure. \n" +
-                        "My role involves collaborating with the PO, PM, and other stakeholders to ensure the successful implementation of projects and 3rd party providers. \n" +
-                        "One of the main reasons for joining the Card Team, were to help rewrite and manage the card application for our private customers, to ensure the best quality and experience using our platform.\n\n" +
-                        "I am working with:\n" +
-                        "- Card Administration and management for Private, Business and Advisories\n" +
-                        "- Card Issuing and Acquiring\n" +
-                        "- GooglePay, ApplePay and GarminPay\n" +
-                        "- Card Security\n" +
-                        "- Card Blocking\n" +
-                        "- etc.\n\n" +
-                        "I am responsible for the frontend architecture, development, and ensuring that the Card area has the highest quality and performance. \n"
-                },
-                {
                     title: "Senior Frontend Developer",
                     fromDate: "Jan 2023",
                     toDate: "Present",
@@ -61,14 +43,55 @@ const Timeline = () => {
                         "My active participation in strategic discussions allows for the implementation of innovative solutions, further solidifying our commitment to cutting-edge technology and best practices in frontend development."
                 },
                 {
-                    title: "New Created Team - Payment Initiation",
+                    title: "Team International Payments (INP)",
+                    fromDate: "Jan 2025",
+                    toDate: "Present",
+                    description:
+                        "In January 2025, I became a part of the International Payments (INP) team at Bankdata, contributing to the development and modernization of the international payment platform designed for our back-office clients. \n" +
+                        "My role was to lead the frontend development and ensure that we met the challenging deadline for <a style='color: deepskyblue' href='https://www.swift.com/standards/iso-20022/iso-20022-programme/cbpr-roadmap' target='_blank'><u>Cross-Border Payments (CBPR+)</u></a>, delivering a platform that meets the highest quality standards for our users. \n\n" +
+                        "This involved creating new features, modernizing legacy systems (some over 30 years old), and ensuring smooth integration with SWIFT. \n\n" +
+                        "Key areas of focus include:\n" +
+                        "   - Developing International Payment Orders.\n" +
+                        "   - Enhancing International Payment Transactions.\n" +
+                        "   - Generating International Payment Reports.\n" +
+                        "   - Collaborating on additional core services critical for global payment processing.\n\n" +
+                        "I was responsible for shaping the frontend architecture and development while onboarding and mentoring a team that included 3 external consultants, 2 backend developers, and a new frontend developer."
+                },
+                {
+                    title: "Team Retail Payment Engagement (RPE)",
+                    fromDate: "Sep 2024",
+                    toDate: "Jan 2025",
+                    description:
+                        "Cards at Bankdata, is a key component of the Danish Card Payment System and a cornerstone of the nation's financial infrastructure. \n" +
+                        "A primary objective for joining the Card Team was to lead and rewrite/migrate the existing frontend into a MicroFrontend architecture, enhancing the card application for private customers to deliver an improved platform experience with top quality.\n\n" +
+                        "Key areas of focus include:\n" +
+                        "   - Card Administration and Management for Private, Business, and Advisors\n" +
+                        "   - Card Issuing and Acquiring\n" +
+                        "   - Integration with GooglePay, ApplePay and GarminPay\n" +
+                        "   - Card Security and Fraud Prevention\n" +
+                        "   - Card Blocking and Access Control\n" +
+                        "   - And more.\n\n" +
+                        "I held responsibility for the frontend architecture, development, and ensuring the Card area achieved the highest standards of quality and performance.\n\n" +
+                        "Beyond my technical responsibilities, I actively fostered a positive and collaborative team culture by acting as an informal leader. My ability to communicate effectively, provide guidance and motivate my colleagues helped the team exceed expectations while successfully delivering the incremental rewrite of the frontend. This was achieved seamlessly, without disrupting the end-user experience, by leveraging the <a style='color: deepskyblue' href='https://trunkbaseddevelopment.com/branch-by-abstraction/' target='_blank'><u>Branch By Abstraction</u></a> approach.\n\n" +
+                        "<i>Following a subsequent organizational restructuring, the RPE team was relocated to Aarhus, and I transitioned to another team.</i>",
+                },
+                {
+                    title: "New Team Formation - Payment Initiation (PAY)",
                     fromDate: "Feb 2024",
                     toDate: "Sep 2024",
                     description:
-                        "After a new organization rotation back in February, I was positioned in a new team for the Payment Initiation area at Bankdata. \n" +
-                        "This new team was created to focus on the Payment Initiation, to handle the part of payment process that deals with the creating of the payment instructions. \n" +
-                        "We were tasked to bring together all payment applications in one team to remove a lot of complexity. This applied to both Frontend and Backend." +
-                        "Furthermore we were responsible for retrieving all the frontend from other teams within Bankdata."
+                        "In February 2024, following a significant organizational reshuffle, I joined the newly formed Payment Initiation (PAY) team at Bankdata. \n" +
+                        "The team's purpose was to centralize and streamline all payment related applications, focusing on the creation and management the payment instructions aspect of the payment process. \n\n" +
+                        "Our goal was to reduce complexity within the payment ecosystem by consolidating frontend and backend responsibilities into a single team. This also included extracting and unifying scattered frontend development efforts, ensuring alignment and introducing efficiencies across the board. \n\n" +
+                        "Despite my short tenure in the team, I achieved the following impactful results:\n" +
+                        "1. Migrated the payment frontend from a monolithic architecture to a MicroFrontend while extracting the domain from another team.\n" +
+                        "2. Initiated and kicked off critical deliveries set for 2025.\n" +
+                        "3. <u>Successfully rewrote and released the PaymentService (BetalingsService)</u> for all our banks in just 6 weeks. This assignment was critical for the 2024 milestone of deploying our private Netbank for Web. \n" +
+                        "   • The task was assigned to me with a very short deadline and minimal guidance, and I was simply told to 'Rewrite BetalingsService' This required me to dive deep into understanding a whole new domain, its functionality, and the business context in record time. \n" +
+                        "   • Due to the legacy system, no reusable code was available, so I built a brand-new frontend application from scratch.\n" +
+                        "   • I handled the entire process independently working as a 'one-man-army' handeling UX design, project management, delivery, alignment with other teams, and ensuring the best possible test coverage for a robust and reliable solution.\n" +
+                        "   • Remarkably, I managed to deliver this in record time while balancing immense personal responsibilities, as my wife was due to give birth. Despite everyone believing it couldn't be done, I exceeded expectations, delivering the solution before time, which was highly unexpected and greatly appreciated.\n\n" +
+                        "This role provided me with the opportunity to reshape and enhance the structure, processes, and collaboration within the Payment Initiation area, driving both immediate and long-term impact."
                 },
                 {
                     title: "AI Community Initiation",
@@ -77,34 +100,33 @@ const Timeline = () => {
                     description:
                         "I pioneered the establishment of a new AI community within Bankdata to integrate AI into our processes, developer experience, and workflows. \n" +
                         "I conduct monthly meetings with upper management to present developer cases and progress. Moreover, I have assembled a team of multiple other talented developers for knowledge sharing, showcasing POCs, and ensuring the success and dissemination of innovative ideas. \n" +
-                        "My role as a facilitator for these meetings involves preparing agendas and creating action items, earning recognition and support from developers and directors for leading this initiative." +
-                        "\n\n" +
-                        "The AI community has been instrumental in fostering a culture of innovation and continuous learning, positioning Bankdata at the forefront of AI integration in the financial sector." +
-                        "\n" +
+                        "My role as a facilitator for these meetings involves preparing agendas and creating action items, earning recognition and support from developers and directors for leading this initiative.\n\n" +
+                        "This initiative significantly accelerated the focus on AI within Bankdata, ensuring it became a core component of our technological strategy. We explored cutting-edge tools and solutions, including being among the first test users of GitHub Copilot. This early adoption enabled us to deliver faster and higher-quality code, while I served as an ambassador for GitHub Copilot in our area, helping other teams and developers leverage its capabilities effectively. \n\n" +
+                        "The AI community has been instrumental in fostering a culture of innovation and continuous learning, positioning Bankdata at the forefront of AI integration in the financial sector.\n" +
+                        "<i>Shout-out on LinkedIn: <a style='color: deepskyblue' href='https://www.linkedin.com/posts/illio_github-copilot-at-bankdata-a-great-developer-activity-7257723989421113345-vnFE?utm_source=share&utm_medium=member_desktop' target='_blank'><u>LinkedIn Post</u></a></i>\n\n" +
                         "<i>- After this period, the AI Community was handed over to another team to continue the work, as I will be focusing on other initiatives within my area.</i>"
                 },
                 {
-                    title: "Frontend Alignment Cross Bankdata",
+                    title: "Frontend Alignment Across Bankdata",
                     fromDate: "Jan 2024",
                     toDate: "Mar 2024",
                     description:
-                        "My team and I successfully developed a POC that standardizes new frontend development across Bankdata using the same template. \n" +
-                        "This initiative ensures the use of a consistent design framework, pipeline, CDN server, repository, greatly enhancing the Developer Experience & User Experience. " +
-                        "The unification across platforms has been widely celebrated by developers at Bankdata, marking a significant step forward in streamlining our development processes. " +
-                        "The POC has been well-received by developers and management, and has now been implemented across all platforms." +
-                        "\n\n" +
-                        "This initiative has been instrumental in fostering a culture of collaboration and innovation, positioning Bankdata at the forefront of frontend development in the financial sector."
+                        "My team and I successfully developed a Proof of Concept (POC) aimed at standardizing new frontend development across Bankdata by unifying one template. \n" +
+                        "This initiative streamlined development workflows by establishing a consistent design framework, optimized pipeline, CDN server, and repository structure. " +
+                        "The result significantly improved both Developer Experience (DevX) and User Experience (UX), enabling seamless transitions for developers across various projects and platforms. \n\n" +
+                        "The success of the POC was celebrated by developers and management alike, with widespread implementation across all platforms, setting a new standard for frontend development at Bankdata. \n\n" +
+                        "This project not only fostered collaboration and innovation within the organization but also solidified Bankdata’s reputation for leading tech in frontend development within the financial sector."
                 },
                 {
                     title: "Bridging the Gap in UX Design and Frontend Development at Bankdata",
                     fromDate: "Dec 2023, Christmas Vacation",
                     toDate: "",
                     description:
-                        "At Bankdata, I've had an idea of creating a tool that can analyze UX mock-ups and identify what Kirby Components that has been used. This gives the developers the proper tool for creating the best frontend application with the correct components. \n" +
-                        "In my free time I played around creating a GPT, a POC that could save a lot of time in our frontend development process. \n" +
-                        "As a result, it has become an important tool for some developers and the fact that time can save on project completion and adherence to high-quality standards. \n" +
-                        "Furthermore, KirbyGPT's integration with GitHub and the official documentation + its educational benefits support my responsibilities as Angular Guild Coordinator, elevating our coding standards and best practices. \n\n" +
-                        "chat.openai.com: <a style='color: deepskyblue' href='https://chat.openai.com/g/g-SH6xqAaFR-kirbygpt' target='_blank'><u>KirbyGPT</u></a> \n" +
+                        "At Bankdata, I developed a tool designed to analyze UX mock-ups and identify Kirby Components, enabling developers to create optimized frontend applications with the appropriate components. \n" +
+                        "In my free time, I built a GPT-powered Proof of Concept (POC) called KirbyGPT, which significantly streamlines the frontend development process by saving time and ensuring adherence to high-quality standards. \n\n" +
+                        "This innovation has proven valuable for developers, allowing them to transition seamlessly from mock-up designs to production-ready code. KirbyGPT's integration with GitHub and its alignment with official documentation further enhances its impact, not only by improving development workflows but also by supporting education and best practices. \n\n" +
+                        "As Angular Guild Coordinator, this tool played a crucial role in raising coding standards, sharing knowledge, and promoting best practices across teams. \n\n" +
+                        "Discover KirbyGPT: <a style='color: deepskyblue' href='https://chat.openai.com/g/g-SH6xqAaFR-kirbygpt' target='_blank'><u>KirbyGPT</u></a> \n" +
                         "Promo Video Created With AI: <a style='color: deepskyblue' href='https://ai.invideo.io/watch/Xk87VzhSTHH' target='_blank'><u>Elevate Frontend Development with KirbyGPT</u></a>"
                 },
                 {
@@ -114,7 +136,7 @@ const Timeline = () => {
                     description:
                         "In my role as the Angular Guild Facilitator at Bankdata, I've played a critical part in fostering a collaborative tech culture by uniting diverse teams to share insights, tackle challenges, and embrace cutting-edge practices and technologies within the Angular ecosystem. \n" +
                         "My efforts have significantly contributed to a unified approach towards Angular development, ensuring consistency and excellence across projects. \n" +
-                        "Even after organizational changes, my ongoing involvement in the Angular Guild underscores my commitment to continuous learning, mentorship, and driving the adoption of best practices, positioning Bankdata at the forefront of technology innovation. \n\n" +
+                        "Even after organizational changes, my ongoing involvement in the Angular Guild underscores my commitment to continuous learning, mentorship, and driving the adoption of best practices. \n\n" +
                         "<i>After a new organization rotation, another team should take the overall responsibility for the Angular Stack.</i>",
                 },
                 {
@@ -131,10 +153,10 @@ const Timeline = () => {
                         "<i>After the new organization rotation of teams, I stopped as Tech PO, since the teams responsibility changed to be more product oriented with focus on the Tech part.</i>",
                 },
                 {
-                    "title": "New Created Frontend Team - 'Bankular' in Card & Payments Area",
-                    "fromDate": "Feb 2022",
-                    "toDate": "Feb 2024",
-                    "description":
+                    title: "Newly Created Frontend Team - 'Bankular' in Card & Payments Area",
+                    fromDate: "Feb 2022",
+                    toDate: "Feb 2024",
+                    description:
                         "After leading the Frontend Development at the Fredericia location and demonstrating significant impact, I was presented with the opportunity to pioneer a new Frontend Team for the Card & Payments area at Bankdata. \n" +
                         "Recognizing the need for specialized frontend expertise in upcoming major projects, I leveraged my network to assemble a team of 4 skilled developers within 3 months, marking the rapid establishment of a dedicated Frontend Team named \"Bankular\" (Bank + Angular). \n\n" +
                         "My role extended beyond team assembly; I spearheaded the onboarding process for new and existing teams, imparting knowledge on frontend development standards and best practices. \n" +
@@ -148,33 +170,39 @@ const Timeline = () => {
                     description:
                         "From Jan-Oct 2023 I went through onboarding of <u>8 teams</u> in Bankdata, on how to start Angular Development. \nBut I wanted to reach even further, so I aligned with my team to create Angular Onboardings as a course of 5 days, for Developers to join. \n\n" +
                         "In October 2023, we celebrated a key milestone at Bankdata with the successful completion of our first Angular onboarding for one of our three platforms. \n" +
-                        "The onboarding was structured into three parts: " +
-                        "\n- Introduction and Overview (covering project creation, frontend mocking, documentation, and hands-on tasks with smart & dumb components) " +
-                        "\n- Hands-On with Angular (providing an assignment that provided the whole 'Angular' experience) " +
-                        "\n- Quality Assurance, Assignment Review, and Integration \n" +
-                        "   - Reviewing the assignment code \n" +
-                        "   - Pair Programming between my developers and the onboardies \n" +
-                        "   - In-depth testing with Jest and Spectator \n\n" +
+                        "The onboarding was structured into three parts:\n" +
+                        "   1. Introduction and Overview (covering project creation, frontend mocking, documentation, and hands-on tasks with smart & dumb components) \n" +
+                        "   2. Hands-On with Angular (providing an assignment that provided the whole 'Angular' experience) \n" +
+                        "   3. Quality Assurance, Assignment Review, and Integration \n" +
+                        "      • Reviewing the assignment code \n" +
+                        "      • Pair Programming between my developers and the onboardies \n" +
+                        "      • In-depth testing with Jest and Spectator \n\n" +
                         "With 14 developers participating on short notice, the engagement level was extraordinary. \n" +
                         "The OnBoarding did not only strengthen our Angular Community within Bankdata, but also made sure that strong bonds and network has been created. \n\n" +
                         "The Teams joined were thrilled for the onboarding and very grateful. Furthermore, developers who were about to create their first Frontend Application estimated that multiple weeks has been saved. \n\n" +
                         "<i>After a new organization rotation of teams, our team stopped onboarding of new developers in Angular. This responsibility were instead handled from another team.</i>",
                 },
                 {
-                    "title": "Angular Template Automation",
-                    "fromDate": "Jun 2021",
-                    "toDate": "Feb 2024",
-                    "description":
+                    title: "Angular - Template & CI/CD Automation",
+                    fromDate: "Jun 2021",
+                    toDate: "Feb 2024",
+                    description:
                         "Developed and implemented an automation process for generating Angular applications according to company standards, reducing the initial setup time from 4-5 days to just 3 minutes. \n\n" +
-                        "This innovation has been utilized 50 times, significantly streamlining project kickoffs. Additionally, I engineered an automated upgrade process for this template, which has been applied 20 times, further enhancing developer productivity. \n\n" +
-                        "Overall, this automation has saved MANY HOURS of development time. Thereby projects has been accelerating faster and resources has been optimized across the development teams."
+                        "This innovation has been utilized more than 50 times, significantly streamlining project kickoffs. Additionally, I engineered an automated upgrade process for this template, which has been applied 100+ times, further enhancing developer productivity. \n\n" +
+                        "To further streamline and align development processes, I collaborated with another developer from the community to create a reusable Jenkins pipeline with custom properties, eliminating the need for teams to copy/paste Jenkins setups from other projects. Inspired by the backend setup, this pipeline bridged the gap between frontend and backend, creating a unified full-stack experience. \n\n" +
+                        "The Jenkins Pipeline supported:\n" +
+                        "   - Deployments to development, staging, and production.\n" +
+                        "   - Rollbacks.\n" +
+                        "   - Change management for production deployments.\n\n" +
+                        "This pipeline was revolutionary for Bankdata's Advisory Channel, where it was rapidly adopted by all 80+ Angular applications. It became a cornerstone of CI/CD, enabling seamless deployments and fostering huge appreciation from the developer community. \n\n" +
+                        "Overall, this automation has saved countless hours of development time, accelerated project timelines, and optimized resources across the development teams."
                 },
                 {
-                    "title": "Reusable Angular Components Library",
-                    "fromDate": "Jun 2021",
-                    "toDate": "Feb 2024",
-                    "description":
-                        "Initiated and developed a community-driven library of reusable Angular Material components at Bankdata, adopted by over 20 development teams. \n\n" +
+                    title: "Angular - Reusable Components Library",
+                    fromDate: "Jun 2021",
+                    toDate: "Feb 2024",
+                    description:
+                        "Initiated and developed a community-driven library of reusable Angular Material components at Bankdata, adopted by over 20 development teams and 65 applications. \n\n" +
                         "This strategic initiative addressed the inefficiency of 'reinventing the button' by providing UX-approved, standardized components for faster development cycles and cohesive user experiences across the platform. \n\n" +
                         "The library significantly eased the onboarding process for new developers, streamlined updates through centralized changes, and fostered a culture of collaboration and innovation within the Angular community. " +
                         "Although quantifying the exact time saved is challenging, the alignment of our platforms and the enthusiastic adoption by developers underscore the library's substantial contribution to enhancing productivity and fostering a standardized development approach."
@@ -184,8 +212,9 @@ const Timeline = () => {
                     fromDate: "6. Dec 2023",
                     toDate: "",
                     description:
-                        "In December 2023, it was my turn to take the stage at Bankdata's Operational Excellence Days. I led a presentation on front-end onboarding with Angular – and how it's all about getting new developers up and running faster. \n" +
-                        "It was important that we're just talking about theory. We want to take them through the whole frontend experience – We showcased how our onboarding in Angular builds upon our backend foundation and how we offer developers an end-to-end experience from the frontend css all the way down to the database. \n\n" +
+                        "In December 2023, it was my turn to take the stage with my buddy <a style='color: deepskyblue' href='https://www.linkedin.com/in/niels-wrang-larsen/' target='_blank'><u>Niels Wrang</u></a>, at Bankdata's Operational Excellence Days. I led a presentation on Frontend Onboarding – and how it's all about getting new developers up and running faster. \n" +
+                        "It was important that we're just talking about theory, taking them through the whole frontend experience. \n" +
+                        "We showcased how our onboarding in Angular builds upon our backend foundation and how we offer developers an end-to-end experience from the frontend css all the way down to the database. \n\n" +
                         "We delved into the significance of knowledge sharing, the use of reusable code, and the role of our Angular Community in fostering a collaborative and efficient development environment. \n\n" +
                         "We want to enhance developer experience and ensuring a smooth transition for new team members into our dynamic and fast-paced environment. \n" +
                         "This event was not just about sharing our methods; it was about reinforcing our commitment to operational excellence and continuous improvement, as an organisation."
@@ -195,7 +224,7 @@ const Timeline = () => {
                     fromDate: "21. Oct 2023",
                     toDate: "",
                     description:
-                        "`In October 2023, I had the privilege of featuring in a promotional video for Bankdata, which was disseminated across various channels. Alongside my fellow developers – we shared our experiences and the excitement of crafting innovative solutions at Bankdata. \n" +
+                        "In October 2023, I had the privilege of featuring in a promotional video for Bankdata, which was disseminated across various channels. Alongside my fellow developers – we shared our experiences and the excitement of crafting innovative solutions at Bankdata. \n" +
                         "The video highlighted the critical role of our IT infrastructure in the daily lives of Danish citizens, the banking sector, and the safety of society. We emphasized the challenges of delivering a full-service platform in a heavily regulated industry and how it demands excellence in our technologies. \n" +
                         "Our solutions receives <b>a million visits</b> a day, which means that the systems needs to be accessible and robust around the clock. \n\n" +
                         "LinkedIn Post: <a style='color: deepskyblue' href='https://www.linkedin.com/feed/update/urn:li:activity:7115233716439801856/' target='_blank'><u>Bankdata - Vi Bygger Fremtidens Digitale Bank</u></a>"
@@ -208,18 +237,24 @@ const Timeline = () => {
                         "Building upon my experience and leadership in Frontend Development at the Fredericia location, I transitioned to a role focused exclusively on frontend development. \n\n" +
                         "This shift was a strategic move to leverage my strengths and passion for creating intuitive, responsive user interfaces, further embracing my expertise in Angular and other modern web technologies. \n" +
                         "In this period, I not only contributed significantly to our projects' success through innovative solutions and enhancements, but also played a role in mentoring junior developers and advocating for best practices in frontend architecture. \n\n" +
-                        "My dedication to excellence in frontend development enabled more efficient project execution, elevated user experience across our applications, and reinforced the importance of specialized roles within our development teams."
+                        "My dedication to excellence in frontend development enabled more efficient project execution, elevated user experience across our applications, and reinforced the importance of specialized roles within our development teams.\n\n" +
+                        "<i>Promoted to Senior Frontend Developer in Jan, 2023.</i>"
                 },
                 {
-                    title: "Full Stack Developer",
-                    fromDate: "May 2021",
-                    toDate: "Jan 2023",
+                    title: "Team DigiX - Full Stack Developer",
+                    fromDate: "Apr 2021",
+                    toDate: "Feb 2022",
                     description:
-                        "Joined a team focused on managing Message Services, including SMS and Emails in Bankdata. \n" +
-                        "I quickly adapted and became an integral part of the team. " +
-                        "My agility and swift learning curve enabled me to contribute significantly in a short period. " +
-                        "I didn't just settle into the team; I made an impact by undertaking three major rewrites of frontend applications, enhancing their performance and reliability. " +
-                        "This phase of my career was marked by rapid development and substantial contributions to the team's success.",
+                        "As part of Team DigiX at Bankdata, I worked on several key services essential for customer communication and account management. \n\n" +
+                        "My contributions included developing and enhancing the following services:\n" +
+                        "   - <u>MessageService</u>: Managing the creation and delivery of customer communications, such as SMS, emails, and push notifications. \n" +
+                        "   - <u>Notification Registrations</u>: Overseeing customer preferences for notifications, including mail, SMS, and push notifications. \n" +
+                        "   - <u>Digital Access</u>: Handling customer information related to digital access agreements, including MitID and Netbank. \n" +
+                        "   - <u>Daily Maximum (Dagsmaks)</u>: Developing and maintaining services to create and manage daily transaction limits for individual accounts. \n\n" +
+                        "While my primary focus was on frontend development, I also played an active role in full-stack and host development. \n\n" +
+                        "This period was defined by impactful contributions, including completing three major rewrites of frontend applications, significantly boosting their performance, scalability, and reliability. \n\n" +
+                        "My ability to adapt quickly and provide technical solutions made me a crucial part of the team, ensuring the success of our high-priority initiatives. \n\n" +
+                        "<i>In November 2021, I was presented with the exciting opportunity to establish a dedicated frontend team, which accelerated frontend development across the organization.</i>",
                 },
             ],
         },
@@ -242,49 +277,56 @@ const Timeline = () => {
                         "This period was marked by my mature attitude towards software development, focusing on writing clean, efficient, and maintainable code, which laid the foundation for future leadership roles and furthered my development as a key asset to the team."
                 },
                 {
-                    title: "Established EG's Polish Team",
-                    fromDate: "Aug 2020",
-                    toDate: "",
-                    description:
-                        "In August 2020, I led the initiation of a new team in Poland for EG - Digital Welfare, starting with two developers and aiming for larger scaling. \n" +
-                        "My role was to harmonize workflows between Danish and Polish teams, refine our Scrum processes, and foster a collaborative and agile environment, marking a big step in both organizational and personal growth"
-                },
-                {
-                    title: "Scrum Master (part time)",
+                    title: "Scrum Master",
                     fromDate: "Jun 2020",
                     toDate: "May 2021",
                     description:
-                        "After EG A/S were bought of Francisco Partners, they decided invest in the company to be more Agile. Therefore the Teamlead role were decommissioned and Scrum Masters were introduced. \n" +
-                        "I started to educate my self to help the team improve and to have the best possible Scrum Events, Tracking progress/Metrics, removing impediments and fostering collaboration between developers and teams. \n" +
-                        "We had continuous improvement in our Scrum Processes and a lot had to be worked on since the company was not mature in Agile Development, at that time."
+                        "After EG A/S was acquired by Francisco Partners, the company decided to invest in becoming more Agile. As part of this transformation, the Teamlead role was decommissioned, and Scrum Masters were introduced. \n\n" +
+                        "I spearheaded the agile transformation and began educating myself to help teams improve. My focus was on ensuring effective Scrum Events, tracking progress and metrics, removing impediments, and fostering collaboration between developers and teams. Despite the company’s initial lack of maturity in Agile Development, I drove continuous improvement in our Scrum processes, addressing the challenges we faced along the way. \n\n" +
+                        "When the Covid-19 pandemic hit the Danish labor market, I played a key role in rethinking how we cooperated as a team, conducted meetings, and facilitated collaboration in a fully remote setting. This required reimagining traditional workflows to maintain productivity and team cohesion, even under unprecedented circumstances. \n\n" +
+                        "In addition to my Scrum Master responsibilities, I continued to work primarily as a developer, ensuring high-quality software delivery while balancing the demands of leadership and facilitation. \n\n" +
+                        "<i>During this time, I also honed my skills in creating effective documentation—a critical yet often underestimated aspect of Agile Development. I learned that good documentation is truly an art, and I leveraged this skill to ensure clarity, alignment, and continuity across teams.</i>"
                 },
                 {
-                    title: "Software Teamlead (part time)",
+                    title: "EG's Polish Team",
+                    fromDate: "Feb 2020",
+                    toDate: "",
+                    description:
+                        "In August 2020, I led the establishment of a new team in Poland for EG - Digital Welfare, starting with two developers and strategically positioning it for future scaling. \n\n" +
+                        "My responsibilities extended beyond traditional leadership; I worked to harmonize workflows between the Danish and the Polish teams, ensuring seamless communication and collaboration. I refined our Scrum processes to better accommodate cross-border teams, fostering an agile and productive working environment that bridged cultural and technical gaps. \n\n" +
+                        "A significant part of my role involved creating a positive and efficient development culture by mentoring the Polish team and aligning them with the standards and practices of the Danish teams. This included streamlining technical processes, ensuring high-quality code, and fostering a unified approach to problem-solving. \n\n" +
+                        "Additionally, I facilitated knowledge sharing between the teams, emphasizing alignment, reusable solutions, and scalability in our development efforts. My leadership helped lay the foundation for a high-performing, collaborative team that continues to deliver exceptional results. \n\n" +
+                        "This experience not only marked a significant organizational achievement but also contributed greatly to my personal growth as a leader, communicator, and advocate for cross-functional collaboration.",
+                },
+                {
+                    title: "Software Teamlead",
                     fromDate: "Sep 2019",
                     toDate: "Jun 2020",
                     description:
-                        "Within 3 months at EG, I ascended to the role of Teamlead for a dynamic team of 8 developers and a QA, steering project planning, coordination, and managerial communications. \n" +
-                        "The management has seen how I lead and managed the team after our former Teamlead left, and wished for me to continue despite my only 3 months experience. \n" +
-                        "My position were more than just a leader, I facilitated workflow enhancements, served as a managerial bridge without direct personnel oversight. " +
-                        "This role allowed me to blend technical leadership with strategic oversight, ensuring our team not only met but exceeded our goals. \n\n" +
-                        "<i>All this while still being able to code and improve my self as a developer.</i> \n\n" +
+                        "After just 3 months at EG, I was entrusted with the role of Teamlead for a team of 8 developers and a QA, a testament to my leadership potential and ability to manage responsibilities effectively. \n\n" +
+                        "This role required me to step into a leadership position during a critical time, following the departure of our former Teamlead. Management recognized my ability to inspire, guide, and manage the team, despite my short tenure. \n\n" +
+                        "As Teamlead, I wasn’t just a coordinator; I focused on improving workflows, fostering collaboration across diverse individuals, and bridging communication between tech and stakeholders. My efforts ensured that our team delivered projects to the deadline, with the best possible quailty while maintaining a positive and productive work environment. \n\n" +
+                        "In this role, I honed my ability to align diverse skill sets toward common goals, while also balancing technical and strategic oversight, which proved invaluable for the team's success. This period was pivotal in shaping my leadership style and understanding of team dynamics. \n\n" +
+                        "<i>It was an incredible opportunity to learn how to lead a diverse team and unite them under a shared vision and objectives.</i> \n\n" +
                         "Article: " +
                         "<a style='color: deepskyblue' href='https://www.linkedin.com/posts/mathias-skovgaard_jeg-ville-lige-dele-denne-fine-artikel-omkring-activity-6683082058618679296-yufu?utm_source=share&utm_medium=member_desktop' target='_blank'><u>LinkedIn</u></a> / " +
-                        "<a style='color: deepskyblue' href='https://www.toha.dk/filer/Datamatiker_Toender.pdf' target='_blank'><u>Erhvervsakademiet SydVest - Page 10</u></a>",
+                        "<a style='color: deepskyblue' href='https://drive.google.com/file/d/1cmCszumK59QiiJsWvtSXJuu3JyBQTSpz/view?usp=sharing' target='_blank'><u>Erhvervsakademiet SydVest - Page 10</u></a>",
                 },
                 {
                     title: "Full Stack - Junior Developer",
                     fromDate: "Feb 2019",
                     toDate: "Aug 2020",
                     description:
-                        "\"EG - Digital Welfare\" were my first job as a Software Developer. \n\n" +
-                        "I worked with FMK (Fælles Medicinkort), that helps places of residence to administrative medicine. \n" +
-                        "Futhermore I worked on Sensum One a system that structuring of social welfare efforts, emphasizing automation, oversight, and collaboration across the special needs sector. " +
-                        "It brought a unified approach to social welfare work, ensuring coherence and a comprehensive overview across various services, ultimately enhancing life through measurable interventions. " +
-                        "This dual engagement not only honed my software development skills, but I could also use my experience and understanding for the user-centered solutions from my time as a Social & Health Worker.",
+                        "<u>EG - Digital Welfare</u> was my first professional role as a Software Developer, marking the start of my journey in the tech industry. \n\n" +
+                        "During this time, I contributed to two significant projects:\n" +
+                        "<u>FMK (Fælles Medicinkort)</u>: A system that helps residential care facilities manage and administer medicine efficiently, ensuring compliance and patient safety. \n" +
+                        "<u>Sensum One</u>: A comprehensive platform designed to streamline social welfare efforts. The system emphasized automation, collaboration, and oversight across the special needs sector, providing a unified approach to case management and significantly improving life through measurable interventions.\n\n" +
+                        "This role allowed me to combine my technical skills with my background as a Social & Health Worker, enabling me to build user-centered solutions that truly made a difference in people's lives. \n\n" +
+                        "It was during this time that I honed my skills in software development, focusing on clean, maintainable code while gaining practical experience in creating solutions that bridged the gap between user needs and technical capabilities. My contributions were impactful in ensuring high-quality deliverables and fostering collaboration across teams. \n\n" +
+                        "<i>Promoted to Full Stack Developer in Aug 2020, reflecting my growth and contributions to the team.</i>",
                 },
             ],
-        },{
+        }, {
             companyName: "Blue Water Shipping",
             startDate: new Date("Aug 2018"),
             endDate: new Date("Jan 2019"),
@@ -299,7 +341,7 @@ const Timeline = () => {
                     description:
                         "Our final year project for Blue Water Shipping focused on upgrading their existing front-end frameworks developed in AngularJS to Angular-7 with Typescript. \n" +
                         "We aimed to deliver a strategic upgrade plan for their front-ends, showcasing the transition to a more type-strong language by upgrading their \"Work Order Management\" WebApp and the importance of fully tested frontend applications. \n" +
-                        "This included not just an upgraded version of the frontend but also comprehensive documentation of the upgrade process and new frontend architecture to facilitate the transition for Blue Water Shipping's developers to the modern Angular framework."
+                        "This included not just an upgraded version of the frontend, but also comprehensive documentation of the upgrade process and a new frontend architecture to facilitate the transition for Blue Water Shipping's developers to the modern Angular framework."
                 },
                 {
                     title: "Full Stack - Intern",
