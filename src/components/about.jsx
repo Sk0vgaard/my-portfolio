@@ -40,77 +40,94 @@ const About = () => {
                     <div className="bg-gray-800 p-8 rounded-lg shadow-md mb-8">
                         <div className="text-center text-gray-200">
                             <p>
-                                My name is Mathias Skovgaard, a {age}-year-old passionate software developer based in
-                                the beautiful city of Esbjerg, Denmark.
-                            </p>
-                            <p>
-                                I specialize in creating high-quality, interactive websites and applications using
-                                modern technologies.
+                                My name is Mathias Skovgaard, a {age}-year-old software developer from Esbjerg, Denmark,
+                                known for my expertise, dedication, and natural ability to lead informally.
                             </p>
                             <br/>
                             <p>
-                                I am always eager to learn and stay up-to-date with the latest developments in the tech
-                                world, which allows me to deliver cutting-edge solutions. I enjoy
-                                collaborating with teams and individuals from various backgrounds, as I believe that
-                                diversity fosters creativity and innovation.
+                                I excel in crafting high-quality, user-friendly applications using cutting-edge
+                                technologies. My journey in tech has been marked by a relentless drive for innovation,
+                                collaboration, and personal growth. I’ve found that empowering others and seeing them
+                                succeed is as fulfilling as delivering innovative technical solutions, making mentorship
+                                and team development a core part of my professional philosophy.
                             </p>
                             <br/>
                             <p>
-                                In my spare time, I love exploring Esbjerg's idyllic landscapes and engaging in outdoor
-                                activities. I also appreciate connecting with fellow professionals who share my
-                                enthusiasm for technology, programming, AI and nature.
+                                I’m passionate about fostering innovation, building communities, and driving technical
+                                excellence. Throughout my career, I have led initiatives that align strategic objectives
+                                with technical execution, ensuring measurable impact and value.
+                            </p>
+                            <br/>
+                            <p> Outside work, I cherish exploring Esbjerg's salmon fishing in Denmark's rivers, and
+                                diving into the ever-evolving world of AI and technology.
+                            </p>
+                            <br/>
+                            <p> Drawing from my background as a <b>Social Healthcare Worker for 7-years</b>, I have
+                                honed strong interpersonal skills, empathy, and the ability to connect with others on a
+                                deeper level. This blend of technical expertise and human-centered understanding makes
+                                me not only a problem solver but also an inspiring team player and leader, capable of
+                                fostering collaboration and trust within any team.
                             </p>
                             <br/>
                             <p>
-                                I will always prefer to be judged by my achievements and the esteem of my colleagues
-                                above all else.
+                                My mantra is simple. Actions and integrity speak louder than words.
                                 <br/>
-                                <i>Actions and integrity speaks louder than words.</i>
+                                <i> - I strive to be judged by my achievements and the respect of those I work with
+                                    above
+                                    all else. </i>
                             </p>
                         </div>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div>
-                            <h3 className="text-xl font-semibold mb-2">Interests</h3>
+                        <div><h3 className="text-xl font-semibold mb-2">Interests</h3>
                             <ul className="list-disc pl-5">
-                                <li>Angler for salmon and sea trout in southwest Jutland brooks</li>
-                                <li>Exploring new technology in my free time</li>
-                                <li>Friends are a huge part of my persona</li>
-                                <li>AI is a huge interest for me, and in my free time I spend time on either
-                                    research, playing, or keeping track of all the new things
-                                </li>
+                                <li>Salmon and sea trout fishing in southwest Jutland's rivers</li>
+                                <li>Exploring new technologies and personal projects</li>
+                                <li>Engaging with friends and building meaningful connections</li>
+                                <li>Diving into AI research, trends, and practical applications</li>
                             </ul>
                         </div>
 
                         <div>
                             <h3 className="text-xl font-semibold mb-2">Skills & Qualities</h3>
                             <ul className="list-disc pl-5">
-                                <li>Embracing challenges and self-improvement</li>
-                                <li>Structured and diligent in documentation</li>
-                                <li>Leadership and mentoring skills</li>
-                                <li>Selfless, as I believe that selflessness is a key factor for a team's success.</li>
-                                <li>Empathy, communication skills, and teamwork from a social & health worker
-                                    background
+                                <li>Leadership: Building high-performing, collaborative teams</li>
+                                <li>Mentorship: Developing and guiding individuals to achieve excellence</li>
+                                <li>Technical Expertise: Balancing technical depth with strategic alignment</li>
+                                <li>Empathy: Leveraging my background as a Social & Health Worker to connect and
+                                    communicate effectively
+                                </li>
+                                <li>Structured Problem Solving: Delivering high-quality solutions under tight
+                                    deadlines
                                 </li>
                             </ul>
                         </div>
                     </div>
 
-                    <div className="mt-6">
-                        <h3 className="text-xl font-semibold mb-2">My Career</h3>
+                    <div className="mt-6"><h3 className="text-xl font-semibold mb-2">
+                        My Career
+                    </h3>
                         <p className="mb-2">
-                            Throughout my journey, I've embraced numerous roles at EG A/S and Bankdata.
+                            With a proven track record at both EG A/S and Bankdata, I have taken on diverse and
+                            challenging roles that blend technical leadership, innovation, and mentorship.
                         </p>
-                        <p className="mb-2">As a versatile <b>tech leader</b>, I’ve shaped and led initiatives, driving innovation and team alignment across departments.</p>
-                        <p className="mb-2">I've established dedicated teams for critical areas like Cards & Payments,
-                            pioneered the <b>AI Community</b>, and coordinated <b>Angular Guild</b> efforts to foster collaboration
-                            and best practices.</p>
-                        <p className="mb-2">My roles have spanned technical guidance, strategic alignment, and
-                            mentoring, highlighting my commitment to excellence and adaptability in complex
-                            environments.</p>
-                        <p className="mb-2">This journey reflects my adaptability, technical expertise, and passion for
-                            shaping a collaborative and forward-thinking tech environment.</p>
+                        <p className="mb-2">
+                            At Bankdata, I spearheaded critical initiatives such as founding dedicated teams in areas
+                            like Cards & Payments, leading the AI Community, and coordinating Angular Guilds. These
+                            roles highlight my ability to foster alignment, drive innovation, and create lasting
+                            organizational impact.
+                        </p>
+                        <p className="mb-2">
+                            My technical expertise is matched by my adaptability and strategic vision. I have
+                            successfully delivered high-stakes projects such as rewriting BetalingsService under tight
+                            deadlines, pioneering frontend automation for scalability, and shaping the international
+                            payments ecosystem with cutting-edge solutions.
+                        </p>
+                        <p className="mb-2"> My career reflects my passion for transforming technical challenges into
+                            innovative solutions and my dedication to fostering collaborative, forward-thinking
+                            environments that empower individuals and teams.
+                        </p>
                     </div>
                 </div>
             </div>

@@ -52,8 +52,8 @@ const Home = () => {
                             <p className="text-scroll underline">A Leader</p>
                             <p className="text-scroll underline">Dependable</p>
                             <p className="text-scroll underline">Selfless</p>
-                            <p className="text-scroll underline">A Mentor</p>
-                            <p className="text-scroll underline">A Communicator</p>
+                            <p className="text-scroll underline">Honourable</p>
+                            <p className="text-scroll underline">Empathetic</p>
                             <p className="text-scroll underline">A Leader</p>
                         </div>
                     </div>
