@@ -47,18 +47,21 @@ const About = () => {
                             <p>
                                 I excel in crafting high-quality, user-friendly applications using cutting-edge
                                 technologies. My journey in tech has been marked by a relentless drive for innovation,
-                                collaboration, and personal growth. I’ve found that empowering others and seeing them
-                                succeed is as fulfilling as delivering innovative technical solutions, making mentorship
-                                and team development a core part of my professional philosophy.
+                                collaboration, and personal growth.
                             </p>
                             <br/>
                             <p>
                                 I’m passionate about fostering innovation, building communities, and driving technical
                                 excellence. Throughout my career, I have led initiatives that align strategic objectives
                                 with technical execution, ensuring measurable impact and value.
+                                I enjoy collaborating with teams and individuals from various backgrounds, as I believe
+                                that diversity fosters creativity and innovation.
+                                I’ve found that empowering others and seeing them succeed is as fulfilling as delivering
+                                innovative technical solutions myself, making mentorship and team development a core
+                                part of my professional philosophy.
                             </p>
                             <br/>
-                            <p> Outside work, I cherish exploring Esbjerg's salmon fishing in Denmark's rivers, and
+                            <p> Outside work, I cherish salmon fishing in Esbjerg's rivers, and
                                 diving into the ever-evolving world of AI and technology.
                             </p>
                             <br/>
