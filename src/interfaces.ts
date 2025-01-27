@@ -3,8 +3,8 @@ export interface CompanyTimeline {
     startDate: Date;
     endDate: Date;
     totalLength: string;
-    companyLink: string;
-    companyIcon: string;
+    companyLink?: string;
+    companyIcon?: string;
     details: JobDetails[];
 }
 

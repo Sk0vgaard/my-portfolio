@@ -75,8 +75,10 @@ const JobTimeline = ({companyTimelines}: { companyTimelines: CompanyTimeline[] }
                                     </span>
                                     <div
                                         className="relative aspect-w-1 aspect-h-1 h-[100px] overflow-hidden">
-                                        <img className="relative top-0 left-0 w-full h-full object-cover text-white"
-                                             src={companyTimeline.companyIcon} alt={companyTimeline.companyName}/>
+                                        {companyTimeline.companyIcon && (
+                                            <img className="relative top-0 left-0 w-full h-full object-cover text-white"
+                                                 src={companyTimeline.companyIcon} alt={companyTimeline.companyName}/>
+                                        )}
                                     </div>
                                 </div>
                                 <p className="md:hidden text-sm text-info flex items-center justify-center md:justify-between">
@@ -95,16 +97,18 @@ const JobTimeline = ({companyTimelines}: { companyTimelines: CompanyTimeline[] }
                                 {expanded[itemKey] && (
                                     <JobTitleTimeline jobDetails={companyTimeline.details}/>
                                 )}
-                                <div className={'py-2 md:pl-4 flex items-center justify-center md:justify-between'}>
-                                    <button
-                                        type="button"
-                                        className="inline-block rounded border-2 border-info px-4 pt-[4px] pb-[3px] text-s font-medium uppercase leading-normal text-info transition duration-150 ease-in-out hover:border-info-600 hover:bg-gray-500 hover:bg-opacity-10 hover:text-info-600 focus:border-info-600 focus:text-info-600 focus:outline-none focus:ring-0 active:border-info-700 active:text-info-700 hover:bg-gray-100 hover:bg-opacity-10"
-                                    >
-                                        <a href={companyTimeline.companyLink} target="_blank" rel="noreferrer">
-                                            Read about {companyTimeline.companyName}
-                                        </a>
-                                    </button>
-                                </div>
+                                {companyTimeline.companyLink && (
+                                    <div className={'py-2 md:pl-4 flex items-center justify-center md:justify-between'}>
+                                        <button
+                                            type="button"
+                                            className="inline-block rounded border-2 border-info px-4 pt-[4px] pb-[3px] text-s font-medium uppercase leading-normal text-info transition duration-150 ease-in-out hover:border-info-600 hover:bg-gray-500 hover:bg-opacity-10 hover:text-info-600 focus:border-info-600 focus:text-info-600 focus:outline-none focus:ring-0 active:border-info-700 active:text-info-700 hover:bg-gray-100 hover:bg-opacity-10"
+                                        >
+                                            <a href={companyTimeline.companyLink} target="_blank" rel="noreferrer">
+                                                Read about {companyTimeline.companyName}
+                                            </a>
+                                        </button>
+                                    </div>
+                                )}
                                 <div className="flex items-center justify-center">
                                     {expanded[itemKey] ? (
                                         <FiChevronUp className="text-info"/>

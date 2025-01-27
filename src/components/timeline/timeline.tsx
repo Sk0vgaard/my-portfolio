@@ -5,30 +5,108 @@ import egLogo from '../../assets/logos/eg_logo.png';
 import bwsLogo from '../../assets/logos/bws_logo.png';
 import JobTimeline from "./jobTimeline";
 
-const Timeline = () => {
-    const calculateTotalLength = (startDate: Date, endDate: Date): string => {
-        const start: Date = new Date(startDate);
-        const end: Date = new Date(endDate);
+const bankdataStartDate: Date = new Date("2021-04-01");
+const bankdataEndDate: Date = new Date();
+const egStartDate: Date = new Date("2019-02-01");
+const egEndDate: Date = new Date("2021-03-01");
+const bwsStartDate: Date = new Date("2018-08-01");
+const bwsEndDate: Date = new Date('2019-01-01');
+const finishEducationDate: Date = new Date('2019-01-01');
+const calculateTotalLength = (startDate: Date, endDate: Date): string => {
 
-        let years: number = end.getFullYear() - start.getFullYear();
-        let months: number = end.getMonth() - start.getMonth();
+    let years: number = endDate.getFullYear() - startDate.getFullYear();
+    let months: number = endDate.getMonth() - startDate.getMonth();
 
-        if (months < 0) {
-            years--;
-            months += 12;
-        }
-
-        const yearStr: string = years > 0 ? `${years} year${years !== 1 ? 's' : ''}` : "";
-        const monthStr: string = `${months} month${months !== 1 ? 's' : ''}`;
-        return [yearStr, monthStr].filter(Boolean).join(", ");
+    if (months < 0) {
+        years--;
+        months += 12;
+    }
+    const formatWithPlural = (value: number, unit: string): string => {
+        if (value <= 0) return "";
+        return `${value} ${unit}${value !== 1 ? 's' : ''}`;
     };
+
+    const yearStr: string = formatWithPlural(years, "year");
+    const monthStr: string = formatWithPlural(months, "month");
+
+    return [yearStr, monthStr].filter(Boolean).join(", ");
+};
+
+
+const Timeline = () => {
 
     const companyTimelines: CompanyTimeline[] = [
         {
-            companyName: "Bankdata",
-            startDate: new Date("May 2021"),
+            companyName: "Milestones of Impact and Inspiration",
+            startDate: new Date("January 2019"),
             endDate: new Date(),
-            totalLength: calculateTotalLength(new Date("May 2021"), new Date()),
+            totalLength: calculateTotalLength(finishEducationDate, new Date()),
+            companyLink: "",
+            companyIcon: "",
+            details: [
+                {
+                    title: "EASV - Upcoming event",
+                    fromDate: "Feb 2025",
+                    toDate: "",
+                    description:
+                        "<p style='padding-bottom: 10px'><u>The Struggles As A Software Developer Student:</u> \n </p>" +
+                        "<p style='padding-bottom: 10px'><u>Imposter Syndrome:</u> \n </p>" +
+                        "<p style='padding-bottom: 20px'><u>What To Expect At Your First Job And How To Nail It:</u> \n </p>" +
+                        // "<p style='padding-bottom: 10px'><i>LinkedIn: <a style='color: deepskyblue' href='' target='_blank'><u>LinkedIn Post</u></a></i></p>" +
+                        "<p><i>EASV Website: <a style='color: deepskyblue' href='https://www.easv.dk/da/uddannelser/datamatiker/' target='_blank'><u>EASV - Computer Science</u></a></i></p>"
+                },
+                {
+                    title: "EASV - A Students Struggle",
+                    fromDate: "Mar 2024",
+                    toDate: "",
+                    description:
+                        "<p style='padding-bottom: 10px'><u>Inspiring Future Developers:</u> \nDelivered two tailored presentations at Business Academy South West (EASV) to empower both bachelor's students and aspiring computer scientists.</p>" +
+                        "<p style='padding-bottom: 10px'><u>Insights on Industry Practices:</u> \nHighlighted Bankdata's vision, Agile methods, tech stack, and unique onboarding practices to showcase how interns grow into valued team members.</p>" +
+                        "<p style='padding-bottom: 10px'><u>Breaking Barriers for New Learners:</u> \nShared personal challenges, including overcoming steep learning curves and \"Imposter Syndrome,\" encouraging students to embrace growth and persistence.</p>" +
+                        "<p style='padding-bottom: 20px'><u>Empowering with Tools:</u> \nFocused on leveraging ChatGPT effectively while stressing the importance of foundational knowledge for long-term success in the tech industry.</p>" +
+                        "<p style='padding-bottom: 10px'><i>LinkedIn: <a style='color: deepskyblue' href='https://www.linkedin.com/posts/mathias-skovgaard_today-our-1st-semester-computer-science-students-activity-7117569421727936512-F5HR?utm_source=share&utm_medium=member_desktop' target='_blank'><u>LinkedIn Post</u></a></i></p>" +
+                        "<p><i>EASV Website: <a style='color: deepskyblue' href='https://www.easv.dk/da/uddannelser/datamatiker/' target='_blank'><u>EASV - Computer Science</u></a></i></p>"
+                },
+                {
+                    title: "Bankdata Promotional Video Participation",
+                    fromDate: "Oct 2023",
+                    toDate: "",
+                    description:
+                        "<p style='padding-bottom: 10px'>In October 2023, I had the privilege of featuring in a promotional video for Bankdata, which was disseminated across various channels. Alongside my fellow developers – we shared our experiences and the excitement of crafting innovative solutions at Bankdata.</p>" +
+                        "<p style='padding-bottom: 10px'>The video highlighted the critical role of our IT infrastructure in the daily lives of Danish citizens, the banking sector, and the safety of society. We emphasized the challenges of delivering a full-service platform in a heavily regulated industry and how it demands excellence in our technologies.</p>" +
+                        "<p style='padding-bottom: 20px'>Our solutions receives <b>a million visits</b> a day, which means that the systems needs to be accessible and robust around the clock.</p>" +
+                        "<p>LinkedIn Post: <a style='color: deepskyblue' href='https://www.linkedin.com/feed/update/urn:li:activity:7115233716439801856/' target='_blank'><u>Bankdata - Vi Bygger Fremtidens Digitale Bank</u></a></p>"
+                },
+                {
+                    title: "EASV - A Students Struggle",
+                    fromDate: "Mar 2021",
+                    toDate: "",
+                    description:
+                        "<p style='padding-bottom: 10px'><u>The Struggle of a Student:</u> \nDiscussed the challenges faced during studies, including steep learning curves and the journey of overcoming obstacles.</p>" +
+                        "<p style='padding-bottom: 10px'><u>The Importance of a Mentor:</u> \nHighlighted how having a supportive mentor can accelerate learning, boost confidence, and guide career paths.</p>" +
+                        "<p style='padding-bottom: 10px'><u>The Value of Networking:</u> \nStressed the significance of building strong professional relationships and its impact on long-term career success.</p>" +
+                        "<p style='padding-bottom: 20px'><u>Learning by Doing:</u> \nEmphasized hands-on experience as the key to mastering skills and bridging the gap between theory and practice.</p>" +
+                        "<p><i>EASV Website: <a style='color: deepskyblue' href='https://www.easv.dk/da/uddannelser/datamatiker/' target='_blank'><u>EASV - Computer Science</u></a></i><p/>"
+                },
+                {
+                    title: "From Social Healthcare to Tech Leadership",
+                    fromDate: "Aug 2019",
+                    toDate: "",
+                    description:
+                        "<p style='padding-bottom: 10px'>I transitioned from a social healthcare to a developer with my first job at EG A/S in Odense, where I quickly made my mark. Just two weeks after graduating as a Computer Scientist from EASV in Esbjerg, I joined EG and, within seven months, was promoted to Team Lead.</p>" +
+                        "<p style='padding-bottom: 10px'>In this role, I managed six developers and established a new development team in Warsaw, Poland, fostering cross-border collaboration and productivity. My background in healthcare enabled me to connect with system users, ensuring that our solutions for documentation, goal tracking, and medication management addressed real-world challenges effectively.</p>" +
+                        "<p style='padding-bottom: 20px'>This period was not just about technical growth; it was about bridging the gap between technology and people, learning to lead diverse teams, and delivering systems that truly make a difference.</p>" +
+                        "<p>Article: " +
+                        "<a style='color: deepskyblue' href='https://www.linkedin.com/posts/mathias-skovgaard_jeg-ville-lige-dele-denne-fine-artikel-omkring-activity-6683082058618679296-yufu?utm_source=share&utm_medium=member_desktop' target='_blank'><u>LinkedIn</u></a> / " +
+                        "<a style='color: deepskyblue' href='https://drive.google.com/file/d/1cmCszumK59QiiJsWvtSXJuu3JyBQTSpz/view?usp=sharing' target='_blank'><u>Erhvervsakademiet SydVest - Page 6</u></a></p>",
+                },
+            ],
+        },
+        {
+            companyName: "Bankdata",
+            startDate: bankdataStartDate,
+            endDate: bankdataEndDate,
+            totalLength: calculateTotalLength(bankdataStartDate, bankdataEndDate),
             companyLink: "https://www.bankdata.dk/om/bankdata",
             companyIcon: `${bankdataLogo}`,
             details: [
@@ -220,16 +298,6 @@ const Timeline = () => {
                         "This event was not just about sharing our methods; it was about reinforcing our commitment to operational excellence and continuous improvement, as an organisation."
                 },
                 {
-                    title: "Bankdata Promotional Video Participation",
-                    fromDate: "21. Oct 2023",
-                    toDate: "",
-                    description:
-                        "In October 2023, I had the privilege of featuring in a promotional video for Bankdata, which was disseminated across various channels. Alongside my fellow developers – we shared our experiences and the excitement of crafting innovative solutions at Bankdata. \n" +
-                        "The video highlighted the critical role of our IT infrastructure in the daily lives of Danish citizens, the banking sector, and the safety of society. We emphasized the challenges of delivering a full-service platform in a heavily regulated industry and how it demands excellence in our technologies. \n" +
-                        "Our solutions receives <b>a million visits</b> a day, which means that the systems needs to be accessible and robust around the clock. \n\n" +
-                        "LinkedIn Post: <a style='color: deepskyblue' href='https://www.linkedin.com/feed/update/urn:li:activity:7115233716439801856/' target='_blank'><u>Bankdata - Vi Bygger Fremtidens Digitale Bank</u></a>"
-                },
-                {
                     title: "Frontend Developer",
                     fromDate: "Feb 2022",
                     toDate: "Jan 2023",
@@ -260,9 +328,9 @@ const Timeline = () => {
         },
         {
             companyName: "EG A/S",
-            startDate: new Date("Feb 2019"),
-            endDate: new Date("May 2021"),
-            totalLength: calculateTotalLength(new Date("Feb 2019"), new Date("May 2021")),
+            startDate: egStartDate,
+            endDate: egEndDate,
+            totalLength: calculateTotalLength(egStartDate, egEndDate),
             companyLink: "https://eg.dk/offentlig-digitalisering/eg-sensum-one/",
             companyIcon: `${egLogo}`,
             details: [
@@ -303,14 +371,14 @@ const Timeline = () => {
                     fromDate: "Sep 2019",
                     toDate: "Jun 2020",
                     description:
-                        "After just 3 months at EG, I was entrusted with the role of Teamlead for a team of 8 developers and a QA, a testament to my leadership potential and ability to manage responsibilities effectively. \n\n" +
+                        "After just 7 months at EG, I was entrusted with the role of Teamlead for a team of 8 developers and a QA, a testament to my leadership potential and ability to manage responsibilities effectively. \n\n" +
                         "This role required me to step into a leadership position during a critical time, following the departure of our former Teamlead. Management recognized my ability to inspire, guide, and manage the team, despite my short tenure. \n\n" +
                         "As Teamlead, I wasn’t just a coordinator; I focused on improving workflows, fostering collaboration across diverse individuals, and bridging communication between tech and stakeholders. My efforts ensured that our team delivered projects to the deadline, with the best possible quailty while maintaining a positive and productive work environment. \n\n" +
                         "In this role, I honed my ability to align diverse skill sets toward common goals, while also balancing technical and strategic oversight, which proved invaluable for the team's success. This period was pivotal in shaping my leadership style and understanding of team dynamics. \n\n" +
                         "<i>It was an incredible opportunity to learn how to lead a diverse team and unite them under a shared vision and objectives.</i> \n\n" +
                         "Article: " +
                         "<a style='color: deepskyblue' href='https://www.linkedin.com/posts/mathias-skovgaard_jeg-ville-lige-dele-denne-fine-artikel-omkring-activity-6683082058618679296-yufu?utm_source=share&utm_medium=member_desktop' target='_blank'><u>LinkedIn</u></a> / " +
-                        "<a style='color: deepskyblue' href='https://drive.google.com/file/d/1cmCszumK59QiiJsWvtSXJuu3JyBQTSpz/view?usp=sharing' target='_blank'><u>Erhvervsakademiet SydVest - Page 10</u></a>",
+                        "<a style='color: deepskyblue' href='https://drive.google.com/file/d/1cmCszumK59QiiJsWvtSXJuu3JyBQTSpz/view?usp=sharing' target='_blank'><u>Erhvervsakademiet SydVest - Page 6</u></a>",
                 },
                 {
                     title: "Full Stack - Junior Developer",
@@ -328,9 +396,9 @@ const Timeline = () => {
             ],
         }, {
             companyName: "Blue Water Shipping",
-            startDate: new Date("Aug 2018"),
-            endDate: new Date("Jan 2019"),
-            totalLength: calculateTotalLength(new Date("Aug 2018"), new Date("Jan 2019")),
+            startDate: bwsStartDate,
+            endDate: bwsEndDate,
+            totalLength: calculateTotalLength(bwsStartDate, bwsEndDate),
             companyLink: "https://www.bws.net/da/om-blue-water",
             companyIcon: `${bwsLogo}`,
             details: [
