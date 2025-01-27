@@ -38,7 +38,7 @@ const Timeline = () => {
     const companyTimelines: CompanyTimeline[] = [
         {
             companyName: "Milestones of Impact and Inspiration",
-            startDate: new Date("January 2019"),
+            startDate: new Date(finishEducationDate),
             endDate: new Date(),
             totalLength: calculateTotalLength(finishEducationDate, new Date()),
             companyLink: "",
