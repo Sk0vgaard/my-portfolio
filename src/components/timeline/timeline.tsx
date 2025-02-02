@@ -3,6 +3,7 @@ import { CompanyTimeline } from '../../interfaces';
 import bankdataLogo from '../../assets/logos/bankdata_logo.png';
 import egLogo from '../../assets/logos/eg_logo.png';
 import bwsLogo from '../../assets/logos/bws_logo.png';
+import milestoneLogo from '../../assets/logos/milestone_logo.png';
 import JobTimeline from "./jobTimeline";
 
 const bankdataStartDate: Date = new Date("2021-04-01");
@@ -46,7 +47,7 @@ const Timeline = () => {
                 endDate: new Date(),
                 totalLength: calculateTotalLength(finishEducationDate, new Date()),
                 companyLink: "",
-                companyIcon: "",
+                companyIcon: milestoneLogo,
                 details: [
                     {
                         title: "EASV - Upcoming event",
@@ -131,7 +132,7 @@ const Timeline = () => {
                 endDate: bankdataEndDate,
                 totalLength: calculateTotalLength(bankdataStartDate, bankdataEndDate),
                 companyLink: "https://www.bankdata.dk/om/bankdata",
-                companyIcon: `${bankdataLogo}`,
+                companyIcon: bankdataLogo,
                 details: [
                     {
                         title: "Senior Frontend Developer",
@@ -420,7 +421,7 @@ const Timeline = () => {
                 endDate: egEndDate,
                 totalLength: calculateTotalLength(egStartDate, egEndDate),
                 companyLink: "https://eg.dk/offentlig-digitalisering/eg-sensum-one/",
-                companyIcon: `${egLogo}`,
+                companyIcon: egLogo,
                 details: [
                     {
                         title: "Full Stack Developer",
@@ -503,7 +504,7 @@ const Timeline = () => {
                 endDate: bwsEndDate,
                 totalLength: calculateTotalLength(bwsStartDate, bwsEndDate),
                 companyLink: "https://www.bws.net/da/om-blue-water",
-                companyIcon: `${bwsLogo}`,
+                companyIcon: bwsLogo,
                 details: [
                     {
                         title: "Frontend, Main Assignment",
