@@ -12,7 +12,10 @@ export interface JobDetails {
     title: string;
     fromDate: string;
     toDate: string;
-    description: string;
+    description: {
+        primaryTexts: string[]; // primary text about the title
+        secondaryText?: string; // italic text
+    };
 }
 
 export {};

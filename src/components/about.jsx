@@ -127,7 +127,8 @@ const About = () => {
                             deadlines, pioneering frontend automation for scalability, and shaping the international
                             payments ecosystem with cutting-edge solutions.
                         </p>
-                        <p className="mb-2"> My career reflects my passion for transforming technical challenges into
+                        <p className="mb-2">
+                            My career reflects my passion for transforming technical challenges into
                             innovative solutions and my dedication to fostering collaborative, forward-thinking
                             environments that empower individuals and teams.
                         </p>

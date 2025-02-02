@@ -16,10 +16,22 @@ const JobTimeline = ({jobDetails}: { jobDetails: JobDetails[] }) => {
                                     {jobDetail.fromDate} {jobDetail.toDate ? `- ${jobDetail.toDate}` : ''}
                                 </span>
                             </div>
-                            <p className="mb-6 text-neutral-200 whitespace-pre-wrap hover:cursor-text"
-                               dangerouslySetInnerHTML={{ __html: jobDetail.description }}
-                               onClick={(e) => e.stopPropagation()}>
-                            </p>
+                            {jobDetail.description.primaryTexts && (
+                                <div>
+                                    {jobDetail.description.primaryTexts.map((text, index) => (
+                                        <p key={index} className="pt-2 text-neutral-200 whitespace-pre-wrap hover:cursor-text"
+                                            dangerouslySetInnerHTML={{__html: text}}
+                                            onClick={(e) => e.stopPropagation()}>
+                                        </p>
+                                    ))}
+                                    {jobDetail.description.secondaryText &&
+                                        <div className="mt-6 text-neutral-200 whitespace-pre-wrap hover:cursor-text italic"
+                                            dangerouslySetInnerHTML={{__html: jobDetail.description.secondaryText}}
+                                            onClick={(e) => e.stopPropagation()}>
+                                        </div>
+                                    }
+                                </div>
+                                )}
                         </div>
                     </div>
                 </li>
