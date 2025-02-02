@@ -204,7 +204,7 @@ const Timeline = () => {
                                 "<li> 1. Migrated the payment frontend from a monolithic architecture to a MicroFrontend while extracting the domain from another team.</li>" +
                                 "<li> 2. Initiated and kicked off critical deliveries set for 2025.</li>" +
                                 "<li> 3. <u>Successfully rewrote and released the PaymentService (BetalingsService)</u> for all our banks in just 6 weeks. This assignment was critical for the 2024 milestone of deploying our private Netbank for Web.<ul></li>" +
-                                "<li>• The task was assigned to me with a very short deadline and minimal guidance, and I was simply told to 'Rewrite BetalingsService' This required me to dive deep into understanding a whole new domain, its functionality, and the business context in record time. </li>" +
+                                "<li>• The task was assigned to me with a very short deadline and minimal guidance, and I was simply told to 'Rewrite BetalingsService', which required me to dive deep into understanding a whole new domain, its functionality, and the business context in record time. </li>" +
                                 "<li>• Due to the legacy system, no reusable code was available, so I built a brand-new frontend application from scratch.</li>" +
                                 "<li>• I handled the entire process independently working as a 'one-man-army' handeling UX design, project management, delivery, alignment with other teams, and ensuring the best possible test coverage for a robust and reliable solution.</li>" +
                                 "<li>• Remarkably, I managed to deliver this in record time while balancing immense personal responsibilities, as my wife was due to give birth. Despite everyone believing it couldn't be done, I exceeded expectations, delivering the solution before time, which was highly unexpected and greatly appreciated.</li></ul>",
@@ -242,22 +242,6 @@ const Timeline = () => {
                                 "The success of the POC was celebrated by developers and management alike, with widespread implementation across all platforms, setting a new standard for frontend development at Bankdata.",
                                 "This project not only fostered collaboration and innovation within the organization but also solidified Bankdata’s reputation for leading tech in frontend development within the financial sector."
                             ]
-                        },
-                    },
-                    {
-                        title: "Bridging the Gap in UX Design and Frontend Development at Bankdata",
-                        fromDate: "Dec 2023, Christmas Vacation",
-                        toDate: "",
-                        description: {
-                            primaryTexts: [
-                                "At Bankdata, I developed a tool designed to analyze UX mock-ups and identify Kirby Components, enabling developers to create optimized frontend applications with the appropriate components.",
-                                "In my free time, I built a GPT-powered Proof of Concept (POC) called KirbyGPT, which significantly streamlines the frontend development process by saving time and ensuring adherence to high-quality standards.",
-                                "This innovation has proven valuable for developers, allowing them to transition seamlessly from mock-up designs to production-ready code. KirbyGPT's integration with GitHub and its alignment with official documentation further enhances its impact, not only by improving development workflows but also by supporting education and best practices.",
-                                "As Angular Guild Coordinator, this tool played a crucial role in raising coding standards, sharing knowledge, and promoting best practices across teams."
-                            ],
-                            secondaryText:
-                                `Discover KirbyGPT: ${urlText('https://chat.openai.com/g/g-SH6xqAaFR-kirbygpt', 'KirbyGPT')} \n` +
-                                `Promo Video Created With AI: ${urlText('https://ai.invideo.io/watch/Xk87VzhSTHH', 'Elevate Frontend Development with KirbyGPT')}`
                         },
                     },
                     {
@@ -364,6 +348,22 @@ const Timeline = () => {
                                 "The library significantly eased the onboarding process for new developers, streamlined updates through centralized changes, and fostered a culture of collaboration and innovation within the Angular community. ",
                                 "Although quantifying the exact time saved is challenging, the alignment of our platforms and the enthusiastic adoption by developers underscore the library's substantial contribution to enhancing productivity and fostering a standardized development approach."
                         ]},
+                    },
+                    {
+                        title: "Bridging the Gap in UX Design and Frontend Development at Bankdata",
+                        fromDate: "Dec 2023, Christmas Vacation",
+                        toDate: "",
+                        description: {
+                            primaryTexts: [
+                                "At Bankdata, I developed a tool designed to analyze UX mock-ups and identify Kirby Components, enabling developers to create optimized frontend applications with the appropriate components.",
+                                "In my free time, I built a GPT-powered Proof of Concept (POC) called KirbyGPT, which significantly streamlines the frontend development process by saving time and ensuring adherence to high-quality standards.",
+                                "This innovation has proven valuable for developers, allowing them to transition seamlessly from mock-up designs to production-ready code. KirbyGPT's integration with GitHub and its alignment with official documentation further enhances its impact, not only by improving development workflows but also by supporting education and best practices.",
+                                "As Angular Guild Coordinator, this tool played a crucial role in raising coding standards, sharing knowledge, and promoting best practices across teams."
+                            ],
+                            secondaryText:
+                                `Discover KirbyGPT: ${urlText('https://chat.openai.com/g/g-SH6xqAaFR-kirbygpt', 'KirbyGPT')} \n` +
+                                `Promo Video Created With AI: ${urlText('https://ai.invideo.io/watch/Xk87VzhSTHH', 'Elevate Frontend Development with KirbyGPT')}`
+                        },
                     },
                     {
                         title: "Operational Excellence Days",
