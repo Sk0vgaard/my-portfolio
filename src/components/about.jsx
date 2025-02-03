@@ -19,8 +19,10 @@ function useAgeCalculator(birthdate) {
 }
 
 const About = () => {
-    const birthDate = '1990-11-19'
-    const age = useAgeCalculator(birthDate);
+    const myBirthDate = '1990-11-19'
+    const oldestBirthDate = '2018-02-13'
+    const middelBirthDate = '2021-03-29'
+    const youngestBirthDate = '2024-06-01'
 
     return (
         <div name="about" className="w-full my-20">
@@ -40,43 +42,56 @@ const About = () => {
                     <div className="bg-gray-800 p-8 rounded-lg shadow-md mb-8">
                         <div className="text-center text-gray-200">
                             <p>
-                                My name is Mathias Skovgaard, a {age}-year-old software developer from Esbjerg, Denmark,
+                                My name is Mathias Skovgaard, a {useAgeCalculator(myBirthDate)}-year-old software
+                                developer from Esbjerg, Denmark,
                                 known for my expertise, dedication, and natural ability to lead informally.
                             </p>
                             <br/>
                             <p>
                                 I excel in crafting high-quality, user-friendly applications using cutting-edge
                                 technologies. My journey in tech has been marked by a relentless drive for innovation,
-                                collaboration, and personal growth.
+                                collaboration, and personal growth - both for my self and those around me.
                             </p>
                             <br/>
-                            <p>
-                                I’m passionate about fostering innovation, building communities, and driving technical
-                                excellence. Throughout my career, I have led initiatives that align strategic objectives
-                                with technical execution, ensuring measurable impact and value.
+                            <p> Passionate about fostering innovation, building communities, and driving technical
+                                excellence, I’ve led initiatives that bridge strategic goals with technical execution,
+                                ensuring real impact.
                                 I enjoy collaborating with teams and individuals from various backgrounds, as I believe
-                                that diversity fosters creativity and innovation.
-                                I’ve found that empowering others and seeing them succeed is as fulfilling as delivering
-                                innovative technical solutions myself, making mentorship and team development a core
-                                part of my professional philosophy.
+                                that diversity fosters creativity and new ways of thinking to achieve excellence.
+                                <br/>
+                                For me, leadership is about more than delivering results—it's about enabling others to
+                                excel and creating an environment where success is shared. Therefore mentorship and team
+                                development are core to my philosophy; since empowering others and see them succeed, is
+                                just as meaningful and fulfilling as my own contributions and achievements.
                             </p>
                             <br/>
-                            <p> Outside work, I cherish salmon fishing in Esbjerg's rivers, and
-                                diving into the ever-evolving world of AI and technology.
+                            <p> On a personal note, I cherish spending time with my wife and our three wonderful
+                                children (♀{useAgeCalculator(oldestBirthDate)}, ♀{useAgeCalculator(middelBirthDate)},
+                                ♂{useAgeCalculator(youngestBirthDate)}). Whether it's salmon fishing in Esbjerg’s
+                                rivers, exploring the latest AI advancements, or simply enjoying quality family time, I
+                                embrace both my personal and professional passions with dedication.
+                                <br/>
+                                I’m known for my strong work ethic and, at times, my tendency to be a workaholic—I love
+                                what I do and constantly strive to push boundaries. My loyalty extends both personally
+                                and professionally; I take pride in building long-term relationships, whether with
+                                colleagues, friends, or industry connections.
+                                <br/>
+                                People often find me easy to talk to, and I genuinely enjoy networking and exchanging
+                                knowledge. I thrive in environments where collaboration, trust, and shared ambitions
+                                drive success.
                             </p>
                             <br/>
-                            <p> Drawing from my background as a <b>Social Healthcare Worker for 7-years</b>, I have
-                                honed strong interpersonal skills, empathy, and the ability to connect with others on a
-                                deeper level. This blend of technical expertise and human-centered understanding makes
-                                me not only a problem solver but also an inspiring team player and leader, capable of
-                                fostering collaboration and trust within any team.
+                            <p> With a <u>7-year</u> background as a Social Healthcare Worker, I bring strong
+                                interpersonal
+                                skills, empathy, and a deep understanding of people. This blend of technical expertise
+                                and human-centered leadership enables me to foster collaboration, trust, and
+                                high-performing teams.
                             </p>
                             <br/>
                             <p>
-                                My mantra is simple. Actions and integrity speak louder than words.
+                                My mantra is simple: Actions and integrity speak louder than words.
                                 <br/>
-                                <i> - I strive to be judged by my achievements and the respect of those I work with
-                                    above
+                                <i> - I strive to be judged by my achievements and the respect of those around me above
                                     all else. </i>
                             </p>
                         </div>
@@ -129,7 +144,7 @@ const About = () => {
                         </p>
                         <p className="mb-2">
                             My career reflects my passion for transforming technical challenges into
-                            innovative solutions and my dedication to fostering collaborative, forward-thinking
+                            the best solutions and my dedication to fostering collaborative, forward-thinking
                             environments that empower individuals and teams.
                         </p>
                     </div>

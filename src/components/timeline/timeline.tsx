@@ -240,7 +240,7 @@ const Timeline = () => {
                                 "This initiative streamlined development workflows by establishing a consistent design framework, optimized pipeline, CDN server, and repository structure. ",
                                 "The result significantly improved both Developer Experience (DevX) and User Experience (UX), enabling seamless transitions for developers across various projects and platforms.",
                                 "The success of the POC was celebrated by developers and management alike, with widespread implementation across all platforms, setting a new standard for frontend development at Bankdata.",
-                                "This project not only fostered collaboration and innovation within the organization but also solidified Bankdata’s reputation for leading tech in frontend development within the financial sector."
+                                "This project not only fostered collaboration within the organization but also solidified Bankdata’s reputation for leading tech in frontend development within the financial sector."
                             ]
                         },
                     },
@@ -269,7 +269,7 @@ const Timeline = () => {
                                 "My work also involved planning the repatriation of frontend development, technical considerations for new developments, and collaborating with POs, PMs, and department leaders.",
                                 "I served as a bridge between technology and product, ensuring reusable code, scalability, and exceeding project expectations.",
                                 "My team and I were viewed as knowledge experts and key stakeholders, supporting other areas and teams in crafting the best solutions.",
-                                "I've acted as a valuable resource across the organization, driving a strong technical culture, passionate about leading and motivating teams towards shared goals, fostering innovation, and contributing to professional development and mentoring.",
+                                "I've acted as a valuable resource across the organization, driving a strong technical culture, passionate about leading and motivating teams towards shared goals.",
                             ],
                             secondaryText:
                                 "- After the new organization rotation of teams, I stopped as Tech PO, since the teams responsibility changed to be more product oriented with focus on the Tech part.",
