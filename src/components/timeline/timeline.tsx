@@ -55,7 +55,7 @@ const Timeline = () => {
                         toDate: "",
                         description: {
                             primaryTexts: [
-                                "<u>Upcoming Event:</u>",
+                                "Once again I've been invited to inspire future developers at Business Academy South West (EASV) with a tailored presentation. This time, I'll be focusing on the importance of foundational knowledge in the tech industry and how it can shape a successful career.",
                                 "<u>Topic:</u>",
                                 "<u>Key Points:</u>",
                                 "<u>Discussion Topics:</u>",
@@ -175,8 +175,8 @@ const Timeline = () => {
                             primaryTexts: [
                                 "Cards at Bankdata, is a key component of the Danish Card Payment System and a cornerstone of the nation's financial infrastructure. ",
                                 "A primary objective for joining the Card Team was to lead and rewrite/migrate the existing frontend into a MicroFrontend architecture, enhancing the card application for private customers to deliver an improved platform experience with top quality.",
-                                "<u>Key areas of focus include:<u>" +
-                                "<ul>"+
+                                "<u>Key areas of focus include:</u>" +
+                                "<ul>" +
                                 "<li>- Card Administration and Management for Private, Business, and Advisors </li>" +
                                 "<li>- Card Issuing and Acquiring </li>" +
                                 "<li>- Integration with GooglePay, ApplePay and GarminPay </li>" +
@@ -285,7 +285,7 @@ const Timeline = () => {
                                 "Recognizing the need for specialized frontend expertise in upcoming major projects, I leveraged my network to assemble a team of 4 skilled developers within 3 months, marking the rapid establishment of a dedicated Frontend Team named \"Bankular\" (Bank, Angular).",
                                 "My role extended beyond team assembly; I spearheaded the onboarding process for new and existing teams, imparting knowledge on frontend development standards and best practices.",
                                 "My efforts were instrumental in fostering a unified developer environment, ensuring that our three main platforms benefited from alignment and consistency in frontend practices."
-                        ],
+                            ],
                             secondaryText:
                                 "- This initiative not only filled a critical gap in the Card & Payments area, but also strengthened Bankdata's overall frontend development capabilities."
                         },
@@ -311,7 +311,7 @@ const Timeline = () => {
                                 "With 14 developers participating on short notice, the engagement level was extraordinary. ",
                                 "The OnBoarding did not only strengthen our Angular Community within Bankdata, but also made sure that strong bonds and network has been created. ",
                                 "The Teams joined were thrilled for the onboarding and very grateful. Furthermore, developers who were about to create their first Frontend Application estimated that multiple weeks has been saved. "
-                        ],
+                            ],
                             secondaryText:
                                 "- After a new organization rotation of teams, our team stopped onboarding of new developers in Angular. This responsibility were instead handled from another team.",
                         },
@@ -332,9 +332,9 @@ const Timeline = () => {
                                 "<li>- Change management for production deployments </li>" +
                                 "</ul>",
                                 "This pipeline was revolutionary for Bankdata's Advisory Channel, where it was rapidly adopted by all 80+ Angular applications. It became a cornerstone of CI/CD, enabling seamless deployments and fostering huge appreciation from the developer community."
-                        ],
-                        secondaryText:
-                            "- Overall, this automation has saved countless hours of development time, accelerated project timelines, and optimized resources across the development teams."
+                            ],
+                            secondaryText:
+                                "- Overall, this automation has saved countless hours of development time, accelerated project timelines, and optimized resources across the development teams."
                         },
                     },
                     {
@@ -347,7 +347,8 @@ const Timeline = () => {
                                 "This strategic initiative addressed the inefficiency of 'reinventing the button' by providing UX-approved, standardized components for faster development cycles and cohesive user experiences across the platform.",
                                 "The library significantly eased the onboarding process for new developers, streamlined updates through centralized changes, and fostered a culture of collaboration and innovation within the Angular community. ",
                                 "Although quantifying the exact time saved is challenging, the alignment of our platforms and the enthusiastic adoption by developers underscore the library's substantial contribution to enhancing productivity and fostering a standardized development approach."
-                        ]},
+                            ]
+                        },
                     },
                     {
                         title: "Bridging the Gap in UX Design and Frontend Development at Bankdata",
@@ -377,7 +378,8 @@ const Timeline = () => {
                                 "We delved into the significance of knowledge sharing, the use of reusable code, and the role of our Angular Community in fostering a collaborative and efficient development environment.",
                                 "We want to enhance developer experience and ensuring a smooth transition for new team members into our dynamic and fast-paced environment.",
                                 "This event was not just about sharing our methods; it was about reinforcing our commitment to operational excellence and continuous improvement, as an organisation."
-                        ]},
+                            ]
+                        },
                     },
                     {
                         title: "Frontend Developer",
@@ -389,7 +391,7 @@ const Timeline = () => {
                                 "This shift was a strategic move to leverage my strengths and passion for creating intuitive, responsive user interfaces, further embracing my expertise in Angular and other modern web technologies.",
                                 "In this period, I not only contributed significantly to our projects' success through innovative solutions and enhancements, but also played a role in mentoring junior developers and advocating for best practices in frontend architecture.",
                                 "My dedication to excellence in frontend development enabled more efficient project execution, elevated user experience across our applications, and reinforced the importance of specialized roles within our development teams",
-                        ],
+                            ],
                             secondaryText:
                                 "- Promoted to Senior Frontend Developer in Jan, 2023."
                         },
@@ -409,8 +411,8 @@ const Timeline = () => {
                                 "While my primary focus was on frontend development, I also played an active role in full-stack and host development.",
                                 "This period was defined by impactful contributions, including completing three major rewrites of frontend applications, significantly boosting their performance, scalability, and reliability.",
                                 "My ability to adapt quickly and provide technical solutions made me a crucial part of the team, ensuring the success of our high-priority initiatives.",],
-                        secondaryText:
-                            "- In November 2021, I was presented with the exciting opportunity to establish a dedicated frontend team, which accelerated frontend development across the organization.",
+                            secondaryText:
+                                "- In November 2021, I was presented with the exciting opportunity to establish a dedicated frontend team, which accelerated frontend development across the organization.",
                         },
                     },
                 ],
@@ -433,7 +435,8 @@ const Timeline = () => {
                                 "My shown a level of ownership over projects by delivering high-quality code and solutions.",
                                 "My ability to work independently, coupled with a proactive approach to problem-solving, allowed me to contribute significantly to our teams success.",
                                 "This period was marked by my mature attitude towards software development, focusing on writing clean, efficient, and maintainable code, which laid the foundation for future leadership roles and furthered my development as a key asset to the team."
-                        ]},
+                            ]
+                        },
                     },
                     {
                         title: "Scrum Master",
@@ -445,7 +448,7 @@ const Timeline = () => {
                                 "I spearheaded the agile transformation and began educating myself to help teams improve. My focus was on ensuring effective Scrum Events, tracking progress and metrics, removing impediments, and fostering collaboration between developers and teams. Despite the company’s initial lack of maturity in Agile Development, I drove continuous improvement in our Scrum processes, addressing the challenges we faced along the way.",
                                 "When the Covid-19 pandemic hit the Danish labor market, I played a key role in rethinking how we cooperated as a team, conducted meetings, and facilitated collaboration in a fully remote setting. This required reimagining traditional workflows to maintain productivity and team cohesion, even under unprecedented circumstances.",
                                 "In addition to my Scrum Master responsibilities, I continued to work primarily as a developer, ensuring high-quality software delivery while balancing the demands of leadership and facilitation.",
-                        ],
+                            ],
                             secondaryText:
                                 "- During this time, I also honed my skills in creating effective documentation—a critical yet often underestimated aspect of Agile Development. I learned that good documentation is truly an art, and I leveraged this skill to ensure clarity, alignment, and continuity across teams."
                         },
@@ -461,7 +464,8 @@ const Timeline = () => {
                                 "A significant part of my role involved creating a positive and efficient development culture by mentoring the Polish team and aligning them with the standards and practices of the Danish teams. This included streamlining technical processes, ensuring high-quality code, and fostering a unified approach to problem-solving.",
                                 "Additionally, I facilitated knowledge sharing between the teams, emphasizing alignment, reusable solutions, and scalability in our development efforts. My leadership helped lay the foundation for a high-performing, collaborative team that continues to deliver exceptional results.",
                                 "This experience not only marked a significant organizational achievement but also contributed greatly to my personal growth as a leader, communicator, and advocate for cross-functional collaboration.",
-                        ]},
+                            ]
+                        },
                     },
                     {
                         title: "Software Teamlead",
@@ -474,7 +478,7 @@ const Timeline = () => {
                                 "As Teamlead, I wasn’t just a coordinator; I focused on improving workflows, fostering collaboration across diverse individuals, and bridging communication between tech and stakeholders. My efforts ensured that our team delivered projects to the deadline, with the best possible quailty while maintaining a positive and productive work environment. \n\n" +
                                 "In this role, I honed my ability to align diverse skill sets toward common goals, while also balancing technical and strategic oversight, which proved invaluable for the team's success. This period was pivotal in shaping my leadership style and understanding of team dynamics. \n\n" +
                                 "It was an incredible opportunity to learn how to lead a diverse team and unite them under a shared vision and objectives."
-                                ],
+                            ],
                             secondaryText:
                                 `Articles: ${urlText('https://www.linkedin.com/posts/mathias-skovgaard_jeg-ville-lige-dele-denne-fine-artikel-omkring-activity-6683082058618679296-yufu?utm_source=share&utm_medium=member_desktop', 'LinkedIn')}` +
                                 " / " +
@@ -493,9 +497,10 @@ const Timeline = () => {
                                 "<u>Sensum One</u>: A comprehensive platform designed to streamline social welfare efforts. The system emphasized automation, collaboration, and oversight across the special needs sector, providing a unified approach to case management and significantly improving life through measurable interventions",
                                 "This role allowed me to combine my technical skills with my background as a Social & Health Worker, enabling me to build user-centered solutions that truly made a difference in people's lives.",
                                 "It was during this time that I honed my skills in software development, focusing on clean, maintainable code while gaining practical experience in creating solutions that bridged the gap between user needs and technical capabilities. My contributions were impactful in ensuring high-quality deliverables and fostering collaboration across teams.",
-                        ],
-                        secondaryText:
-                            "- Promoted to Full Stack Developer in Aug 2020, reflecting my growth and contributions to the team."},
+                            ],
+                            secondaryText:
+                                "- Promoted to Full Stack Developer in Aug 2020, reflecting my growth and contributions to the team."
+                        },
                     },
                 ],
             }, {
@@ -519,7 +524,8 @@ const Timeline = () => {
                                 `${urlText('https://www.linkedin.com/in/rasmus-lindved-4167a112a/', 'Rasmus Lindved')} ` +
                                 "we aimed to deliver a strategic upgrade plan for their front-ends, showcasing the transition to a more type-strong language by upgrading their \"Work Order Management\" WebApp and the importance of fully tested frontend applications.",
                                 "This included not just an upgraded version of the frontend, but also comprehensive documentation of the upgrade process and a new frontend architecture to facilitate the transition for Blue Water Shipping's developers to the modern Angular framework."
-                        ]},
+                            ]
+                        },
                     },
                     {
                         title: "Full Stack - Intern",
@@ -531,7 +537,8 @@ const Timeline = () => {
                                 "I contributed to various projects, including developing <u>K</u>ey <u>P</u>erformance <u>I</u>ndicator (KPI) reports and improving email communication systems for shipping details.",
                                 "My tasks involved SQL database management, implementing new stored procedures, and refining data representation in Excel reports for better decision-making.",
                                 "This period was instrumental in honing my technical skills, particularly in SQL, and understanding the intricacies of logistics and supply chain management software solutions."
-                        ]},
+                            ]
+                        },
                     },
                 ],
             },
