@@ -38,7 +38,7 @@ const Home = () => {
             <div className='grid md:grid-cols-2 max-w-[1240px] m-auto'>
                 <div className="flex flex-col justify-center md:items-start w-full px-2 py-8">
                     <div className={'hidden md:block'}>
-                        <p className={`text-2xl ${fadeIn} ${fadeProp.fade}`}>Technical Leader / Frontend Developer</p>
+                        <p className={`text-2xl ${fadeIn} ${fadeProp.fade}`}>Technical Leader / Software Engineer</p>
                         <h1 className={`pt-5 pb-8 text-5xl md:text-7xl font-bold ${fadeIn}`}>
                             Mathias Skovgaard
                         </h1>
@@ -49,12 +49,12 @@ const Home = () => {
                             I AM
                         </p>
                         <div className='grid ml-[8px] overflow-hidden'>
-                            <p className="text-scroll underline">A Leader</p>
+                            <p className="text-scroll underline">A Mentor</p>
                             <p className="text-scroll underline">Dependable</p>
                             <p className="text-scroll underline">Selfless</p>
-                            <p className="text-scroll underline">Honourable</p>
+                            <p className="text-scroll underline">Loyal</p>
                             <p className="text-scroll underline">Empathetic</p>
-                            <p className="text-scroll underline">A Leader</p>
+                            <p className="text-scroll underline">A Mentor</p>
                         </div>
                     </div>
                 </div>
