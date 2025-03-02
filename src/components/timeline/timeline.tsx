@@ -67,7 +67,9 @@ const Timeline = () => {
                                 "<u>The First Years As A Developer:</u> \n" +
                                 "I shared personal experiences and insights from my journey as a developer, highlighting 'Imposter Syndrome', challenges, successes, and lessons learned along the way and focus on what's important the first few years.",
                             ],
-                            secondaryText: `EASV Website: ${urlText('https://www.easv.dk/da/uddannelser/datamatiker/', 'EASV - Computer Science')}`
+                            secondaryText:
+                                `LinkedIn: ${urlText('https://www.linkedin.com/posts/mathias-skovgaard_t%C3%A6ttere-p%C3%A5-virkeligheden-og-learning-by-activity-7301302353092046848-JxN2?utm_source=share&utm_medium=member_desktop&rcm=ACoAACZZS90BJXjsSAKPjTbStSDoqrJN6eA5sOA', 'LinkedIn Post')}\n` +
+                                `EASV Website: ${urlText('https://www.easv.dk/da/uddannelser/datamatiker/', 'EASV - Computer Science')}`
                         },
                     },
                     {
