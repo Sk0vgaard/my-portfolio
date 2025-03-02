@@ -50,29 +50,40 @@ const Timeline = () => {
                 companyIcon: milestoneLogo,
                 details: [
                     {
-                        title: "EASV - Upcoming event",
+                        title: "EASV - Building The Foundation, Fake Learning, Growth & AI in Development",
                         fromDate: "Feb 2025",
                         toDate: "",
                         description: {
                             primaryTexts: [
                                 "Once again I've been invited to inspire future developers at Business Academy South West (EASV) with a tailored presentation. This time, I'll be focusing on the importance of foundational knowledge in the tech industry and how it can shape a successful career.",
-                                "<u>Topic:</u>",
-                                "<u>Key Points:</u>",
-                                "<u>Discussion Topics:</u>",
+                                "<u>What Is Fake Learning And How To Avoid It: </u> \n" +
+                                "I shared insights on how to identify and avoid fake learning, emphasizing the significance of hands-on experience, continuous learning, and how to pursuit  knowledge outside the classroom.",
+                                "<u>Learning By Doing:</u> \n" +
+                                "I highlighted the value of practical experience in mastering new skills, bridging the gap between theory and practice.",
+                                "<u>AI as a Tool, Not a Replacement:</u> \n" +
+                                "I discussed the role of AI in the tech industry, highlighting its potential to enhance productivity and efficiency, rather than replacing foundational knowledge and skills.",
+                                "<u>Empowering Future Developers:</u> \n" +
+                                "I encouraged students to embrace challenges and setbacks as opportunities for growth, emphasizing the importance of resilience, curiosity, and a growth mindset in navigating the tech landscape.",
+                                "<u>The First Years As A Developer:</u> \n" +
+                                "I shared personal experiences and insights from my journey as a developer, highlighting 'Imposter Syndrome', challenges, successes, and lessons learned along the way and focus on what's important the first few years.",
                             ],
                             secondaryText: `EASV Website: ${urlText('https://www.easv.dk/da/uddannelser/datamatiker/', 'EASV - Computer Science')}`
                         },
                     },
                     {
-                        title: "EASV - A Students Struggle",
+                        title: "EASV - Inspiring Future Developers",
                         fromDate: "Mar 2024",
                         toDate: "",
                         description: {
                             primaryTexts: [
-                                "<u>Inspiring Future Developers:</u> \nDelivered two tailored presentations at Business Academy South West (EASV) to empower both bachelor's students and aspiring computer scientists.",
-                                "<u>Insights on Industry Practices:</u> \nHighlighted Bankdata's vision, Agile methods, tech stack, and unique onboarding practices to showcase how interns grow into valued team members.",
-                                "<u>Breaking Barriers for New Learners:</u> \nShared personal challenges, including overcoming steep learning curves and \"Imposter Syndrome,\" encouraging students to embrace growth and persistence.",
-                                "<u>Empowering with Tools:</u> \nFocused on leveraging ChatGPT effectively while stressing the importance of foundational knowledge for long-term success in the tech industry.",
+                                "<u>Inspiring Future Developers:</u> \n" +
+                                "Delivered two presentations at Business Academy South West (EASV) to empower both bachelor's students and aspiring computer scientists.",
+                                "<u>Understanding the Industry:</u> \n" +
+                                "I shared key insights into Bankdata’s vision, Agile methodologies, tech stack, and onboarding process, demonstrating how interns transition into essential team members.\n" +
+                                "<u>Overcoming Early Career Challenges:</u> \n" +
+                                "Shared personal challenges, including overcoming steep learning curves and \"Imposter Syndrome,\" encouraging students to embrace growth and persistence.",
+                                "<u>Empowering Tools:</u> \n" +
+                                "Focused on leveraging ChatGPT effectively while stressing the importance of foundational knowledge for long-term success in the tech industry.",
                             ],
                             secondaryText:
                                 `LinkedIn: ${urlText('https://www.linkedin.com/posts/mathias-skovgaard_today-our-1st-semester-computer-science-students-activity-7117569421727936512-F5HR?utm_source=share&utm_medium=member_desktop', 'LinkedIn Post')}\n` +
@@ -99,10 +110,14 @@ const Timeline = () => {
                         toDate: "",
                         description: {
                             primaryTexts: [
-                                "<u>The Struggle of a Student:</u> Discussed the challenges faced during studies, including steep learning curves and the journey of overcoming obstacles.",
-                                "<u>The Importance of a Mentor:</u> Highlighted how having a supportive mentor can accelerate learning, boost confidence, and guide career paths.",
-                                "<u>The Value of Networking:</u> Stressed the significance of building strong professional relationships and its impact on long-term career success.",
-                                "<u>Learning by Doing:</u> Emphasized hands-on experience as the key to mastering skills and bridging the gap between theory and practice."
+                                "<u>The Struggle of a Student:</u>\n" +
+                                "Discussed the challenges faced during studies, including steep learning curves and the journey of overcoming obstacles.",
+                                "<u>The Importance of a Mentor:</u>\n" +
+                                "Highlighted how having a supportive mentor can accelerate learning, boost confidence, and guide career paths.",
+                                "<u>The Value of Networking:</u>\n" +
+                                "Stressed the significance of building strong professional relationships and its impact on long-term career success.",
+                                "<u>Learning by Doing:</u>\n" +
+                                "Emphasized hands-on experience as the key to mastering skills and bridging the gap between theory and practice."
                             ],
                             secondaryText:
                                 `EASV Website: ${urlText('https://www.easv.dk/da/uddannelser/datamatiker/', 'EASV - Computer Science')}`
